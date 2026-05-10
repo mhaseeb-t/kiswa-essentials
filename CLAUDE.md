@@ -81,5 +81,20 @@ res.status(400).json({ success: false, error: 'message' })
 Axios instance in `api/index.js` auto-attaches JWT token from Redux store.
 
 ## Environment Variables
-- `backend/.env`: `DATABASE_URL`, `PORT=5000`, `JWT_SECRET`
+
+### Backend Mode Switching
+The backend supports both local development and production (Supabase) modes:
+
+**Local Mode** (default in `.env`):
+```
+DATABASE_URL=postgresql://postgres:Malik%40786@localhost:6969/kiswa_essentials
+```
+
+**Production Mode** (for Vercel/Supabase):
+```
+DATABASE_URL=postgresql://postgres.cagqmgxlrlopxrfxhwou:Rm@kaK9N.hDp9,.@aws-1-ap-south-1.pooler.supabase.com:5432/postgres
+```
+
+To switch: edit `backend/.env` - comment out one and uncomment the other.
+
 - `frontend/.env`: `VITE_API_URL=http://localhost:5000`
