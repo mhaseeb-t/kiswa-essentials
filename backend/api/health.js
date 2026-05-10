@@ -11,24 +11,13 @@ module.exports = async (req, res) => {
     });
   }
 
-  // Supabase requires connection through their API proxy for external access
-  // Try different connection approaches
-  let connectionConfig = {
+  const isLocal = dbUrl.includes('localhost');
+  const pool = new Pool({
     connectionString: dbUrl,
-    ssl: { rejectUnauthorized: false },
+    ssl: isLocal ? false : { rejectUnauthorized: false },
     max: 1,
     connectionTimeoutMillis: 10000,
-  };
-
-  // Check if using Supabase pooler
-  if (dbUrl.includes('pooler.supabase.com')) {
-    connectionConfig.ssl = {
-      rejectUnauthorized: false,
-      minVersion: 'TLSv1.2'
-    };
-  }
-
-  const pool = new Pool(connectionConfig);
+  });
 
   try {
     const result = await pool.query('SELECT 1 as connected, now() as server_time');
@@ -37,6 +26,7 @@ module.exports = async (req, res) => {
       success: true,
       message: 'Kiswa Essentials API is running',
       database: 'connected',
+      mode: isLocal ? 'local' : 'production',
       serverTime: result.rows[0].server_time,
       timestamp: new Date().toISOString()
     });
