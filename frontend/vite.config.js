@@ -7,6 +7,19 @@ export default defineConfig({
   base: '/',
   build: {
     outDir: 'dist',
-    assetsDir: 'assets'
+    assetsDir: 'assets',
+    commonjsOptions: {
+      include: /node_modules/,
+      transformMixedEsModules: true
+    }
+  },
+  optimizeDeps: {
+    include: [
+      'react',
+      'react-dom',
+      'react-redux',
+      'react-router-dom',
+      '@reduxjs/toolkit'
+    ]
   }
 })
