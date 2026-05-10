@@ -8,6 +8,8 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
+    sourcemap: true,
+    minify: 'terser',
     commonjsOptions: {
       include: /node_modules/,
       transformMixedEsModules: true
@@ -16,7 +18,7 @@ export default defineConfig({
   optimizeDeps: {
     include: [
       'react',
-      'react-dom',
+      'react-dom/client',
       'react-redux',
       'react-router-dom',
       '@reduxjs/toolkit'
