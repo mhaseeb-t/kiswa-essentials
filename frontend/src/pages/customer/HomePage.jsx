@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Shirt, Sparkles, Wind, Flame, Star, Truck, Shield, Gift, ChevronDown, Loader2 } from 'lucide-react';
+import { useSelector } from 'react-redux';
 import ProductGrid from '../../components/product/ProductGrid';
 
 const HomePage = () => {
