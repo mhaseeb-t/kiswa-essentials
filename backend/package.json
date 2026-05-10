@@ -1,0 +1,29 @@
+{
+  "name": "kiswa-essentials-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Kiswa Essentials e-commerce store",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "seed": "node seeds/seeder.js",
+    "deploy": "vercel --prod",
+    "dev:serverless": "vercel dev"
+  },
+  "type": "commonjs",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-validator": "^7.3.2",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.6.2",
+    "morgan": "^1.10.1",
+    "pg": "^8.20.0"
+  },
+  "devDependencies": {
+    "vercel": "^41.0.0"
+  }
+}

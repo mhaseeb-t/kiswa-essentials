@@ -1,0 +1,97 @@
+import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { Eye } from 'lucide-react';
+import Badge from '../../components/ui/Badge';
+import { formatPrice } from '../../utils/formatPrice';
+import { ORDER_STATUSES } from '../../utils/constants';
+
+const StaffOrders = () => {
+  const [orders, setOrders] = useState([]);
+  const [activeTab, setActiveTab] = useState('all');
+
+  useEffect(() => {
+    setOrders([
+      { id: 'ORD-847291', customer: 'Ahmed Khan', email: 'ahmed@example.com', total: 289.97, status: 'PENDING', date: '2024-01-15' },
+      { id: 'ORD-729384', customer: 'Fatima Ahmed', email: 'fatima@example.com', total: 179.98, status: 'SHIPPED', date: '2024-01-14' },
+      { id: 'ORD-618273', customer: 'Omar Ali', email: 'omar@example.com', total: 89.99, status: 'PAID', date: '2024-01-13' },
+      { id: 'ORD-509162', customer: 'Sara Khan', email: 'sara@example.com', total: 149.99, status: 'DELIVERED', date: '2024-01-12' },
+    ]);
+  }, []);
+
+  const tabs = ['all', 'PENDING', 'PAID', 'SHIPPED', 'DELIVERED'];
+
+  const filteredOrders = activeTab === 'all'
+    ? orders
+    : orders.filter(o => o.status === activeTab);
+
+  return (
+    <div className="min-h-screen bg-[#0f0f0f] py-8 px-4">
+      <div className="max-w-7xl mx-auto">
+        <h1 className="text-3xl font-medium text-[#f5f0e8] mb-8">Staff Orders</h1>
+
+        {/* Tabs */}
+        <div className="flex flex-wrap gap-2 mb-6">
+          {tabs.map((tab) => (
+            <button
+              key={tab}
+              onClick={() => setActiveTab(tab)}
+              className={`px-4 py-2 rounded text-sm font-medium transition-colors ${
+                activeTab === tab
+                  ? 'bg-[#c9b89a] text-[#0f0f0f]'
+                  : 'bg-[#1a1a1a] text-[#888888] hover:text-[#f5f0e8] border border-[#2e2e2e]'
+              }`}
+            >
+              {tab.charAt(0).toUpperCase() + tab.slice(1)}
+            </button>
+          ))}
+        </div>
+
+        {/* Orders Table */}
+        <div className="bg-[#1a1a1a] border border-[#2e2e2e] rounded-lg overflow-hidden">
+          <table className="w-full">
+            <thead>
+              <tr className="border-b border-[#2e2e2e]">
+                <th className="text-left p-4 text-[#888888] text-sm font-medium">Order ID</th>
+                <th className="text-left p-4 text-[#888888] text-sm font-medium">Customer</th>
+                <th className="text-left p-4 text-[#888888] text-sm font-medium">Total</th>
+                <th className="text-left p-4 text-[#888888] text-sm font-medium">Status</th>
+                <th className="text-left p-4 text-[#888888] text-sm font-medium">Date</th>
+                <th className="text-left p-4 text-[#888888] text-sm font-medium">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              {filteredOrders.map((order) => (
+                <tr key={order.id} className="border-b border-[#2e2e2e] hover:bg-[#0f0f0f]">
+                  <td className="p-4 text-[#f5f0e8] font-medium">{order.id}</td>
+                  <td className="p-4 text-[#f5f0e8]">{order.customer}</td>
+                  <td className="p-4 text-[#c9b89a]">{formatPrice(order.total)}</td>
+                  <td className="p-4">
+                    <Badge variant={
+                      order.status === 'DELIVERED' ? 'success' :
+                      order.status === 'SHIPPED' ? 'info' :
+                      order.status === 'PAID' ? 'default' : 'warning'
+                    }>
+                      {ORDER_STATUSES[order.status]?.label || order.status}
+                    </Badge>
+                  </td>
+                  <td className="p-4 text-[#888888]">{order.date}</td>
+                  <td className="p-4">
+                    <Link
+                      to={`/staff/orders/${order.id}`}
+                      className="inline-flex items-center gap-2 text-[#c9b89a] hover:underline"
+                    >
+                      <Eye className="w-4 h-4" />
+                      Update
+                    </Link>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default StaffOrders;

@@ -1,0 +1,10 @@
+# Environment Variables for Vercel Serverless
+
+# Database - Add these in Vercel Dashboard > Settings > Environment Variables
+DATABASE_URL=postgresql://postgres:password@host:5432/kiswa_essentials
+
+# JWT - Generate a strong secret and add to Vercel
+JWT_SECRET=your-super-secret-jwt-key-change-in-production
+
+# Node Environment
+NODE_ENV=production

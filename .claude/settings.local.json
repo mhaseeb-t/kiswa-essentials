@@ -1,0 +1,38 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx skills *)",
+      "Bash(npm create *)",
+      "Bash(claude mcp *)",
+      "Bash(Get-ChildItem -Path \"f:\\\\agent checkl\\\\src\" -Recurse -File)",
+      "Bash(Select-Object FullName)",
+      "Bash(Get-ChildItem -Path \"F:\\\\agent checkl\" -Force)",
+      "Bash(Format-Table Name, Mode, Length, LastWriteTime)",
+      "Bash(rm -rf \"F:/agent checkl/asd\")",
+      "Bash(rm -f \"F:/agent checkl/index.html\" \"F:/agent checkl/package.json\" \"F:/agent checkl/vite.config.js\")",
+      "Bash(rm -rf \"F:/agent checkl/src\" \"F:/agent checkl/public\")",
+      "Bash(npm start *)",
+      "Bash(node -e ' *)",
+      "Bash(PGPASSWORD=\"Malik@786\" psql -h localhost -p 6969 -U postgres -d postgres -c \"SELECT 1;\")",
+      "PowerShell(vercel *)",
+      "PowerShell(gh *)",
+      "Bash(Get-ChildItem *)",
+      "PowerShell(winget install *)",
+      "PowerShell(npm install *)",
+      "PowerShell(git init *)",
+      "PowerShell(git config *)",
+      "PowerShell(git add *)",
+      "Bash(New-Item -ItemType Directory -Path \"backend\\\\api\\\\_lib\" -Force)",
+      "Bash(Out-Null)",
+      "Bash(New-Item -ItemType Directory -Path \"backend\\\\api\\\\auth\" -Force)",
+      "Bash(New-Item -ItemType Directory -Path \"backend\\\\api\\\\products\" -Force)",
+      "Bash(New-Item -ItemType Directory -Path \"backend\\\\api\\\\orders\" -Force)",
+      "Bash(New-Item -ItemType Directory -Path \"backend\\\\api\\\\categories\" -Force)"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "postgres",
+    "vercel"
+  ]
+}
