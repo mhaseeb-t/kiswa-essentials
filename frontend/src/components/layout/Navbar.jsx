@@ -93,7 +93,7 @@ const Navbar = () => {
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled ? 'glass border-b border-[#2a2a2e]/50' : 'bg-[#0c0c0e]/95'
       }`}>
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-2 group">
@@ -120,7 +120,7 @@ const Navbar = () => {
                   }`}
                 >
                   {link.name}
-                  <span className={`absolute -bottom-1 left-0 w-0 h-[1px] bg-[#c9b89a] transition-all duration-300 group-hover:w-full ${
+                  <span className={`absolute -bottom-1 left-0 w-0 h-px bg-[#c9b89a] transition-all duration-300 group-hover:w-full ${
                     location.pathname === link.path ? 'w-full' : ''
                   }`} />
                 </Link>
@@ -236,7 +236,7 @@ const Navbar = () => {
                     onClick={() => setIsUserMenuOpen(!isUserMenuOpen)}
                     className="flex items-center gap-2 p-2 text-[#a8a4a0] hover:text-[#c9b89a] hover:bg-[#1a1a1e]/50 rounded-full transition-all"
                   >
-                    <div className="w-7 h-7 rounded-full bg-gradient-to-br from-[#c9b89a] to-[#a89878] flex items-center justify-center">
+                    <div className="w-7 h-7 rounded-full bg-linear-to-br from-[#c9b89a] to-[#a89878] flex items-center justify-center">
                       <span className="text-[#0c0c0e] text-xs font-medium">
                         {user?.name?.charAt(0)?.toUpperCase()}
                       </span>
