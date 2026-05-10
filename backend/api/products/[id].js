@@ -1,5 +1,5 @@
-const { query } = require('../../_lib/db');
-const { initDB } = require('../../_lib/seed');
+const { query } = require('../_lib/db');
+const { initDB } = require('../_lib/seed');
 
 // GET /api/products/[id]
 module.exports = async (req, res) => {
