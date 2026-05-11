@@ -1,0 +1,4284 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "_graphify_ast.py",
+      "file_type": "code",
+      "source_file": "_graphify_ast.py",
+      "source_location": "L1",
+      "id": "graphify_ast_py",
+      "community": 18,
+      "norm_label": "_graphify_ast.py"
+    },
+    {
+      "label": "_graphify_ast_main.py",
+      "file_type": "code",
+      "source_file": "_graphify_ast_main.py",
+      "source_location": "L1",
+      "id": "graphify_ast_main_py",
+      "community": 19,
+      "norm_label": "_graphify_ast_main.py"
+    },
+    {
+      "label": "_graphify_cache.py",
+      "file_type": "code",
+      "source_file": "_graphify_cache.py",
+      "source_location": "L1",
+      "id": "graphify_cache_py",
+      "community": 20,
+      "norm_label": "_graphify_cache.py"
+    },
+    {
+      "label": "_graphify_cache_main.py",
+      "file_type": "code",
+      "source_file": "_graphify_cache_main.py",
+      "source_location": "L1",
+      "id": "graphify_cache_main_py",
+      "community": 21,
+      "norm_label": "_graphify_cache_main.py"
+    },
+    {
+      "label": "_graphify_detect.py",
+      "file_type": "code",
+      "source_file": "_graphify_detect.py",
+      "source_location": "L1",
+      "id": "graphify_detect_py",
+      "community": 22,
+      "norm_label": "_graphify_detect.py"
+    },
+    {
+      "label": "index.js",
+      "file_type": "code",
+      "source_file": "backend/index.js",
+      "source_location": "L1",
+      "id": "backend_index_js",
+      "community": 1,
+      "norm_label": "index.js"
+    },
+    {
+      "label": "ensureUsersTable()",
+      "file_type": "code",
+      "source_file": "backend/index.js",
+      "source_location": "L24",
+      "id": "backend_index_ensureuserstable",
+      "community": 1,
+      "norm_label": "ensureuserstable()"
+    },
+    {
+      "label": "prisma.config.ts",
+      "file_type": "code",
+      "source_file": "backend/prisma.config.ts",
+      "source_location": "L1",
+      "id": "backend_prisma_config_ts",
+      "community": 23,
+      "norm_label": "prisma.config.ts"
+    },
+    {
+      "label": "server.js",
+      "file_type": "code",
+      "source_file": "backend/server.js",
+      "source_location": "L1",
+      "id": "backend_server_js",
+      "community": 9,
+      "norm_label": "server.js"
+    },
+    {
+      "label": "startServer()",
+      "file_type": "code",
+      "source_file": "backend/server.js",
+      "source_location": "L71",
+      "id": "backend_server_startserver",
+      "community": 9,
+      "norm_label": "startserver()"
+    },
+    {
+      "label": "search.js",
+      "file_type": "code",
+      "source_file": "backend/api/products/search.js",
+      "source_location": "L1",
+      "id": "backend_api_products_search_js",
+      "community": 24,
+      "norm_label": "search.js"
+    },
+    {
+      "label": "db.js",
+      "file_type": "code",
+      "source_file": "backend/config/db.js",
+      "source_location": "L1",
+      "id": "backend_config_db_js",
+      "community": 9,
+      "norm_label": "db.js"
+    },
+    {
+      "label": "connectDB()",
+      "file_type": "code",
+      "source_file": "backend/config/db.js",
+      "source_location": "L8",
+      "id": "config_db_connectdb",
+      "community": 9,
+      "norm_label": "connectdb()"
+    },
+    {
+      "label": "authController.js",
+      "file_type": "code",
+      "source_file": "backend/controllers/authController.js",
+      "source_location": "L1",
+      "id": "backend_controllers_authcontroller_js",
+      "community": 5,
+      "norm_label": "authcontroller.js"
+    },
+    {
+      "label": "generateToken()",
+      "file_type": "code",
+      "source_file": "backend/controllers/authController.js",
+      "source_location": "L4",
+      "id": "controllers_authcontroller_generatetoken",
+      "community": 5,
+      "norm_label": "generatetoken()"
+    },
+    {
+      "label": "forgotPassword()",
+      "file_type": "code",
+      "source_file": "backend/controllers/authController.js",
+      "source_location": "L174",
+      "id": "controllers_authcontroller_forgotpassword",
+      "community": 5,
+      "norm_label": "forgotpassword()"
+    },
+    {
+      "label": "validateResetToken()",
+      "file_type": "code",
+      "source_file": "backend/controllers/authController.js",
+      "source_location": "L233",
+      "id": "controllers_authcontroller_validateresettoken",
+      "community": 5,
+      "norm_label": "validateresettoken()"
+    },
+    {
+      "label": "resetPassword()",
+      "file_type": "code",
+      "source_file": "backend/controllers/authController.js",
+      "source_location": "L275",
+      "id": "controllers_authcontroller_resetpassword",
+      "community": 5,
+      "norm_label": "resetpassword()"
+    },
+    {
+      "label": "categoryController.js",
+      "file_type": "code",
+      "source_file": "backend/controllers/categoryController.js",
+      "source_location": "L1",
+      "id": "backend_controllers_categorycontroller_js",
+      "community": 3,
+      "norm_label": "categorycontroller.js"
+    },
+    {
+      "label": "getCategory()",
+      "file_type": "code",
+      "source_file": "backend/controllers/categoryController.js",
+      "source_location": "L16",
+      "id": "controllers_categorycontroller_getcategory",
+      "community": 3,
+      "norm_label": "getcategory()"
+    },
+    {
+      "label": "createCategory()",
+      "file_type": "code",
+      "source_file": "backend/controllers/categoryController.js",
+      "source_location": "L36",
+      "id": "controllers_categorycontroller_createcategory",
+      "community": 3,
+      "norm_label": "createcategory()"
+    },
+    {
+      "label": "updateCategory()",
+      "file_type": "code",
+      "source_file": "backend/controllers/categoryController.js",
+      "source_location": "L66",
+      "id": "controllers_categorycontroller_updatecategory",
+      "community": 3,
+      "norm_label": "updatecategory()"
+    },
+    {
+      "label": "deleteCategory()",
+      "file_type": "code",
+      "source_file": "backend/controllers/categoryController.js",
+      "source_location": "L90",
+      "id": "controllers_categorycontroller_deletecategory",
+      "community": 3,
+      "norm_label": "deletecategory()"
+    },
+    {
+      "label": "couponController.js",
+      "file_type": "code",
+      "source_file": "backend/controllers/couponController.js",
+      "source_location": "L1",
+      "id": "backend_controllers_couponcontroller_js",
+      "community": 12,
+      "norm_label": "couponcontroller.js"
+    },
+    {
+      "label": "validateCoupon()",
+      "file_type": "code",
+      "source_file": "backend/controllers/couponController.js",
+      "source_location": "L3",
+      "id": "controllers_couponcontroller_validatecoupon",
+      "community": 12,
+      "norm_label": "validatecoupon()"
+    },
+    {
+      "label": "getAllCoupons()",
+      "file_type": "code",
+      "source_file": "backend/controllers/couponController.js",
+      "source_location": "L93",
+      "id": "controllers_couponcontroller_getallcoupons",
+      "community": 12,
+      "norm_label": "getallcoupons()"
+    },
+    {
+      "label": "orderController.js",
+      "file_type": "code",
+      "source_file": "backend/controllers/orderController.js",
+      "source_location": "L1",
+      "id": "backend_controllers_ordercontroller_js",
+      "community": 6,
+      "norm_label": "ordercontroller.js"
+    },
+    {
+      "label": "getCustomers()",
+      "file_type": "code",
+      "source_file": "backend/controllers/orderController.js",
+      "source_location": "L125",
+      "id": "controllers_ordercontroller_getcustomers",
+      "community": 6,
+      "norm_label": "getcustomers()"
+    },
+    {
+      "label": "productController.js",
+      "file_type": "code",
+      "source_file": "backend/controllers/productController.js",
+      "source_location": "L1",
+      "id": "backend_controllers_productcontroller_js",
+      "community": 3,
+      "norm_label": "productcontroller.js"
+    },
+    {
+      "label": "wishlistController.js",
+      "file_type": "code",
+      "source_file": "backend/controllers/wishlistController.js",
+      "source_location": "L1",
+      "id": "backend_controllers_wishlistcontroller_js",
+      "community": 10,
+      "norm_label": "wishlistcontroller.js"
+    },
+    {
+      "label": "getWishlist()",
+      "file_type": "code",
+      "source_file": "backend/controllers/wishlistController.js",
+      "source_location": "L4",
+      "id": "controllers_wishlistcontroller_getwishlist",
+      "community": 10,
+      "norm_label": "getwishlist()"
+    },
+    {
+      "label": "addToWishlist()",
+      "file_type": "code",
+      "source_file": "backend/controllers/wishlistController.js",
+      "source_location": "L29",
+      "id": "controllers_wishlistcontroller_addtowishlist",
+      "community": 10,
+      "norm_label": "addtowishlist()"
+    },
+    {
+      "label": "removeFromWishlist()",
+      "file_type": "code",
+      "source_file": "backend/controllers/wishlistController.js",
+      "source_location": "L53",
+      "id": "controllers_wishlistcontroller_removefromwishlist",
+      "community": 10,
+      "norm_label": "removefromwishlist()"
+    },
+    {
+      "label": "admin.js",
+      "file_type": "code",
+      "source_file": "backend/middleware/admin.js",
+      "source_location": "L1",
+      "id": "backend_middleware_admin_js",
+      "community": 14,
+      "norm_label": "admin.js"
+    },
+    {
+      "label": "admin()",
+      "file_type": "code",
+      "source_file": "backend/middleware/admin.js",
+      "source_location": "L1",
+      "id": "middleware_admin_admin",
+      "community": 14,
+      "norm_label": "admin()"
+    },
+    {
+      "label": "protect()",
+      "file_type": "code",
+      "source_file": "backend/middleware/auth.js",
+      "source_location": "L4",
+      "id": "middleware_auth_protect",
+      "community": 15,
+      "norm_label": "protect()"
+    },
+    {
+      "label": "errorHandler.js",
+      "file_type": "code",
+      "source_file": "backend/middleware/errorHandler.js",
+      "source_location": "L1",
+      "id": "backend_middleware_errorhandler_js",
+      "community": 25,
+      "norm_label": "errorhandler.js"
+    },
+    {
+      "label": "staff.js",
+      "file_type": "code",
+      "source_file": "backend/middleware/staff.js",
+      "source_location": "L1",
+      "id": "backend_middleware_staff_js",
+      "community": 16,
+      "norm_label": "staff.js"
+    },
+    {
+      "label": "staff()",
+      "file_type": "code",
+      "source_file": "backend/middleware/staff.js",
+      "source_location": "L1",
+      "id": "middleware_staff_staff",
+      "community": 16,
+      "norm_label": "staff()"
+    },
+    {
+      "label": "Category.js",
+      "file_type": "code",
+      "source_file": "backend/models/Category.js",
+      "source_location": "L1",
+      "id": "backend_models_category_js",
+      "community": 26,
+      "norm_label": "category.js"
+    },
+    {
+      "label": "Coupon.js",
+      "file_type": "code",
+      "source_file": "backend/models/Coupon.js",
+      "source_location": "L1",
+      "id": "backend_models_coupon_js",
+      "community": 27,
+      "norm_label": "coupon.js"
+    },
+    {
+      "label": "Order.js",
+      "file_type": "code",
+      "source_file": "backend/models/Order.js",
+      "source_location": "L1",
+      "id": "backend_models_order_js",
+      "community": 28,
+      "norm_label": "order.js"
+    },
+    {
+      "label": "Product.js",
+      "file_type": "code",
+      "source_file": "backend/models/Product.js",
+      "source_location": "L1",
+      "id": "backend_models_product_js",
+      "community": 29,
+      "norm_label": "product.js"
+    },
+    {
+      "label": "User.js",
+      "file_type": "code",
+      "source_file": "backend/models/User.js",
+      "source_location": "L1",
+      "id": "backend_models_user_js",
+      "community": 30,
+      "norm_label": "user.js"
+    },
+    {
+      "label": "Wishlist.js",
+      "file_type": "code",
+      "source_file": "backend/models/Wishlist.js",
+      "source_location": "L1",
+      "id": "backend_models_wishlist_js",
+      "community": 31,
+      "norm_label": "wishlist.js"
+    },
+    {
+      "label": "auth.js",
+      "file_type": "code",
+      "source_file": "backend/routes/auth.js",
+      "source_location": "L1",
+      "id": "backend_routes_auth_js",
+      "community": 15,
+      "norm_label": "auth.js"
+    },
+    {
+      "label": "categories.js",
+      "file_type": "code",
+      "source_file": "backend/routes/categories.js",
+      "source_location": "L1",
+      "id": "backend_routes_categories_js",
+      "community": 32,
+      "norm_label": "categories.js"
+    },
+    {
+      "label": "coupons.js",
+      "file_type": "code",
+      "source_file": "backend/routes/coupons.js",
+      "source_location": "L1",
+      "id": "backend_routes_coupons_js",
+      "community": 33,
+      "norm_label": "coupons.js"
+    },
+    {
+      "label": "orders.js",
+      "file_type": "code",
+      "source_file": "backend/routes/orders.js",
+      "source_location": "L1",
+      "id": "backend_routes_orders_js",
+      "community": 34,
+      "norm_label": "orders.js"
+    },
+    {
+      "label": "products.js",
+      "file_type": "code",
+      "source_file": "backend/routes/products.js",
+      "source_location": "L1",
+      "id": "backend_routes_products_js",
+      "community": 35,
+      "norm_label": "products.js"
+    },
+    {
+      "label": "data.js",
+      "file_type": "code",
+      "source_file": "backend/seeds/data.js",
+      "source_location": "L1",
+      "id": "backend_seeds_data_js",
+      "community": 13,
+      "norm_label": "data.js"
+    },
+    {
+      "label": "seedDatabase()",
+      "file_type": "code",
+      "source_file": "backend/seeds/data.js",
+      "source_location": "L3",
+      "id": "seeds_data_seeddatabase",
+      "community": 13,
+      "norm_label": "seeddatabase()"
+    },
+    {
+      "label": "seeder.js",
+      "file_type": "code",
+      "source_file": "backend/seeds/seeder.js",
+      "source_location": "L1",
+      "id": "backend_seeds_seeder_js",
+      "community": 13,
+      "norm_label": "seeder.js"
+    },
+    {
+      "label": "eslint.config.js",
+      "file_type": "code",
+      "source_file": "frontend/eslint.config.js",
+      "source_location": "L1",
+      "id": "frontend_eslint_config_js",
+      "community": 36,
+      "norm_label": "eslint.config.js"
+    },
+    {
+      "label": "vite.config.js",
+      "file_type": "code",
+      "source_file": "frontend/vite.config.js",
+      "source_location": "L1",
+      "id": "frontend_vite_config_js",
+      "community": 37,
+      "norm_label": "vite.config.js"
+    },
+    {
+      "label": "App.jsx",
+      "file_type": "code",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L1",
+      "id": "frontend_src_app_jsx",
+      "community": 0,
+      "norm_label": "app.jsx"
+    },
+    {
+      "label": "ProtectedRoute()",
+      "file_type": "code",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L42",
+      "id": "src_app_protectedroute",
+      "community": 0,
+      "norm_label": "protectedroute()"
+    },
+    {
+      "label": "AdminRoute()",
+      "file_type": "code",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L51",
+      "id": "src_app_adminroute",
+      "community": 0,
+      "norm_label": "adminroute()"
+    },
+    {
+      "label": "StaffRoute()",
+      "file_type": "code",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L63",
+      "id": "src_app_staffroute",
+      "community": 0,
+      "norm_label": "staffroute()"
+    },
+    {
+      "label": "App()",
+      "file_type": "code",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L74",
+      "id": "src_app_app",
+      "community": 0,
+      "norm_label": "app()"
+    },
+    {
+      "label": "main.jsx",
+      "file_type": "code",
+      "source_file": "frontend/src/main.jsx",
+      "source_location": "L1",
+      "id": "frontend_src_main_jsx",
+      "community": 1,
+      "norm_label": "main.jsx"
+    },
+    {
+      "label": "authApi.js",
+      "file_type": "code",
+      "source_file": "frontend/src/api/authApi.js",
+      "source_location": "L1",
+      "id": "frontend_src_api_authapi_js",
+      "community": 5,
+      "norm_label": "authapi.js"
+    },
+    {
+      "label": "login()",
+      "file_type": "code",
+      "source_file": "frontend/src/api/authApi.js",
+      "source_location": "L3",
+      "id": "api_authapi_login",
+      "community": 5,
+      "norm_label": "login()"
+    },
+    {
+      "label": "register()",
+      "file_type": "code",
+      "source_file": "frontend/src/api/authApi.js",
+      "source_location": "L8",
+      "id": "api_authapi_register",
+      "community": 5,
+      "norm_label": "register()"
+    },
+    {
+      "label": "getProfile()",
+      "file_type": "code",
+      "source_file": "frontend/src/api/authApi.js",
+      "source_location": "L13",
+      "id": "api_authapi_getprofile",
+      "community": 5,
+      "norm_label": "getprofile()"
+    },
+    {
+      "label": "updateProfile()",
+      "file_type": "code",
+      "source_file": "frontend/src/api/authApi.js",
+      "source_location": "L18",
+      "id": "api_authapi_updateprofile",
+      "community": 5,
+      "norm_label": "updateprofile()"
+    },
+    {
+      "label": "axios.js",
+      "file_type": "code",
+      "source_file": "frontend/src/api/axios.js",
+      "source_location": "L1",
+      "id": "frontend_src_api_axios_js",
+      "community": 2,
+      "norm_label": "axios.js"
+    },
+    {
+      "label": "orderApi.js",
+      "file_type": "code",
+      "source_file": "frontend/src/api/orderApi.js",
+      "source_location": "L1",
+      "id": "frontend_src_api_orderapi_js",
+      "community": 6,
+      "norm_label": "orderapi.js"
+    },
+    {
+      "label": "createOrder()",
+      "file_type": "code",
+      "source_file": "frontend/src/api/orderApi.js",
+      "source_location": "L3",
+      "id": "api_orderapi_createorder",
+      "community": 6,
+      "norm_label": "createorder()"
+    },
+    {
+      "label": "getMyOrders()",
+      "file_type": "code",
+      "source_file": "frontend/src/api/orderApi.js",
+      "source_location": "L8",
+      "id": "api_orderapi_getmyorders",
+      "community": 6,
+      "norm_label": "getmyorders()"
+    },
+    {
+      "label": "getOrder()",
+      "file_type": "code",
+      "source_file": "frontend/src/api/orderApi.js",
+      "source_location": "L13",
+      "id": "api_orderapi_getorder",
+      "community": 6,
+      "norm_label": "getorder()"
+    },
+    {
+      "label": "getAllOrders()",
+      "file_type": "code",
+      "source_file": "frontend/src/api/orderApi.js",
+      "source_location": "L18",
+      "id": "api_orderapi_getallorders",
+      "community": 6,
+      "norm_label": "getallorders()"
+    },
+    {
+      "label": "updateOrderStatus()",
+      "file_type": "code",
+      "source_file": "frontend/src/api/orderApi.js",
+      "source_location": "L24",
+      "id": "api_orderapi_updateorderstatus",
+      "community": 6,
+      "norm_label": "updateorderstatus()"
+    },
+    {
+      "label": "productApi.js",
+      "file_type": "code",
+      "source_file": "frontend/src/api/productApi.js",
+      "source_location": "L1",
+      "id": "frontend_src_api_productapi_js",
+      "community": 3,
+      "norm_label": "productapi.js"
+    },
+    {
+      "label": "getAllProducts()",
+      "file_type": "code",
+      "source_file": "frontend/src/api/productApi.js",
+      "source_location": "L3",
+      "id": "api_productapi_getallproducts",
+      "community": 3,
+      "norm_label": "getallproducts()"
+    },
+    {
+      "label": "getProduct()",
+      "file_type": "code",
+      "source_file": "frontend/src/api/productApi.js",
+      "source_location": "L9",
+      "id": "api_productapi_getproduct",
+      "community": 3,
+      "norm_label": "getproduct()"
+    },
+    {
+      "label": "createProduct()",
+      "file_type": "code",
+      "source_file": "frontend/src/api/productApi.js",
+      "source_location": "L14",
+      "id": "api_productapi_createproduct",
+      "community": 3,
+      "norm_label": "createproduct()"
+    },
+    {
+      "label": "updateProduct()",
+      "file_type": "code",
+      "source_file": "frontend/src/api/productApi.js",
+      "source_location": "L19",
+      "id": "api_productapi_updateproduct",
+      "community": 3,
+      "norm_label": "updateproduct()"
+    },
+    {
+      "label": "deleteProduct()",
+      "file_type": "code",
+      "source_file": "frontend/src/api/productApi.js",
+      "source_location": "L24",
+      "id": "api_productapi_deleteproduct",
+      "community": 3,
+      "norm_label": "deleteproduct()"
+    },
+    {
+      "label": "getCategories()",
+      "file_type": "code",
+      "source_file": "frontend/src/api/productApi.js",
+      "source_location": "L29",
+      "id": "api_productapi_getcategories",
+      "community": 3,
+      "norm_label": "getcategories()"
+    },
+    {
+      "label": "CartDrawer()",
+      "file_type": "code",
+      "source_file": "frontend/src/components/cart/CartDrawer.jsx",
+      "source_location": "L7",
+      "id": "cart_cartdrawer_cartdrawer",
+      "community": 2,
+      "norm_label": "cartdrawer()"
+    },
+    {
+      "label": "AdminLayout.jsx",
+      "file_type": "code",
+      "source_file": "frontend/src/components/layout/AdminLayout.jsx",
+      "source_location": "L1",
+      "id": "frontend_src_components_layout_adminlayout_jsx",
+      "community": 1,
+      "norm_label": "adminlayout.jsx"
+    },
+    {
+      "label": "AdminLayout()",
+      "file_type": "code",
+      "source_file": "frontend/src/components/layout/AdminLayout.jsx",
+      "source_location": "L6",
+      "id": "layout_adminlayout_adminlayout",
+      "community": 1,
+      "norm_label": "adminlayout()"
+    },
+    {
+      "label": "Footer.jsx",
+      "file_type": "code",
+      "source_file": "frontend/src/components/layout/Footer.jsx",
+      "source_location": "L1",
+      "id": "frontend_src_components_layout_footer_jsx",
+      "community": 7,
+      "norm_label": "footer.jsx"
+    },
+    {
+      "label": "InstagramIcon()",
+      "file_type": "code",
+      "source_file": "frontend/src/components/layout/Footer.jsx",
+      "source_location": "L4",
+      "id": "layout_footer_instagramicon",
+      "community": 7,
+      "norm_label": "instagramicon()"
+    },
+    {
+      "label": "FacebookIcon()",
+      "file_type": "code",
+      "source_file": "frontend/src/components/layout/Footer.jsx",
+      "source_location": "L12",
+      "id": "layout_footer_facebookicon",
+      "community": 7,
+      "norm_label": "facebookicon()"
+    },
+    {
+      "label": "TwitterIcon()",
+      "file_type": "code",
+      "source_file": "frontend/src/components/layout/Footer.jsx",
+      "source_location": "L18",
+      "id": "layout_footer_twittericon",
+      "community": 7,
+      "norm_label": "twittericon()"
+    },
+    {
+      "label": "Footer()",
+      "file_type": "code",
+      "source_file": "frontend/src/components/layout/Footer.jsx",
+      "source_location": "L24",
+      "id": "layout_footer_footer",
+      "community": 7,
+      "norm_label": "footer()"
+    },
+    {
+      "label": "Layout.jsx",
+      "file_type": "code",
+      "source_file": "frontend/src/components/layout/Layout.jsx",
+      "source_location": "L1",
+      "id": "frontend_src_components_layout_layout_jsx",
+      "community": 7,
+      "norm_label": "layout.jsx"
+    },
+    {
+      "label": "Layout()",
+      "file_type": "code",
+      "source_file": "frontend/src/components/layout/Layout.jsx",
+      "source_location": "L6",
+      "id": "layout_layout_layout",
+      "community": 7,
+      "norm_label": "layout()"
+    },
+    {
+      "label": "Navbar.jsx",
+      "file_type": "code",
+      "source_file": "frontend/src/components/layout/Navbar.jsx",
+      "source_location": "L1",
+      "id": "frontend_src_components_layout_navbar_jsx",
+      "community": 1,
+      "norm_label": "navbar.jsx"
+    },
+    {
+      "label": "Navbar()",
+      "file_type": "code",
+      "source_file": "frontend/src/components/layout/Navbar.jsx",
+      "source_location": "L15",
+      "id": "layout_navbar_navbar",
+      "community": 1,
+      "norm_label": "navbar()"
+    },
+    {
+      "label": "WhatsAppButton()",
+      "file_type": "code",
+      "source_file": "frontend/src/components/layout/WhatsAppButton.jsx",
+      "source_location": "L4",
+      "id": "layout_whatsappbutton_whatsappbutton",
+      "community": 7,
+      "norm_label": "whatsappbutton()"
+    },
+    {
+      "label": "OrderStatusTracker()",
+      "file_type": "code",
+      "source_file": "frontend/src/components/order/OrderStatusTracker.jsx",
+      "source_location": "L1",
+      "id": "order_orderstatustracker_orderstatustracker",
+      "community": 0,
+      "norm_label": "orderstatustracker()"
+    },
+    {
+      "label": "ProductCard.jsx",
+      "file_type": "code",
+      "source_file": "frontend/src/components/product/ProductCard.jsx",
+      "source_location": "L1",
+      "id": "frontend_src_components_product_productcard_jsx",
+      "community": 2,
+      "norm_label": "productcard.jsx"
+    },
+    {
+      "label": "ProductCard()",
+      "file_type": "code",
+      "source_file": "frontend/src/components/product/ProductCard.jsx",
+      "source_location": "L10",
+      "id": "product_productcard_productcard",
+      "community": 2,
+      "norm_label": "productcard()"
+    },
+    {
+      "label": "FilterSection()",
+      "file_type": "code",
+      "source_file": "frontend/src/components/product/ProductFilters.jsx",
+      "source_location": "L6",
+      "id": "product_productfilters_filtersection",
+      "community": 4,
+      "norm_label": "filtersection()"
+    },
+    {
+      "label": "CheckIcon()",
+      "file_type": "code",
+      "source_file": "frontend/src/components/product/ProductFilters.jsx",
+      "source_location": "L25",
+      "id": "product_productfilters_checkicon",
+      "community": 4,
+      "norm_label": "checkicon()"
+    },
+    {
+      "label": "ProductFilters()",
+      "file_type": "code",
+      "source_file": "frontend/src/components/product/ProductFilters.jsx",
+      "source_location": "L31",
+      "id": "product_productfilters_productfilters",
+      "community": 4,
+      "norm_label": "productfilters()"
+    },
+    {
+      "label": "ProductGrid()",
+      "file_type": "code",
+      "source_file": "frontend/src/components/product/ProductGrid.jsx",
+      "source_location": "L3",
+      "id": "product_productgrid_productgrid",
+      "community": 4,
+      "norm_label": "productgrid()"
+    },
+    {
+      "label": "ReviewCard()",
+      "file_type": "code",
+      "source_file": "frontend/src/components/product/ReviewCard.jsx",
+      "source_location": "L4",
+      "id": "product_reviewcard_reviewcard",
+      "community": 8,
+      "norm_label": "reviewcard()"
+    },
+    {
+      "label": "ReviewForm()",
+      "file_type": "code",
+      "source_file": "frontend/src/components/product/ReviewForm.jsx",
+      "source_location": "L9",
+      "id": "product_reviewform_reviewform",
+      "community": 8,
+      "norm_label": "reviewform()"
+    },
+    {
+      "label": "ReviewsList.jsx",
+      "file_type": "code",
+      "source_file": "frontend/src/components/product/ReviewsList.jsx",
+      "source_location": "L1",
+      "id": "frontend_src_components_product_reviewslist_jsx",
+      "community": 8,
+      "norm_label": "reviewslist.jsx"
+    },
+    {
+      "label": "ReviewsList()",
+      "file_type": "code",
+      "source_file": "frontend/src/components/product/ReviewsList.jsx",
+      "source_location": "L8",
+      "id": "product_reviewslist_reviewslist",
+      "community": 8,
+      "norm_label": "reviewslist()"
+    },
+    {
+      "label": "StarRating()",
+      "file_type": "code",
+      "source_file": "frontend/src/components/product/StarRating.jsx",
+      "source_location": "L3",
+      "id": "product_starrating_starrating",
+      "community": 8,
+      "norm_label": "starrating()"
+    },
+    {
+      "label": "SearchBar.jsx",
+      "file_type": "code",
+      "source_file": "frontend/src/components/search/SearchBar.jsx",
+      "source_location": "L1",
+      "id": "frontend_src_components_search_searchbar_jsx",
+      "community": 2,
+      "norm_label": "searchbar.jsx"
+    },
+    {
+      "label": "SearchBar()",
+      "file_type": "code",
+      "source_file": "frontend/src/components/search/SearchBar.jsx",
+      "source_location": "L12",
+      "id": "search_searchbar_searchbar",
+      "community": 2,
+      "norm_label": "searchbar()"
+    },
+    {
+      "label": "Badge.jsx",
+      "file_type": "code",
+      "source_file": "frontend/src/components/ui/Badge.jsx",
+      "source_location": "L1",
+      "id": "frontend_src_components_ui_badge_jsx",
+      "community": 0,
+      "norm_label": "badge.jsx"
+    },
+    {
+      "label": "Badge()",
+      "file_type": "code",
+      "source_file": "frontend/src/components/ui/Badge.jsx",
+      "source_location": "L1",
+      "id": "ui_badge_badge",
+      "community": 0,
+      "norm_label": "badge()"
+    },
+    {
+      "label": "Button.jsx",
+      "file_type": "code",
+      "source_file": "frontend/src/components/ui/Button.jsx",
+      "source_location": "L1",
+      "id": "frontend_src_components_ui_button_jsx",
+      "community": 0,
+      "norm_label": "button.jsx"
+    },
+    {
+      "label": "Input.jsx",
+      "file_type": "code",
+      "source_file": "frontend/src/components/ui/Input.jsx",
+      "source_location": "L1",
+      "id": "frontend_src_components_ui_input_jsx",
+      "community": 0,
+      "norm_label": "input.jsx"
+    },
+    {
+      "label": "LanguageSelector()",
+      "file_type": "code",
+      "source_file": "frontend/src/components/ui/LanguageSelector.jsx",
+      "source_location": "L11",
+      "id": "ui_languageselector_languageselector",
+      "community": 11,
+      "norm_label": "languageselector()"
+    },
+    {
+      "label": "Modal.jsx",
+      "file_type": "code",
+      "source_file": "frontend/src/components/ui/Modal.jsx",
+      "source_location": "L1",
+      "id": "frontend_src_components_ui_modal_jsx",
+      "community": 0,
+      "norm_label": "modal.jsx"
+    },
+    {
+      "label": "Modal()",
+      "file_type": "code",
+      "source_file": "frontend/src/components/ui/Modal.jsx",
+      "source_location": "L3",
+      "id": "ui_modal_modal",
+      "community": 0,
+      "norm_label": "modal()"
+    },
+    {
+      "label": "Spinner.jsx",
+      "file_type": "code",
+      "source_file": "frontend/src/components/ui/Spinner.jsx",
+      "source_location": "L1",
+      "id": "frontend_src_components_ui_spinner_jsx",
+      "community": 17,
+      "norm_label": "spinner.jsx"
+    },
+    {
+      "label": "Spinner()",
+      "file_type": "code",
+      "source_file": "frontend/src/components/ui/Spinner.jsx",
+      "source_location": "L3",
+      "id": "ui_spinner_spinner",
+      "community": 17,
+      "norm_label": "spinner()"
+    },
+    {
+      "label": "useRegionDetection.js",
+      "file_type": "code",
+      "source_file": "frontend/src/hooks/useRegionDetection.js",
+      "source_location": "L1",
+      "id": "frontend_src_hooks_useregiondetection_js",
+      "community": 1,
+      "norm_label": "useregiondetection.js"
+    },
+    {
+      "label": "useTranslation()",
+      "file_type": "code",
+      "source_file": "frontend/src/hooks/useTranslation.js",
+      "source_location": "L5",
+      "id": "hooks_usetranslation_usetranslation",
+      "community": 11,
+      "norm_label": "usetranslation()"
+    },
+    {
+      "label": "AdminAddProduct()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/admin/AdminAddProduct.jsx",
+      "source_location": "L8",
+      "id": "admin_adminaddproduct_adminaddproduct",
+      "community": 0,
+      "norm_label": "adminaddproduct()"
+    },
+    {
+      "label": "AdminCategories()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/admin/AdminCategories.jsx",
+      "source_location": "L7",
+      "id": "admin_admincategories_admincategories",
+      "community": 0,
+      "norm_label": "admincategories()"
+    },
+    {
+      "label": "AdminCustomers.jsx",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/admin/AdminCustomers.jsx",
+      "source_location": "L1",
+      "id": "frontend_src_pages_admin_admincustomers_jsx",
+      "community": 0,
+      "norm_label": "admincustomers.jsx"
+    },
+    {
+      "label": "AdminCustomers()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/admin/AdminCustomers.jsx",
+      "source_location": "L5",
+      "id": "admin_admincustomers_admincustomers",
+      "community": 0,
+      "norm_label": "admincustomers()"
+    },
+    {
+      "label": "AdminDashboard()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/admin/AdminDashboard.jsx",
+      "source_location": "L7",
+      "id": "admin_admindashboard_admindashboard",
+      "community": 0,
+      "norm_label": "admindashboard()"
+    },
+    {
+      "label": "AdminEditProduct()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/admin/AdminEditProduct.jsx",
+      "source_location": "L8",
+      "id": "admin_admineditproduct_admineditproduct",
+      "community": 0,
+      "norm_label": "admineditproduct()"
+    },
+    {
+      "label": "AdminOrderDetail()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/admin/AdminOrderDetail.jsx",
+      "source_location": "L11",
+      "id": "admin_adminorderdetail_adminorderdetail",
+      "community": 0,
+      "norm_label": "adminorderdetail()"
+    },
+    {
+      "label": "AdminOrders()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/admin/AdminOrders.jsx",
+      "source_location": "L8",
+      "id": "admin_adminorders_adminorders",
+      "community": 0,
+      "norm_label": "adminorders()"
+    },
+    {
+      "label": "AdminProducts()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/admin/AdminProducts.jsx",
+      "source_location": "L9",
+      "id": "admin_adminproducts_adminproducts",
+      "community": 0,
+      "norm_label": "adminproducts()"
+    },
+    {
+      "label": "StatCard()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
+      "source_location": "L7",
+      "id": "admin_analyticspage_statcard",
+      "community": 2,
+      "norm_label": "statcard()"
+    },
+    {
+      "label": "getStatusColor()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
+      "source_location": "L33",
+      "id": "admin_analyticspage_getstatuscolor",
+      "community": 2,
+      "norm_label": "getstatuscolor()"
+    },
+    {
+      "label": "SimpleBarChart()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
+      "source_location": "L49",
+      "id": "admin_analyticspage_simplebarchart",
+      "community": 2,
+      "norm_label": "simplebarchart()"
+    },
+    {
+      "label": "AnalyticsPage()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
+      "source_location": "L76",
+      "id": "admin_analyticspage_analyticspage",
+      "community": 2,
+      "norm_label": "analyticspage()"
+    },
+    {
+      "label": "InventoryPage.jsx",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/admin/InventoryPage.jsx",
+      "source_location": "L1",
+      "id": "frontend_src_pages_admin_inventorypage_jsx",
+      "community": 0,
+      "norm_label": "inventorypage.jsx"
+    },
+    {
+      "label": "InventoryPage()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/admin/InventoryPage.jsx",
+      "source_location": "L8",
+      "id": "admin_inventorypage_inventorypage",
+      "community": 0,
+      "norm_label": "inventorypage()"
+    },
+    {
+      "label": "StaffOrders.jsx",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/admin/StaffOrders.jsx",
+      "source_location": "L1",
+      "id": "frontend_src_pages_admin_stafforders_jsx",
+      "community": 0,
+      "norm_label": "stafforders.jsx"
+    },
+    {
+      "label": "StaffOrders()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/admin/StaffOrders.jsx",
+      "source_location": "L8",
+      "id": "admin_stafforders_stafforders",
+      "community": 0,
+      "norm_label": "stafforders()"
+    },
+    {
+      "label": "LoginPage.jsx",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/auth/LoginPage.jsx",
+      "source_location": "L1",
+      "id": "frontend_src_pages_auth_loginpage_jsx",
+      "community": 1,
+      "norm_label": "loginpage.jsx"
+    },
+    {
+      "label": "LoginPage()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/auth/LoginPage.jsx",
+      "source_location": "L11",
+      "id": "auth_loginpage_loginpage",
+      "community": 1,
+      "norm_label": "loginpage()"
+    },
+    {
+      "label": "RegisterPage.jsx",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/auth/RegisterPage.jsx",
+      "source_location": "L1",
+      "id": "frontend_src_pages_auth_registerpage_jsx",
+      "community": 1,
+      "norm_label": "registerpage.jsx"
+    },
+    {
+      "label": "RegisterPage()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/auth/RegisterPage.jsx",
+      "source_location": "L10",
+      "id": "auth_registerpage_registerpage",
+      "community": 1,
+      "norm_label": "registerpage()"
+    },
+    {
+      "label": "ResetPasswordPage()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/auth/ResetPasswordPage.jsx",
+      "source_location": "L8",
+      "id": "auth_resetpasswordpage_resetpasswordpage",
+      "community": 0,
+      "norm_label": "resetpasswordpage()"
+    },
+    {
+      "label": "AboutPage()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/customer/AboutPage.jsx",
+      "source_location": "L4",
+      "id": "customer_aboutpage_aboutpage",
+      "community": 0,
+      "norm_label": "aboutpage()"
+    },
+    {
+      "label": "CartPage.jsx",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/customer/CartPage.jsx",
+      "source_location": "L1",
+      "id": "frontend_src_pages_customer_cartpage_jsx",
+      "community": 2,
+      "norm_label": "cartpage.jsx"
+    },
+    {
+      "label": "CartPage()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/customer/CartPage.jsx",
+      "source_location": "L8",
+      "id": "customer_cartpage_cartpage",
+      "community": 2,
+      "norm_label": "cartpage()"
+    },
+    {
+      "label": "CheckoutPage()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/customer/CheckoutPage.jsx",
+      "source_location": "L13",
+      "id": "customer_checkoutpage_checkoutpage",
+      "community": 0,
+      "norm_label": "checkoutpage()"
+    },
+    {
+      "label": "HomePage.jsx",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/customer/HomePage.jsx",
+      "source_location": "L1",
+      "id": "frontend_src_pages_customer_homepage_jsx",
+      "community": 4,
+      "norm_label": "homepage.jsx"
+    },
+    {
+      "label": "HomePage()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/customer/HomePage.jsx",
+      "source_location": "L9",
+      "id": "customer_homepage_homepage",
+      "community": 4,
+      "norm_label": "homepage()"
+    },
+    {
+      "label": "OrderConfirmPage()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/customer/OrderConfirmPage.jsx",
+      "source_location": "L5",
+      "id": "customer_orderconfirmpage_orderconfirmpage",
+      "community": 0,
+      "norm_label": "orderconfirmpage()"
+    },
+    {
+      "label": "OrderDetailPage()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/customer/OrderDetailPage.jsx",
+      "source_location": "L10",
+      "id": "customer_orderdetailpage_orderdetailpage",
+      "community": 0,
+      "norm_label": "orderdetailpage()"
+    },
+    {
+      "label": "OrdersPage.jsx",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/customer/OrdersPage.jsx",
+      "source_location": "L1",
+      "id": "frontend_src_pages_customer_orderspage_jsx",
+      "community": 0,
+      "norm_label": "orderspage.jsx"
+    },
+    {
+      "label": "OrdersPage()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/customer/OrdersPage.jsx",
+      "source_location": "L9",
+      "id": "customer_orderspage_orderspage",
+      "community": 0,
+      "norm_label": "orderspage()"
+    },
+    {
+      "label": "ProductDetailPage()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/customer/ProductDetailPage.jsx",
+      "source_location": "L14",
+      "id": "customer_productdetailpage_productdetailpage",
+      "community": 8,
+      "norm_label": "productdetailpage()"
+    },
+    {
+      "label": "ProductsPage()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/customer/ProductsPage.jsx",
+      "source_location": "L11",
+      "id": "customer_productspage_productspage",
+      "community": 4,
+      "norm_label": "productspage()"
+    },
+    {
+      "label": "ProfilePage()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/customer/ProfilePage.jsx",
+      "source_location": "L7",
+      "id": "customer_profilepage_profilepage",
+      "community": 0,
+      "norm_label": "profilepage()"
+    },
+    {
+      "label": "SearchPage()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/customer/SearchPage.jsx",
+      "source_location": "L8",
+      "id": "customer_searchpage_searchpage",
+      "community": 2,
+      "norm_label": "searchpage()"
+    },
+    {
+      "label": "TrackOrderPage()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/customer/TrackOrderPage.jsx",
+      "source_location": "L16",
+      "id": "customer_trackorderpage_trackorderpage",
+      "community": 0,
+      "norm_label": "trackorderpage()"
+    },
+    {
+      "label": "WishlistPage()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/customer/WishlistPage.jsx",
+      "source_location": "L8",
+      "id": "customer_wishlistpage_wishlistpage",
+      "community": 1,
+      "norm_label": "wishlistpage()"
+    },
+    {
+      "label": "loadSettingsFromStorage()",
+      "file_type": "code",
+      "source_file": "frontend/src/store/index.js",
+      "source_location": "L8",
+      "id": "store_index_loadsettingsfromstorage",
+      "community": 1,
+      "norm_label": "loadsettingsfromstorage()"
+    },
+    {
+      "label": "loadCartFromStorage()",
+      "file_type": "code",
+      "source_file": "frontend/src/store/index.js",
+      "source_location": "L28",
+      "id": "store_index_loadcartfromstorage",
+      "community": 1,
+      "norm_label": "loadcartfromstorage()"
+    },
+    {
+      "label": "loadAuthFromStorage()",
+      "file_type": "code",
+      "source_file": "frontend/src/store/index.js",
+      "source_location": "L37",
+      "id": "store_index_loadauthfromstorage",
+      "community": 1,
+      "norm_label": "loadauthfromstorage()"
+    },
+    {
+      "label": "authSlice.js",
+      "file_type": "code",
+      "source_file": "frontend/src/store/slices/authSlice.js",
+      "source_location": "L1",
+      "id": "frontend_src_store_slices_authslice_js",
+      "community": 1,
+      "norm_label": "authslice.js"
+    },
+    {
+      "label": "cartSlice.js",
+      "file_type": "code",
+      "source_file": "frontend/src/store/slices/cartSlice.js",
+      "source_location": "L1",
+      "id": "frontend_src_store_slices_cartslice_js",
+      "community": 2,
+      "norm_label": "cartslice.js"
+    },
+    {
+      "label": "selectCartTotal()",
+      "file_type": "code",
+      "source_file": "frontend/src/store/slices/cartSlice.js",
+      "source_location": "L48",
+      "id": "slices_cartslice_selectcarttotal",
+      "community": 2,
+      "norm_label": "selectcarttotal()"
+    },
+    {
+      "label": "selectCartItemsCount()",
+      "file_type": "code",
+      "source_file": "frontend/src/store/slices/cartSlice.js",
+      "source_location": "L51",
+      "id": "slices_cartslice_selectcartitemscount",
+      "community": 1,
+      "norm_label": "selectcartitemscount()"
+    },
+    {
+      "label": "productSlice.js",
+      "file_type": "code",
+      "source_file": "frontend/src/store/slices/productSlice.js",
+      "source_location": "L1",
+      "id": "frontend_src_store_slices_productslice_js",
+      "community": 4,
+      "norm_label": "productslice.js"
+    },
+    {
+      "label": "selectFilters()",
+      "file_type": "code",
+      "source_file": "frontend/src/store/slices/productSlice.js",
+      "source_location": "L42",
+      "id": "slices_productslice_selectfilters",
+      "community": 4,
+      "norm_label": "selectfilters()"
+    },
+    {
+      "label": "selectSearchQuery()",
+      "file_type": "code",
+      "source_file": "frontend/src/store/slices/productSlice.js",
+      "source_location": "L43",
+      "id": "slices_productslice_selectsearchquery",
+      "community": 4,
+      "norm_label": "selectsearchquery()"
+    },
+    {
+      "label": "selectAvailableFilters()",
+      "file_type": "code",
+      "source_file": "frontend/src/store/slices/productSlice.js",
+      "source_location": "L44",
+      "id": "slices_productslice_selectavailablefilters",
+      "community": 4,
+      "norm_label": "selectavailablefilters()"
+    },
+    {
+      "label": "settingsSlice.js",
+      "file_type": "code",
+      "source_file": "frontend/src/store/slices/settingsSlice.js",
+      "source_location": "L1",
+      "id": "frontend_src_store_slices_settingsslice_js",
+      "community": 1,
+      "norm_label": "settingsslice.js"
+    },
+    {
+      "label": "uiSlice.js",
+      "file_type": "code",
+      "source_file": "frontend/src/store/slices/uiSlice.js",
+      "source_location": "L1",
+      "id": "frontend_src_store_slices_uislice_js",
+      "community": 1,
+      "norm_label": "uislice.js"
+    },
+    {
+      "label": "wishlistSlice.js",
+      "file_type": "code",
+      "source_file": "frontend/src/store/slices/wishlistSlice.js",
+      "source_location": "L1",
+      "id": "frontend_src_store_slices_wishlistslice_js",
+      "community": 1,
+      "norm_label": "wishlistslice.js"
+    },
+    {
+      "label": "selectWishlistItems()",
+      "file_type": "code",
+      "source_file": "frontend/src/store/slices/wishlistSlice.js",
+      "source_location": "L138",
+      "id": "slices_wishlistslice_selectwishlistitems",
+      "community": 1,
+      "norm_label": "selectwishlistitems()"
+    },
+    {
+      "label": "selectWishlistCount()",
+      "file_type": "code",
+      "source_file": "frontend/src/store/slices/wishlistSlice.js",
+      "source_location": "L139",
+      "id": "slices_wishlistslice_selectwishlistcount",
+      "community": 1,
+      "norm_label": "selectwishlistcount()"
+    },
+    {
+      "label": "selectWishlistLoading()",
+      "file_type": "code",
+      "source_file": "frontend/src/store/slices/wishlistSlice.js",
+      "source_location": "L140",
+      "id": "slices_wishlistslice_selectwishlistloading",
+      "community": 1,
+      "norm_label": "selectwishlistloading()"
+    },
+    {
+      "label": "selectIsInWishlist()",
+      "file_type": "code",
+      "source_file": "frontend/src/store/slices/wishlistSlice.js",
+      "source_location": "L141",
+      "id": "slices_wishlistslice_selectisinwishlist",
+      "community": 1,
+      "norm_label": "selectisinwishlist()"
+    },
+    {
+      "label": "constants.js",
+      "file_type": "code",
+      "source_file": "frontend/src/utils/constants.js",
+      "source_location": "L1",
+      "id": "frontend_src_utils_constants_js",
+      "community": 0,
+      "norm_label": "constants.js"
+    },
+    {
+      "label": "formatDate()",
+      "file_type": "code",
+      "source_file": "frontend/src/utils/formatDate.js",
+      "source_location": "L1",
+      "id": "utils_formatdate_formatdate",
+      "community": 0,
+      "norm_label": "formatdate()"
+    },
+    {
+      "label": "convertPrice()",
+      "file_type": "code",
+      "source_file": "frontend/src/utils/formatPrice.js",
+      "source_location": "L22",
+      "id": "utils_formatprice_convertprice",
+      "community": 2,
+      "norm_label": "convertprice()"
+    },
+    {
+      "label": "formatPrice()",
+      "file_type": "code",
+      "source_file": "frontend/src/utils/formatPrice.js",
+      "source_location": "L28",
+      "id": "utils_formatprice_formatprice",
+      "community": 2,
+      "norm_label": "formatprice()"
+    },
+    {
+      "label": "getCurrencySymbol()",
+      "file_type": "code",
+      "source_file": "frontend/src/utils/formatPrice.js",
+      "source_location": "L41",
+      "id": "utils_formatprice_getcurrencysymbol",
+      "community": 2,
+      "norm_label": "getcurrencysymbol()"
+    },
+    {
+      "label": "translations.js",
+      "file_type": "code",
+      "source_file": "frontend/src/utils/translations.js",
+      "source_location": "L1",
+      "id": "frontend_src_utils_translations_js",
+      "community": 11,
+      "norm_label": "translations.js"
+    },
+    {
+      "label": "getTranslation()",
+      "file_type": "code",
+      "source_file": "frontend/src/utils/translations.js",
+      "source_location": "L249",
+      "id": "utils_translations_gettranslation",
+      "community": 11,
+      "norm_label": "gettranslation()"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/index.js",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "backend_index_js",
+      "target": "backend_index_ensureuserstable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "frontend_src_main_jsx",
+      "target": "backend_index_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/store/index.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "backend_index_js",
+      "target": "frontend_src_store_slices_authslice_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/store/index.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "backend_index_js",
+      "target": "frontend_src_store_slices_cartslice_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/store/index.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "backend_index_js",
+      "target": "frontend_src_store_slices_wishlistslice_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/store/index.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "backend_index_js",
+      "target": "frontend_src_store_slices_uislice_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/store/index.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "backend_index_js",
+      "target": "frontend_src_store_slices_settingsslice_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/store/index.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "backend_index_js",
+      "target": "store_index_loadsettingsfromstorage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/store/index.js",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "backend_index_js",
+      "target": "frontend_src_store_slices_productslice_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/store/index.js",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "backend_index_js",
+      "target": "store_index_loadcartfromstorage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/store/index.js",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "backend_index_js",
+      "target": "store_index_loadauthfromstorage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/server.js",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "backend_server_js",
+      "target": "backend_server_startserver",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/server.js",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "backend_server_startserver",
+      "target": "config_db_connectdb"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/config/db.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "backend_config_db_js",
+      "target": "config_db_connectdb",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/controllers/authController.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "backend_controllers_authcontroller_js",
+      "target": "controllers_authcontroller_generatetoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/controllers/authController.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "backend_controllers_authcontroller_js",
+      "target": "api_authapi_register",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/controllers/authController.js",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "backend_controllers_authcontroller_js",
+      "target": "api_authapi_login",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/controllers/authController.js",
+      "source_location": "L106",
+      "weight": 1.0,
+      "source": "backend_controllers_authcontroller_js",
+      "target": "api_authapi_getprofile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/controllers/authController.js",
+      "source_location": "L133",
+      "weight": 1.0,
+      "source": "backend_controllers_authcontroller_js",
+      "target": "api_authapi_updateprofile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/controllers/authController.js",
+      "source_location": "L174",
+      "weight": 1.0,
+      "source": "backend_controllers_authcontroller_js",
+      "target": "controllers_authcontroller_forgotpassword",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/controllers/authController.js",
+      "source_location": "L233",
+      "weight": 1.0,
+      "source": "backend_controllers_authcontroller_js",
+      "target": "controllers_authcontroller_validateresettoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/controllers/authController.js",
+      "source_location": "L275",
+      "weight": 1.0,
+      "source": "backend_controllers_authcontroller_js",
+      "target": "controllers_authcontroller_resetpassword",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/controllers/authController.js",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "api_authapi_register",
+      "target": "controllers_authcontroller_generatetoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/controllers/authController.js",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "api_authapi_login",
+      "target": "controllers_authcontroller_generatetoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "frontend_src_app_jsx",
+      "target": "controllers_authcontroller_forgotpassword",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/controllers/categoryController.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "backend_controllers_categorycontroller_js",
+      "target": "api_productapi_getcategories",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/controllers/categoryController.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "backend_controllers_categorycontroller_js",
+      "target": "controllers_categorycontroller_getcategory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/controllers/categoryController.js",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "backend_controllers_categorycontroller_js",
+      "target": "controllers_categorycontroller_createcategory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/controllers/categoryController.js",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "backend_controllers_categorycontroller_js",
+      "target": "controllers_categorycontroller_updatecategory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/controllers/categoryController.js",
+      "source_location": "L90",
+      "weight": 1.0,
+      "source": "backend_controllers_categorycontroller_js",
+      "target": "controllers_categorycontroller_deletecategory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/controllers/couponController.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "backend_controllers_couponcontroller_js",
+      "target": "controllers_couponcontroller_validatecoupon",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/controllers/couponController.js",
+      "source_location": "L93",
+      "weight": 1.0,
+      "source": "backend_controllers_couponcontroller_js",
+      "target": "controllers_couponcontroller_getallcoupons",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/controllers/orderController.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "backend_controllers_ordercontroller_js",
+      "target": "api_orderapi_createorder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/controllers/orderController.js",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "backend_controllers_ordercontroller_js",
+      "target": "api_orderapi_getmyorders",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/controllers/orderController.js",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "backend_controllers_ordercontroller_js",
+      "target": "api_orderapi_getorder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/controllers/orderController.js",
+      "source_location": "L96",
+      "weight": 1.0,
+      "source": "backend_controllers_ordercontroller_js",
+      "target": "api_orderapi_updateorderstatus",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/controllers/orderController.js",
+      "source_location": "L125",
+      "weight": 1.0,
+      "source": "backend_controllers_ordercontroller_js",
+      "target": "controllers_ordercontroller_getcustomers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/controllers/productController.js",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "backend_controllers_productcontroller_js",
+      "target": "api_productapi_getproduct",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/controllers/productController.js",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "backend_controllers_productcontroller_js",
+      "target": "api_productapi_createproduct",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/controllers/productController.js",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "backend_controllers_productcontroller_js",
+      "target": "api_productapi_updateproduct",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/controllers/productController.js",
+      "source_location": "L116",
+      "weight": 1.0,
+      "source": "backend_controllers_productcontroller_js",
+      "target": "api_productapi_deleteproduct",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/controllers/wishlistController.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "backend_controllers_wishlistcontroller_js",
+      "target": "controllers_wishlistcontroller_getwishlist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/controllers/wishlistController.js",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "backend_controllers_wishlistcontroller_js",
+      "target": "controllers_wishlistcontroller_addtowishlist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/controllers/wishlistController.js",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "backend_controllers_wishlistcontroller_js",
+      "target": "controllers_wishlistcontroller_removefromwishlist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/middleware/admin.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "backend_middleware_admin_js",
+      "target": "middleware_admin_admin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/middleware/auth.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "backend_routes_auth_js",
+      "target": "middleware_auth_protect",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/middleware/staff.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "backend_middleware_staff_js",
+      "target": "middleware_staff_staff",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/seeds/data.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "backend_seeds_data_js",
+      "target": "seeds_data_seeddatabase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/seeds/seeder.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "backend_seeds_seeder_js",
+      "target": "seeds_data_seeddatabase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "frontend_src_app_jsx",
+      "target": "frontend_src_components_layout_layout_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "frontend_src_app_jsx",
+      "target": "frontend_src_components_layout_adminlayout_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "frontend_src_app_jsx",
+      "target": "frontend_src_pages_customer_homepage_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "frontend_src_app_jsx",
+      "target": "customer_productspage_productspage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "frontend_src_app_jsx",
+      "target": "customer_productdetailpage_productdetailpage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "frontend_src_app_jsx",
+      "target": "frontend_src_pages_customer_cartpage_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "frontend_src_app_jsx",
+      "target": "customer_checkoutpage_checkoutpage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "frontend_src_app_jsx",
+      "target": "customer_orderconfirmpage_orderconfirmpage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "frontend_src_app_jsx",
+      "target": "frontend_src_pages_customer_orderspage_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "frontend_src_app_jsx",
+      "target": "customer_orderdetailpage_orderdetailpage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "frontend_src_app_jsx",
+      "target": "customer_profilepage_profilepage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "frontend_src_app_jsx",
+      "target": "customer_aboutpage_aboutpage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "frontend_src_app_jsx",
+      "target": "customer_trackorderpage_trackorderpage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "frontend_src_app_jsx",
+      "target": "customer_wishlistpage_wishlistpage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "frontend_src_app_jsx",
+      "target": "customer_searchpage_searchpage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "frontend_src_app_jsx",
+      "target": "frontend_src_pages_auth_loginpage_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "frontend_src_app_jsx",
+      "target": "frontend_src_pages_auth_registerpage_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "frontend_src_app_jsx",
+      "target": "auth_resetpasswordpage_resetpasswordpage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "frontend_src_app_jsx",
+      "target": "admin_admindashboard_admindashboard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "frontend_src_app_jsx",
+      "target": "admin_analyticspage_analyticspage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "frontend_src_app_jsx",
+      "target": "admin_adminproducts_adminproducts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "frontend_src_app_jsx",
+      "target": "admin_adminaddproduct_adminaddproduct",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "frontend_src_app_jsx",
+      "target": "admin_admineditproduct_admineditproduct",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "frontend_src_app_jsx",
+      "target": "admin_adminorders_adminorders",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "frontend_src_app_jsx",
+      "target": "admin_adminorderdetail_adminorderdetail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "frontend_src_app_jsx",
+      "target": "frontend_src_pages_admin_admincustomers_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "frontend_src_app_jsx",
+      "target": "admin_admincategories_admincategories",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "frontend_src_app_jsx",
+      "target": "frontend_src_pages_admin_stafforders_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "frontend_src_app_jsx",
+      "target": "frontend_src_pages_admin_inventorypage_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "frontend_src_app_jsx",
+      "target": "src_app_protectedroute",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "frontend_src_app_jsx",
+      "target": "src_app_adminroute",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "frontend_src_app_jsx",
+      "target": "src_app_staffroute",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "frontend_src_app_jsx",
+      "target": "src_app_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "frontend_src_main_jsx",
+      "target": "frontend_src_app_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/api/authApi.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "frontend_src_api_authapi_js",
+      "target": "frontend_src_api_axios_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/api/authApi.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "frontend_src_api_authapi_js",
+      "target": "api_authapi_login",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/api/authApi.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "frontend_src_api_authapi_js",
+      "target": "api_authapi_register",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/api/authApi.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "frontend_src_api_authapi_js",
+      "target": "api_authapi_getprofile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/api/authApi.js",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "frontend_src_api_authapi_js",
+      "target": "api_authapi_updateprofile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/api/orderApi.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "frontend_src_api_orderapi_js",
+      "target": "frontend_src_api_axios_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/api/productApi.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "frontend_src_api_productapi_js",
+      "target": "frontend_src_api_axios_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/search/SearchBar.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "frontend_src_components_search_searchbar_jsx",
+      "target": "frontend_src_api_axios_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "admin_analyticspage_analyticspage",
+      "target": "frontend_src_api_axios_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/customer/CheckoutPage.jsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "customer_checkoutpage_checkoutpage",
+      "target": "frontend_src_api_axios_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/customer/SearchPage.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "customer_searchpage_searchpage",
+      "target": "frontend_src_api_axios_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/api/orderApi.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "frontend_src_api_orderapi_js",
+      "target": "api_orderapi_createorder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/api/orderApi.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "frontend_src_api_orderapi_js",
+      "target": "api_orderapi_getmyorders",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/api/orderApi.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "frontend_src_api_orderapi_js",
+      "target": "api_orderapi_getorder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/api/orderApi.js",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "frontend_src_api_orderapi_js",
+      "target": "api_orderapi_getallorders",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/api/orderApi.js",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "frontend_src_api_orderapi_js",
+      "target": "api_orderapi_updateorderstatus",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/api/productApi.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "frontend_src_api_productapi_js",
+      "target": "api_productapi_getallproducts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/api/productApi.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "frontend_src_api_productapi_js",
+      "target": "api_productapi_getproduct",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/api/productApi.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "frontend_src_api_productapi_js",
+      "target": "api_productapi_createproduct",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/api/productApi.js",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "frontend_src_api_productapi_js",
+      "target": "api_productapi_updateproduct",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/api/productApi.js",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "frontend_src_api_productapi_js",
+      "target": "api_productapi_deleteproduct",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/api/productApi.js",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "frontend_src_api_productapi_js",
+      "target": "api_productapi_getcategories",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/cart/CartDrawer.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "cart_cartdrawer_cartdrawer",
+      "target": "frontend_src_store_slices_cartslice_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/cart/CartDrawer.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "cart_cartdrawer_cartdrawer",
+      "target": "slices_cartslice_selectcarttotal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "source_file": "frontend/src/components/cart/CartDrawer.jsx",
+      "source_location": "L120",
+      "weight": 1.0,
+      "confidence_score": 0.8,
+      "source": "cart_cartdrawer_cartdrawer",
+      "target": "utils_formatprice_formatprice"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/layout/Navbar.jsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "frontend_src_components_layout_navbar_jsx",
+      "target": "cart_cartdrawer_cartdrawer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/layout/AdminLayout.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "frontend_src_components_layout_adminlayout_jsx",
+      "target": "frontend_src_store_slices_authslice_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/layout/AdminLayout.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "frontend_src_components_layout_adminlayout_jsx",
+      "target": "layout_adminlayout_adminlayout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/layout/Footer.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "frontend_src_components_layout_footer_jsx",
+      "target": "layout_footer_instagramicon",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/layout/Footer.jsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "frontend_src_components_layout_footer_jsx",
+      "target": "layout_footer_facebookicon",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/layout/Footer.jsx",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "frontend_src_components_layout_footer_jsx",
+      "target": "layout_footer_twittericon",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/layout/Footer.jsx",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "frontend_src_components_layout_footer_jsx",
+      "target": "layout_footer_footer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/layout/Layout.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "frontend_src_components_layout_layout_jsx",
+      "target": "frontend_src_components_layout_footer_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/layout/Layout.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "frontend_src_components_layout_layout_jsx",
+      "target": "frontend_src_components_layout_navbar_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/layout/Layout.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "frontend_src_components_layout_layout_jsx",
+      "target": "layout_whatsappbutton_whatsappbutton",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/layout/Layout.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "frontend_src_components_layout_layout_jsx",
+      "target": "layout_layout_layout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/layout/Navbar.jsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "frontend_src_components_layout_navbar_jsx",
+      "target": "frontend_src_store_slices_cartslice_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/layout/Navbar.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "frontend_src_components_layout_navbar_jsx",
+      "target": "frontend_src_store_slices_uislice_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/layout/Navbar.jsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "frontend_src_components_layout_navbar_jsx",
+      "target": "frontend_src_store_slices_authslice_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/layout/Navbar.jsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "frontend_src_components_layout_navbar_jsx",
+      "target": "slices_cartslice_selectcartitemscount",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/layout/Navbar.jsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "frontend_src_components_layout_navbar_jsx",
+      "target": "frontend_src_store_slices_wishlistslice_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/layout/Navbar.jsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "frontend_src_components_layout_navbar_jsx",
+      "target": "slices_wishlistslice_selectwishlistcount",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/layout/Navbar.jsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "frontend_src_components_layout_navbar_jsx",
+      "target": "frontend_src_store_slices_settingsslice_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/layout/Navbar.jsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "frontend_src_components_layout_navbar_jsx",
+      "target": "frontend_src_hooks_useregiondetection_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/layout/Navbar.jsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "frontend_src_components_layout_navbar_jsx",
+      "target": "frontend_src_components_search_searchbar_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/layout/Navbar.jsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "frontend_src_components_layout_navbar_jsx",
+      "target": "layout_navbar_navbar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "frontend/src/components/layout/Navbar.jsx",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "layout_navbar_navbar",
+      "target": "frontend_src_hooks_useregiondetection_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/layout/WhatsAppButton.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "layout_whatsappbutton_whatsappbutton",
+      "target": "frontend_src_utils_constants_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/customer/OrderDetailPage.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "customer_orderdetailpage_orderdetailpage",
+      "target": "order_orderstatustracker_orderstatustracker",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/product/ProductCard.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "frontend_src_components_product_productcard_jsx",
+      "target": "frontend_src_store_slices_cartslice_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/product/ProductCard.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "frontend_src_components_product_productcard_jsx",
+      "target": "frontend_src_store_slices_wishlistslice_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/product/ProductCard.jsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "frontend_src_components_product_productcard_jsx",
+      "target": "utils_formatprice_formatprice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/product/ProductCard.jsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "frontend_src_components_product_productcard_jsx",
+      "target": "frontend_src_components_ui_badge_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/product/ProductCard.jsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "frontend_src_components_product_productcard_jsx",
+      "target": "product_productcard_productcard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/product/ProductGrid.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "product_productgrid_productgrid",
+      "target": "frontend_src_components_product_productcard_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/customer/SearchPage.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "customer_searchpage_searchpage",
+      "target": "frontend_src_components_product_productcard_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "frontend/src/components/product/ProductCard.jsx",
+      "source_location": "L157",
+      "weight": 1.0,
+      "source": "product_productcard_productcard",
+      "target": "utils_formatprice_formatprice"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/product/ProductFilters.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "product_productfilters_productfilters",
+      "target": "product_productfilters_filtersection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/product/ProductFilters.jsx",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "product_productfilters_productfilters",
+      "target": "product_productfilters_checkicon",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/product/ProductFilters.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "product_productfilters_productfilters",
+      "target": "frontend_src_store_slices_productslice_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/customer/ProductsPage.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "customer_productspage_productspage",
+      "target": "product_productfilters_productfilters",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/customer/HomePage.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "frontend_src_pages_customer_homepage_jsx",
+      "target": "product_productgrid_productgrid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/customer/ProductsPage.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "customer_productspage_productspage",
+      "target": "product_productgrid_productgrid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/product/ReviewCard.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "product_reviewcard_reviewcard",
+      "target": "product_starrating_starrating",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/product/ReviewsList.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "frontend_src_components_product_reviewslist_jsx",
+      "target": "product_reviewcard_reviewcard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/product/ReviewForm.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "product_reviewform_reviewform",
+      "target": "product_starrating_starrating",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/customer/ProductDetailPage.jsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "customer_productdetailpage_productdetailpage",
+      "target": "product_reviewform_reviewform",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/product/ReviewsList.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "frontend_src_components_product_reviewslist_jsx",
+      "target": "product_starrating_starrating",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/product/ReviewsList.jsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "frontend_src_components_product_reviewslist_jsx",
+      "target": "product_reviewslist_reviewslist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/customer/ProductDetailPage.jsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "customer_productdetailpage_productdetailpage",
+      "target": "frontend_src_components_product_reviewslist_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/customer/ProductDetailPage.jsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "customer_productdetailpage_productdetailpage",
+      "target": "product_starrating_starrating",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/search/SearchBar.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "frontend_src_components_search_searchbar_jsx",
+      "target": "utils_formatprice_formatprice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/search/SearchBar.jsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "frontend_src_components_search_searchbar_jsx",
+      "target": "search_searchbar_searchbar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/ui/Badge.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "frontend_src_components_ui_badge_jsx",
+      "target": "ui_badge_badge",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/AdminDashboard.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "admin_admindashboard_admindashboard",
+      "target": "frontend_src_components_ui_badge_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/AdminOrderDetail.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "admin_adminorderdetail_adminorderdetail",
+      "target": "frontend_src_components_ui_badge_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/AdminOrders.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "admin_adminorders_adminorders",
+      "target": "frontend_src_components_ui_badge_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/AdminProducts.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "admin_adminproducts_adminproducts",
+      "target": "frontend_src_components_ui_badge_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/InventoryPage.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "frontend_src_pages_admin_inventorypage_jsx",
+      "target": "frontend_src_components_ui_badge_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/StaffOrders.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "frontend_src_pages_admin_stafforders_jsx",
+      "target": "frontend_src_components_ui_badge_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/customer/OrderDetailPage.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "customer_orderdetailpage_orderdetailpage",
+      "target": "frontend_src_components_ui_badge_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/customer/OrdersPage.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "frontend_src_pages_customer_orderspage_jsx",
+      "target": "frontend_src_components_ui_badge_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/customer/ProductDetailPage.jsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "customer_productdetailpage_productdetailpage",
+      "target": "frontend_src_components_ui_badge_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/AdminAddProduct.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "admin_adminaddproduct_adminaddproduct",
+      "target": "frontend_src_components_ui_button_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/AdminCategories.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "admin_admincategories_admincategories",
+      "target": "frontend_src_components_ui_button_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/AdminEditProduct.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "admin_admineditproduct_admineditproduct",
+      "target": "frontend_src_components_ui_button_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/AdminOrderDetail.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "admin_adminorderdetail_adminorderdetail",
+      "target": "frontend_src_components_ui_button_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/AdminProducts.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "admin_adminproducts_adminproducts",
+      "target": "frontend_src_components_ui_button_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/customer/CheckoutPage.jsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "customer_checkoutpage_checkoutpage",
+      "target": "frontend_src_components_ui_button_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/customer/OrderConfirmPage.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "customer_orderconfirmpage_orderconfirmpage",
+      "target": "frontend_src_components_ui_button_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/customer/ProfilePage.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "customer_profilepage_profilepage",
+      "target": "frontend_src_components_ui_button_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/AdminAddProduct.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "admin_adminaddproduct_adminaddproduct",
+      "target": "frontend_src_components_ui_input_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/AdminCategories.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "admin_admincategories_admincategories",
+      "target": "frontend_src_components_ui_input_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/AdminEditProduct.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "admin_admineditproduct_admineditproduct",
+      "target": "frontend_src_components_ui_input_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/AdminOrderDetail.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "admin_adminorderdetail_adminorderdetail",
+      "target": "frontend_src_components_ui_input_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/customer/CheckoutPage.jsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "customer_checkoutpage_checkoutpage",
+      "target": "frontend_src_components_ui_input_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/customer/ProfilePage.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "customer_profilepage_profilepage",
+      "target": "frontend_src_components_ui_input_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "source_file": "frontend/src/components/ui/LanguageSelector.jsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 0.8,
+      "source": "ui_languageselector_languageselector",
+      "target": "hooks_usetranslation_usetranslation"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/ui/Modal.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "frontend_src_components_ui_modal_jsx",
+      "target": "ui_modal_modal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/AdminCategories.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "admin_admincategories_admincategories",
+      "target": "frontend_src_components_ui_modal_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/AdminProducts.jsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "admin_adminproducts_adminproducts",
+      "target": "frontend_src_components_ui_modal_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/ui/Spinner.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "frontend_src_components_ui_spinner_jsx",
+      "target": "ui_spinner_spinner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/hooks/useRegionDetection.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "frontend_src_hooks_useregiondetection_js",
+      "target": "frontend_src_store_slices_settingsslice_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/hooks/useTranslation.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "hooks_usetranslation_usetranslation",
+      "target": "frontend_src_store_slices_settingsslice_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/hooks/useTranslation.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "hooks_usetranslation_usetranslation",
+      "target": "frontend_src_utils_translations_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/hooks/useTranslation.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "hooks_usetranslation_usetranslation",
+      "target": "utils_translations_gettranslation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/AdminCustomers.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "frontend_src_pages_admin_admincustomers_jsx",
+      "target": "utils_formatdate_formatdate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/AdminCustomers.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "frontend_src_pages_admin_admincustomers_jsx",
+      "target": "admin_admincustomers_admincustomers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "source_file": "frontend/src/pages/admin/AdminDashboard.jsx",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 0.8,
+      "source": "admin_admindashboard_admindashboard",
+      "target": "utils_formatprice_formatprice"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "source_file": "frontend/src/pages/admin/AdminOrderDetail.jsx",
+      "source_location": "L100",
+      "weight": 1.0,
+      "confidence_score": 0.8,
+      "source": "admin_adminorderdetail_adminorderdetail",
+      "target": "utils_formatprice_formatprice"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/AdminOrderDetail.jsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "admin_adminorderdetail_adminorderdetail",
+      "target": "utils_formatdate_formatdate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/AdminOrderDetail.jsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "admin_adminorderdetail_adminorderdetail",
+      "target": "frontend_src_utils_constants_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/AdminOrders.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "admin_adminorders_adminorders",
+      "target": "utils_formatprice_formatprice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/AdminOrders.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "admin_adminorders_adminorders",
+      "target": "frontend_src_utils_constants_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/AdminProducts.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "admin_adminproducts_adminproducts",
+      "target": "utils_formatprice_formatprice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "admin_analyticspage_analyticspage",
+      "target": "admin_analyticspage_statcard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "admin_analyticspage_analyticspage",
+      "target": "admin_analyticspage_getstatuscolor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "admin_analyticspage_analyticspage",
+      "target": "admin_analyticspage_simplebarchart",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
+      "source_location": "L147",
+      "weight": 1.0,
+      "confidence_score": 0.8,
+      "source": "admin_analyticspage_analyticspage",
+      "target": "utils_formatprice_formatprice"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/AnalyticsPage.jsx",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "admin_analyticspage_analyticspage",
+      "target": "utils_formatdate_formatdate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/InventoryPage.jsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "frontend_src_pages_admin_inventorypage_jsx",
+      "target": "admin_inventorypage_inventorypage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/StaffOrders.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "frontend_src_pages_admin_stafforders_jsx",
+      "target": "utils_formatprice_formatprice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/StaffOrders.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "frontend_src_pages_admin_stafforders_jsx",
+      "target": "frontend_src_utils_constants_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/admin/StaffOrders.jsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "frontend_src_pages_admin_stafforders_jsx",
+      "target": "admin_stafforders_stafforders",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/auth/LoginPage.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "frontend_src_pages_auth_loginpage_jsx",
+      "target": "frontend_src_store_slices_authslice_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/auth/LoginPage.jsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "frontend_src_pages_auth_loginpage_jsx",
+      "target": "frontend_src_store_slices_wishlistslice_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/auth/LoginPage.jsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "frontend_src_pages_auth_loginpage_jsx",
+      "target": "auth_loginpage_loginpage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/auth/RegisterPage.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "frontend_src_pages_auth_registerpage_jsx",
+      "target": "frontend_src_store_slices_authslice_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/auth/RegisterPage.jsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "frontend_src_pages_auth_registerpage_jsx",
+      "target": "auth_registerpage_registerpage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/customer/CartPage.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "frontend_src_pages_customer_cartpage_jsx",
+      "target": "frontend_src_store_slices_cartslice_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/customer/CartPage.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "frontend_src_pages_customer_cartpage_jsx",
+      "target": "slices_cartslice_selectcarttotal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/customer/CartPage.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "frontend_src_pages_customer_cartpage_jsx",
+      "target": "utils_formatprice_formatprice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/customer/CartPage.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "frontend_src_pages_customer_cartpage_jsx",
+      "target": "frontend_src_utils_constants_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/customer/CartPage.jsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "frontend_src_pages_customer_cartpage_jsx",
+      "target": "customer_cartpage_cartpage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "frontend/src/pages/customer/CartPage.jsx",
+      "source_location": "L130",
+      "weight": 1.0,
+      "source": "customer_cartpage_cartpage",
+      "target": "utils_formatprice_formatprice"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/customer/CheckoutPage.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "customer_checkoutpage_checkoutpage",
+      "target": "frontend_src_store_slices_cartslice_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "source_file": "frontend/src/pages/customer/CheckoutPage.jsx",
+      "source_location": "L223",
+      "weight": 1.0,
+      "confidence_score": 0.8,
+      "source": "customer_checkoutpage_checkoutpage",
+      "target": "utils_formatprice_formatprice"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/customer/CheckoutPage.jsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "customer_checkoutpage_checkoutpage",
+      "target": "frontend_src_utils_constants_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/customer/HomePage.jsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "frontend_src_pages_customer_homepage_jsx",
+      "target": "customer_homepage_homepage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "source_file": "frontend/src/pages/customer/OrderDetailPage.jsx",
+      "source_location": "L135",
+      "weight": 1.0,
+      "confidence_score": 0.8,
+      "source": "customer_orderdetailpage_orderdetailpage",
+      "target": "utils_formatprice_formatprice"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/customer/OrderDetailPage.jsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "customer_orderdetailpage_orderdetailpage",
+      "target": "utils_formatdate_formatdate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/customer/OrderDetailPage.jsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "customer_orderdetailpage_orderdetailpage",
+      "target": "frontend_src_utils_constants_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/customer/OrdersPage.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "frontend_src_pages_customer_orderspage_jsx",
+      "target": "utils_formatprice_formatprice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/customer/OrdersPage.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "frontend_src_pages_customer_orderspage_jsx",
+      "target": "utils_formatdate_formatdate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/customer/OrdersPage.jsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "frontend_src_pages_customer_orderspage_jsx",
+      "target": "frontend_src_utils_constants_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/customer/OrdersPage.jsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "frontend_src_pages_customer_orderspage_jsx",
+      "target": "customer_orderspage_orderspage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/customer/ProductDetailPage.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "customer_productdetailpage_productdetailpage",
+      "target": "frontend_src_store_slices_cartslice_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "source_file": "frontend/src/pages/customer/ProductDetailPage.jsx",
+      "source_location": "L206",
+      "weight": 1.0,
+      "confidence_score": 0.8,
+      "source": "customer_productdetailpage_productdetailpage",
+      "target": "utils_formatprice_formatprice"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/customer/ProductsPage.jsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "customer_productspage_productspage",
+      "target": "frontend_src_store_slices_productslice_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/customer/ProductsPage.jsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "customer_productspage_productspage",
+      "target": "slices_productslice_selectfilters",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/customer/WishlistPage.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "customer_wishlistpage_wishlistpage",
+      "target": "frontend_src_store_slices_wishlistslice_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/customer/WishlistPage.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "customer_wishlistpage_wishlistpage",
+      "target": "slices_wishlistslice_selectwishlistitems",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/customer/WishlistPage.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "customer_wishlistpage_wishlistpage",
+      "target": "frontend_src_store_slices_cartslice_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/customer/WishlistPage.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "customer_wishlistpage_wishlistpage",
+      "target": "utils_formatprice_formatprice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/store/slices/cartSlice.js",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "frontend_src_store_slices_cartslice_js",
+      "target": "slices_cartslice_selectcarttotal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/store/slices/cartSlice.js",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "frontend_src_store_slices_cartslice_js",
+      "target": "slices_cartslice_selectcartitemscount",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/store/slices/productSlice.js",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "frontend_src_store_slices_productslice_js",
+      "target": "slices_productslice_selectfilters",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/store/slices/productSlice.js",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "frontend_src_store_slices_productslice_js",
+      "target": "slices_productslice_selectsearchquery",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/store/slices/productSlice.js",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "frontend_src_store_slices_productslice_js",
+      "target": "slices_productslice_selectavailablefilters",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/store/slices/wishlistSlice.js",
+      "source_location": "L138",
+      "weight": 1.0,
+      "source": "frontend_src_store_slices_wishlistslice_js",
+      "target": "slices_wishlistslice_selectwishlistitems",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/store/slices/wishlistSlice.js",
+      "source_location": "L139",
+      "weight": 1.0,
+      "source": "frontend_src_store_slices_wishlistslice_js",
+      "target": "slices_wishlistslice_selectwishlistcount",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/store/slices/wishlistSlice.js",
+      "source_location": "L140",
+      "weight": 1.0,
+      "source": "frontend_src_store_slices_wishlistslice_js",
+      "target": "slices_wishlistslice_selectwishlistloading",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/store/slices/wishlistSlice.js",
+      "source_location": "L141",
+      "weight": 1.0,
+      "source": "frontend_src_store_slices_wishlistslice_js",
+      "target": "slices_wishlistslice_selectisinwishlist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/utils/formatPrice.js",
+      "source_location": "L30",
+      "weight": 1.0,
+      "context": "call",
+      "source": "utils_formatprice_formatprice",
+      "target": "utils_formatprice_convertprice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/utils/formatPrice.js",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "utils_formatprice_formatprice",
+      "target": "utils_formatprice_getcurrencysymbol",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/utils/translations.js",
+      "source_location": "L249",
+      "weight": 1.0,
+      "source": "frontend_src_utils_translations_js",
+      "target": "utils_translations_gettranslation",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "a7dd34ad4e8c8f32c273c93021a40386c775e495"
+}

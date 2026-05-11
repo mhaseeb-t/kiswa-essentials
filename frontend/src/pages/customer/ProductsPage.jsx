@@ -1,90 +1,89 @@
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
 import { Search, SlidersHorizontal, X, Grid3X3, LayoutList } from 'lucide-react';
 import ProductGrid from '../../components/product/ProductGrid';
 import ProductFilters from '../../components/product/ProductFilters';
-import { MOCK_PRODUCTS } from '../../utils/constants';
+import { selectFilters, setFilters, setAvailableFilters } from '../../store/slices/productSlice';
+
+const API_URL = import.meta.env.VITE_API_URL || 'https://backend-chi-drab-54.vercel.app/api';
 
 const ProductsPage = () => {
+  const dispatch = useDispatch();
   const [searchParams, setSearchParams] = useSearchParams();
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [showFilters, setShowFilters] = useState(false);
   const [viewMode, setViewMode] = useState('grid');
+  const [error, setError] = useState('');
+  const filters = useSelector(selectFilters);
+  const { regionCode } = useSelector((state) => state.settings);
 
-  const [filters, setFilters] = useState({
-    categories: [],
-    minPrice: '',
-    maxPrice: '',
-    sort: 'newest',
-    inStock: false,
-  });
-
-  const categories = [
-    { _id: 'kurtas', name: 'Kurtas' },
-    { _id: 'shalwar-kameez', name: 'Shalwar Kameez' },
-    { _id: 'shawls', name: 'Shawls' },
-    { _id: 'perfumes', name: 'Perfumes' },
-  ];
-
-  useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      let filtered = [...MOCK_PRODUCTS];
-
-      const search = searchParams.get('search');
-      if (search) {
-        filtered = filtered.filter((p) =>
-          p.name.toLowerCase().includes(search.toLowerCase())
-        );
+  const fetchAvailableFilters = async () => {
+    try {
+      const response = await fetch(`${API_URL}/filters`);
+      const data = await response.json();
+      if (data.success && data.filters) {
+        dispatch(setAvailableFilters(data.filters));
       }
-
-      const category = searchParams.get('category');
-      if (category) {
-        filtered = filtered.filter((p) =>
-          p.category.toLowerCase() === category
-        );
-      }
-
-      if (filters.categories.length > 0) {
-        filtered = filtered.filter((p) =>
-          filters.categories.includes(p.category)
-        );
-      }
-
-      if (filters.minPrice) {
-        filtered = filtered.filter((p) => p.price >= parseFloat(filters.minPrice));
-      }
-
-      if (filters.maxPrice) {
-        filtered = filtered.filter((p) => p.price <= parseFloat(filters.maxPrice));
-      }
-
-      if (filters.inStock) {
-        filtered = filtered.filter((p) => p.stock > 0);
-      }
-
-      if (filters.sort === 'price-low') {
-        filtered.sort((a, b) => a.price - b.price);
-      } else if (filters.sort === 'price-high') {
-        filtered.sort((a, b) => b.price - a.price);
-      }
-
-      setProducts(filtered);
-      setLoading(false);
-    }, 500);
-  }, [searchParams, filters]);
-
-  const handleFilterChange = (newFilters) => {
-    setFilters(newFilters);
+    } catch (err) {
+      console.error('Failed to fetch available filters:', err);
+    }
   };
 
-  const activeFiltersCount = filters.categories.length + (filters.minPrice ? 1 : 0) + (filters.maxPrice ? 1 : 0) + (filters.inStock ? 1 : 0);
+  const fetchProducts = async () => {
+    setLoading(true);
+    setError('');
+
+    try {
+      const params = new URLSearchParams();
+      const search = searchParams.get('search');
+      if (search) params.set('search', search);
+
+      const category = searchParams.get('category');
+      if (category) params.set('category_id', category);
+
+      if (filters.categories.length > 0) {
+        params.set('category_id', filters.categories[0]);
+      }
+
+      if (filters.minPrice) params.set('minPrice', filters.minPrice);
+      if (filters.maxPrice) params.set('maxPrice', filters.maxPrice);
+      if (filters.color) params.set('color', filters.color);
+      if (filters.size) params.set('size', filters.size);
+      if (filters.sort && filters.sort !== 'newest') params.set('sort', filters.sort);
+      if (filters.inStock) params.set('in_stock', 'true');
+      if (regionCode) params.set('region', regionCode);
+
+      const response = await fetch(`${API_URL}/products?${params.toString()}`);
+      const data = await response.json();
+
+      if (data.success) {
+        setProducts(data.products || []);
+      } else {
+        setError(data.message || 'Failed to load products');
+      }
+    } catch (err) {
+      setError('Failed to connect to server');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchAvailableFilters();
+  }, []);
+
+  useEffect(() => {
+    fetchProducts();
+  }, [searchParams, filters, regionCode]);
+
+  const activeFiltersCount = filters.categories.length + (filters.minPrice ? 1 : 0) + (filters.maxPrice ? 1 : 0) + (filters.color ? 1 : 0) + (filters.size ? 1 : 0) + (filters.inStock ? 1 : 0);
 
   return (
     <div className="min-h-screen bg-[#0c0c0e] pt-20">
       {/* Hero Banner */}
-      <div className="relative h-48 md:h-64 bg-gradient-to-br from-[#1a1a1e] via-[#0c0c0e] to-[#1a1a1e] overflow-hidden">
+      <div className="relative h-48 md:h-64 bg-linear-to-br from-[#1a1a1e] via-[#0c0c0e] to-[#1a1a1e] overflow-hidden">
         <div className="absolute inset-0 pattern-arabesque opacity-20" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
           <span className="text-[#c9b89a] text-xs tracking-[0.3em] uppercase mb-4 block">Discover</span>
@@ -92,7 +91,7 @@ const ProductsPage = () => {
         </div>
       </div>
 
-      <div className="max-w-[1400px] mx-auto px-6 lg:px-8 py-8 lg:py-12">
+      <div className="max-w-350 mx-auto px-6 lg:px-8 py-8 lg:py-12">
         {/* Header with Search & Controls */}
         <div className="flex flex-col lg:flex-row lg:items-center gap-6 mb-8">
           <div className="flex-1 relative max-w-xl">
@@ -153,6 +152,12 @@ const ProductsPage = () => {
           </div>
         </div>
 
+        {error && (
+          <div className="mb-6 p-4 bg-red-500/10 border border-red-500/30 rounded-xl text-red-400 text-sm">
+            {error}
+          </div>
+        )}
+
         {/* Mobile Filters Drawer */}
         {showFilters && (
           <div className="lg:hidden mb-8 animate-fadeIn">
@@ -163,26 +168,18 @@ const ProductsPage = () => {
                   <X className="w-5 h-5" />
                 </button>
               </div>
-              <ProductFilters
-                categories={categories}
-                filters={filters}
-                onFilterChange={handleFilterChange}
-              />
+              <ProductFilters />
             </div>
           </div>
         )}
 
         <div className="flex gap-8">
           {/* Desktop Filters Sidebar */}
-          <aside className="hidden lg:block w-72 flex-shrink-0">
+          <aside className="hidden lg:block w-72 shrink-0">
             <div className="sticky top-24">
               <div className="bg-[#1a1a1e] border border-[#2a2a2e] rounded-2xl p-6">
                 <h3 className="font-display text-lg text-[#f8f4ef] mb-6">Refine Selection</h3>
-                <ProductFilters
-                  categories={categories}
-                  filters={filters}
-                  onFilterChange={handleFilterChange}
-                />
+                <ProductFilters />
               </div>
             </div>
           </aside>

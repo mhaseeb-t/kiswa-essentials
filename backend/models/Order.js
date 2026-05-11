@@ -32,7 +32,7 @@ const Order = {
     return 'ORD-' + Math.random().toString(36).substr(2, 6).toUpperCase();
   },
 
-  async create({ user_id, items, total, shippingAddress, paymentId }) {
+  async create({ user_id, items, total, shippingAddress, paymentId, couponId }) {
     const orderId = this.generateOrderId();
     const query = `
       INSERT INTO orders (order_id, user_id, items, total, status,
@@ -48,6 +48,13 @@ const Order = {
       shippingAddress.postcode, shippingAddress.country, paymentId
     ];
     const result = await pool.query(query, values);
+
+    if (couponId) {
+      const Coupon = require('./Coupon');
+      await Coupon.linkToOrder(result.rows[0].id, couponId);
+      await Coupon.incrementUsage(couponId);
+    }
+
     return result.rows[0];
   },
 

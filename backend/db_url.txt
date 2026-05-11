@@ -1,0 +1,1 @@
+postgresql://postgres.cagqmgxlrlopxrfxhwou:Rm%40kaK9N.hDp9.%40aws-0-eu-west-2.pooler.supabase.com:5432/postgres

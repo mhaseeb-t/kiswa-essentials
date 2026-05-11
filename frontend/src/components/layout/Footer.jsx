@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Sparkles, Mail, Phone, MapPin, ArrowRight, Globe } from 'lucide-react';
+import { Sparkles, Mail, Phone, MapPin, ArrowRight } from 'lucide-react';
 
 const InstagramIcon = () => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
@@ -58,7 +58,7 @@ const Footer = () => {
 
       {/* Newsletter Section */}
       <div className="relative border-b border-[#2a2a2e]/30">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-8 py-16 lg:py-20">
+        <div className="max-w-350 mx-auto px-6 lg:px-8 py-16 lg:py-20">
           <div className="max-w-2xl mx-auto text-center">
             <span className="inline-flex items-center gap-2 text-[#c9b89a] text-sm tracking-[0.3em] uppercase mb-4">
               <Sparkles className="w-4 h-4" />
@@ -92,7 +92,7 @@ const Footer = () => {
       </div>
 
       {/* Main Footer */}
-      <div className="relative max-w-[1400px] mx-auto px-6 lg:px-8 py-16 lg:py-20">
+      <div className="relative max-w-350 mx-auto px-6 lg:px-8 py-16 lg:py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8">
           {/* Brand Column */}
           <div className="lg:col-span-2">

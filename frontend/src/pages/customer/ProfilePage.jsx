@@ -22,14 +22,17 @@ const ProfilePage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#0f0f0f] py-8 px-4">
-      <div className="max-w-2xl mx-auto">
-        <h1 className="text-3xl font-medium text-[#f5f0e8] mb-8">My Profile</h1>
+    <div className="min-h-screen bg-[#0c0c0e] pt-20 pb-16">
+      <div className="max-w-2xl mx-auto px-6 lg:px-8">
+        <div className="mb-8">
+          <h1 className="font-display text-3xl text-[#f8f4ef]">My Profile</h1>
+          <p className="text-[#6b6b6b] mt-1">Manage your account settings and preferences</p>
+        </div>
 
-        <form onSubmit={handleSubmit(onSubmit)} className="bg-[#1a1a1a] border border-[#2e2e2e] rounded-lg p-6 space-y-6">
-          <div className="border-b border-[#2e2e2e] pb-6">
-            <h2 className="text-lg font-medium text-[#f5f0e8] mb-4">Personal Information</h2>
-            <div className="space-y-4">
+        <form onSubmit={handleSubmit(onSubmit)} className="bg-[#1a1a1e] border border-[#2a2a2e] rounded-2xl p-8 space-y-8">
+          <div className="border-b border-[#2a2a2e] pb-8">
+            <h2 className="font-display text-lg text-[#f8f4ef] mb-6">Personal Information</h2>
+            <div className="space-y-5">
               <Input
                 label="Full Name"
                 placeholder="Enter your name"
@@ -55,9 +58,9 @@ const ProfilePage = () => {
             </div>
           </div>
 
-          <div className="pb-6">
-            <h2 className="text-lg font-medium text-[#f5f0e8] mb-4">Change Password</h2>
-            <div className="space-y-4">
+          <div className="pb-8">
+            <h2 className="font-display text-lg text-[#f8f4ef] mb-6">Change Password</h2>
+            <div className="space-y-5">
               <Input
                 label="Current Password"
                 type="password"

@@ -45,7 +45,7 @@ const AdminDashboard = () => {
 
   return (
     <div className="min-h-screen bg-[#0c0c0e] pt-20 pb-16">
-      <div className="max-w-[1400px] mx-auto px-6 lg:px-8">
+      <div className="max-w-350 mx-auto px-6 lg:px-8">
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-12">
           <div>
@@ -162,7 +162,7 @@ const AdminDashboard = () => {
                         </td>
                         <td className="p-4">
                           <div className="flex items-center gap-3">
-                            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#c9b89a] to-[#a89878] flex items-center justify-center">
+                            <div className="w-8 h-8 rounded-full bg-linear-to-br from-[#c9b89a] to-[#a89878] flex items-center justify-center">
                               <span className="text-[#0c0c0e] text-xs font-medium">
                                 {order.customer.split(' ').map(n => n[0]).join('')}
                               </span>
@@ -215,7 +215,18 @@ const AdminDashboard = () => {
             </span>
           </Link>
 
-          <div className="bg-gradient-to-br from-[#c9b89a]/20 to-[#1a1a1e] border border-[#c9b89a]/20 rounded-2xl p-6">
+          <Link
+            to="/admin/inventory"
+            className="group bg-[#1a1a1e] border border-[#2a2a2e] rounded-2xl p-6 hover:border-[#c9b89a]/30 transition-all"
+          >
+            <h3 className="font-display text-lg text-[#f8f4ef] mb-2 group-hover:text-[#c9b89a] transition-colors">Stock Management</h3>
+            <p className="text-sm text-[#6b6b6b] mb-4">Monitor and update product inventory</p>
+            <span className="text-[#c9b89a] text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+              Manage <ArrowRight className="w-4 h-4" />
+            </span>
+          </Link>
+
+          <div className="bg-linear-to-br from-[#c9b89a]/20 to-[#1a1a1e] border border-[#c9b89a]/20 rounded-2xl p-6">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 rounded-full bg-[#c9b89a]/20 flex items-center justify-center">
                 <Sparkles className="w-5 h-5 text-[#c9b89a]" />

@@ -33,9 +33,9 @@ const AboutPage = () => {
       {/* Hero Section */}
       <section id="about" className="relative py-24 lg:py-32 overflow-hidden">
         <div className="absolute inset-0 pattern-arabesque opacity-10" />
-        <div className="absolute top-1/4 right-0 w-[600px] h-[600px] bg-[#c9b89a]/5 rounded-full blur-3xl" />
+        <div className="absolute top-1/4 right-0 w-150 h-150 bg-[#c9b89a]/5 rounded-full blur-3xl" />
 
-        <div className="relative max-w-[1400px] mx-auto px-6 lg:px-8">
+        <div className="relative max-w-350 mx-auto px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center animate-fadeInUp">
             <span className="inline-flex items-center gap-2 text-[#c9b89a] text-sm tracking-[0.3em] uppercase mb-6">
               <Sparkles className="w-4 h-4" />
@@ -54,11 +54,11 @@ const AboutPage = () => {
 
       {/* Mission Section */}
       <section className="relative py-24 bg-[#0a0a0c]">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-8">
+        <div className="max-w-350 mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="animate-fadeIn">
               <div className="relative">
-                <div className="aspect-[4/5] rounded-3xl bg-gradient-to-br from-[#1a1a1e] to-[#2a2a2e] overflow-hidden">
+                <div className="aspect-4/5 rounded-3xl bg-linear-to-br from-[#1a1a1e] to-[#2a2a2e] overflow-hidden">
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="text-center">
                       <div className="w-32 h-32 rounded-full bg-[#c9b89a]/10 mx-auto mb-6 flex items-center justify-center">
@@ -99,7 +99,7 @@ const AboutPage = () => {
 
       {/* Stats Section */}
       <section className="relative py-24 bg-[#0c0c0e]">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-8">
+        <div className="max-w-350 mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center animate-fadeInUp" style={{ animationDelay: `${index * 100}ms` }}>
@@ -114,7 +114,7 @@ const AboutPage = () => {
       {/* Values Section */}
       <section className="relative py-24 bg-[#0a0a0c]">
         <div className="absolute inset-0 pattern-arabesque opacity-10" />
-        <div className="relative max-w-[1400px] mx-auto px-6 lg:px-8">
+        <div className="relative max-w-350 mx-auto px-6 lg:px-8">
           <div className="text-center mb-16 animate-fadeInUp">
             <span className="text-[#c9b89a] text-sm tracking-[0.3em] uppercase">Our Values</span>
             <h2 className="font-display text-3xl lg:text-4xl text-[#f8f4ef] mt-4">What We Stand For</h2>
@@ -140,7 +140,7 @@ const AboutPage = () => {
 
       {/* Team Section */}
       <section className="relative py-24 bg-[#0c0c0e]">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-8">
+        <div className="max-w-350 mx-auto px-6 lg:px-8">
           <div className="text-center mb-16 animate-fadeInUp">
             <span className="text-[#c9b89a] text-sm tracking-[0.3em] uppercase">Meet The Team</span>
             <h2 className="font-display text-3xl lg:text-4xl text-[#f8f4ef] mt-4">The People Behind Kiswa</h2>
@@ -153,7 +153,7 @@ const AboutPage = () => {
                 className="group text-center animate-fadeInUp"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-[#c9b89a] to-[#a89878] flex items-center justify-center">
+                <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-linear-to-br from-[#c9b89a] to-[#a89878] flex items-center justify-center">
                   <span className="text-[#0c0c0e] text-2xl font-display">{member.image}</span>
                 </div>
                 <h3 className="font-display text-lg text-[#f8f4ef] mb-1">{member.name}</h3>
@@ -166,7 +166,7 @@ const AboutPage = () => {
 
       {/* Policies Section */}
       <section className="relative py-24 bg-[#0a0a0c]">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-8">
+        <div className="max-w-350 mx-auto px-6 lg:px-8">
           <div className="text-center mb-16 animate-fadeInUp">
             <span className="text-[#c9b89a] text-sm tracking-[0.3em] uppercase">Customer Promise</span>
             <h2 className="font-display text-3xl lg:text-4xl text-[#f8f4ef] mt-4">Shop With Confidence</h2>
@@ -189,8 +189,8 @@ const AboutPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="relative py-24 bg-gradient-to-b from-[#0c0c0e] to-[#0a0a0c]">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-8">
+      <section className="relative py-24 bg-linear-to-b from-[#0c0c0e] to-[#0a0a0c]">
+        <div className="max-w-350 mx-auto px-6 lg:px-8">
           <div className="text-center animate-fadeInUp">
             <h2 className="font-display text-3xl lg:text-4xl text-[#f8f4ef] mb-6">
               Ready to Explore Our Collection?

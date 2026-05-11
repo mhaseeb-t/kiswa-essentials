@@ -3,15 +3,18 @@ import { Plus, Heart, Eye } from 'lucide-react';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addItem } from '../../store/slices/cartSlice';
-import { addToWishlist, removeFromWishlist, selectIsInWishlist } from '../../store/slices/wishlistSlice';
+import { addToWishlist, removeFromWishlist, addToWishlistAPI, removeFromWishlistAPI } from '../../store/slices/wishlistSlice';
 import { formatPrice } from '../../utils/formatPrice';
 import Badge from '../ui/Badge';
 
 const ProductCard = ({ product, index = 0 }) => {
   const dispatch = useDispatch();
   const [isHovered, setIsHovered] = useState(false);
+  const [loadingId, setLoadingId] = useState(null);
   const productId = product._id || product.id;
-  const isWishlisted = useSelector(selectIsInWishlist(productId));
+  const isWishlisted = useSelector((state) => state.wishlist.items.some((item) => item.id === productId));
+  const currency = useSelector((state) => state.settings.currency);
+  const token = useSelector((state) => state.auth.token);
 
   const handleAddToCart = (e) => {
     e.preventDefault();
@@ -28,8 +31,26 @@ const ProductCard = ({ product, index = 0 }) => {
   const handleWishlist = (e) => {
     e.preventDefault();
     e.stopPropagation();
+
+    if (loadingId) return;
+
+    setLoadingId(productId);
+
+    // Optimistic update - add/remove locally first for UX
     if (isWishlisted) {
       dispatch(removeFromWishlist(productId));
+      // Backend sync in background
+      if (token) {
+        dispatch(removeFromWishlistAPI(productId)).catch(() => {
+          // Rollback on error
+          dispatch(addToWishlist({
+            id: productId,
+            name: product.name,
+            price: product.price,
+            image: product.images?.[0] || product.image,
+          }));
+        });
+      }
     } else {
       dispatch(addToWishlist({
         id: productId,
@@ -37,7 +58,21 @@ const ProductCard = ({ product, index = 0 }) => {
         price: product.price,
         image: product.images?.[0] || product.image,
       }));
+      // Backend sync in background
+      if (token) {
+        dispatch(addToWishlistAPI({
+          id: productId,
+          name: product.name,
+          price: product.price,
+          image: product.images?.[0] || product.image,
+        })).catch(() => {
+          // Rollback on error
+          dispatch(removeFromWishlist(productId));
+        });
+      }
     }
+
+    setLoadingId(null);
   };
 
   const getStockStatus = () => {
@@ -60,7 +95,7 @@ const ProductCard = ({ product, index = 0 }) => {
       {/* Card Container */}
       <div className="relative bg-[#1a1a1e] border border-[#2a2a2e] rounded-2xl overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#c9b89a]/5 hover:border-[#c9b89a]/20">
         {/* Image Container */}
-        <div className="relative aspect-[3/4] bg-[#0c0c0e] overflow-hidden">
+        <div className="relative aspect-3/4 bg-[#0c0c0e] overflow-hidden">
           <img
             src={imageUrl}
             alt={product.name}
@@ -68,7 +103,7 @@ const ProductCard = ({ product, index = 0 }) => {
           />
 
           {/* Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0c0c0e] via-transparent to-transparent opacity-60" />
+          <div className="absolute inset-0 bg-linear-to-t from-[#0c0c0e] via-transparent to-transparent opacity-60" />
 
           {/* Top Badges */}
           <div className="absolute top-4 left-4 right-4 flex items-center justify-between">
@@ -80,11 +115,12 @@ const ProductCard = ({ product, index = 0 }) => {
             </Badge>
             <button
               onClick={handleWishlist}
-              className={`p-2 rounded-full backdrop-blur-md transition-all duration-300 ${
+              disabled={loadingId === productId}
+              className={`p-2 rounded-full backdrop-blur-md transition-all duration-300 z-10 ${
                 isWishlisted
                   ? 'bg-[#c9b89a] text-[#0c0c0e]'
                   : 'bg-[#0c0c0e]/60 text-[#f8f4ef]/70 hover:bg-[#0c0c0e]/80'
-              }`}
+              } ${loadingId === productId ? 'opacity-50 cursor-wait' : ''}`}
             >
               <Heart className={`w-4 h-4 ${isWishlisted ? 'fill-current' : ''}`} />
             </button>
@@ -118,18 +154,18 @@ const ProductCard = ({ product, index = 0 }) => {
           </h3>
           <div className="flex items-center justify-between">
             <span className="font-display text-xl text-[#c9b89a]">
-              {formatPrice(product.price)}
+              {formatPrice(product.price, currency, true)}
             </span>
-            {product.originalPrice && product.originalPrice > product.price && (
+            {product.original_price && product.original_price > product.price && (
               <span className="text-sm text-[#6b6b6b] line-through">
-                {formatPrice(product.originalPrice)}
+                {formatPrice(product.original_price, currency, true)}
               </span>
             )}
           </div>
         </div>
 
         {/* Decorative Corner */}
-        <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#c9b89a]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+        <div className="absolute top-0 right-0 w-24 h-24 bg-linear-to-bl from-[#c9b89a]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
       </div>
     </Link>
   );

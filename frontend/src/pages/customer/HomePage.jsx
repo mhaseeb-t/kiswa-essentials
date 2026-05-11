@@ -4,6 +4,8 @@ import { ArrowRight, Shirt, Sparkles, Wind, Flame, Star, Truck, Shield, Gift, Ch
 import { useSelector } from 'react-redux';
 import ProductGrid from '../../components/product/ProductGrid';
 
+const API_URL = import.meta.env.VITE_API_URL || 'https://backend-chi-drab-54.vercel.app/api';
+
 const HomePage = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -19,7 +21,7 @@ const HomePage = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/api/products?featured=true&region=${regionCode || 'UK'}`);
+        const response = await fetch(`${API_URL}/products?featured=true&region=${regionCode || 'UK'}`);
         const data = await response.json();
         if (data.success) {
           setProducts(data.products.slice(0, 8));
@@ -39,7 +41,7 @@ const HomePage = () => {
       {/* Announcement Bar */}
       <div className="relative bg-[#c9b89a] overflow-hidden">
         <div className="absolute inset-0 animate-shimmer" />
-        <div className="relative max-w-[1400px] mx-auto px-4 py-2.5 text-center">
+        <div className="relative max-w-350 mx-auto px-4 py-2.5 text-center">
           <p className="text-[#0c0c0e] text-sm font-medium tracking-wide">
             Complimentary shipping on orders over £75 — Worldwide delivery available
           </p>
@@ -50,12 +52,12 @@ const HomePage = () => {
       <section className="relative min-h-[90vh] flex items-center bg-[#0c0c0e] overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-gradient-to-bl from-[#c9b89a]/5 via-transparent to-transparent rounded-full blur-3xl" />
-          <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-[#c9b89a]/5 via-transparent to-transparent rounded-full blur-3xl" />
+          <div className="absolute top-0 right-0 w-200 h-200 bg-linear-to-bl from-[#c9b89a]/5 via-transparent to-transparent rounded-full blur-3xl" />
+          <div className="absolute bottom-0 left-0 w-150 h-150 bg-linear-to-tr from-[#c9b89a]/5 via-transparent to-transparent rounded-full blur-3xl" />
           <div className="absolute inset-0 pattern-arabesque opacity-20" />
         </div>
 
-        <div className="relative max-w-[1400px] mx-auto px-6 lg:px-8 py-20">
+        <div className="relative max-w-350 mx-auto px-6 lg:px-8 py-20">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div className="space-y-8 animate-fadeInUp">
@@ -110,8 +112,8 @@ const HomePage = () => {
 
             {/* Right Content - Hero Image Placeholder */}
             <div className="relative hidden lg:block animate-fadeInUp delay-300">
-              <div className="relative aspect-[3/4] rounded-3xl overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#1a1a1e] to-[#2a2a2e]">
+              <div className="relative aspect-3/4 rounded-3xl overflow-hidden">
+                <div className="absolute inset-0 bg-linear-to-br from-[#1a1a1e] to-[#2a2a2e]">
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="text-center">
                       <Shirt className="w-24 h-24 text-[#c9b89a]/20 mx-auto mb-4" />
@@ -149,7 +151,7 @@ const HomePage = () => {
       {/* Categories Section */}
       <section className="relative py-24 bg-[#0a0a0c]">
         <div className="absolute inset-0 pattern-arabesque opacity-10" />
-        <div className="relative max-w-[1400px] mx-auto px-6 lg:px-8">
+        <div className="relative max-w-350 mx-auto px-6 lg:px-8">
           <div className="text-center mb-16 animate-fadeInUp">
             <span className="text-[#c9b89a] text-sm tracking-[0.3em] uppercase">Explore</span>
             <h2 className="font-display text-4xl lg:text-5xl text-[#f8f4ef] mt-4">Shop by Category</h2>
@@ -163,7 +165,7 @@ const HomePage = () => {
                 className="group relative bg-[#1a1a1e] border border-[#2a2a2e] rounded-2xl p-8 text-center transition-all duration-500 hover:-translate-y-2 hover:border-[#c9b89a]/30 hover:shadow-2xl hover:shadow-[#c9b89a]/5 overflow-hidden"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-[#c9b89a]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute inset-0 bg-linear-to-br from-[#c9b89a]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="relative">
                   <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#c9b89a]/10 mb-6 group-hover:bg-[#c9b89a]/20 transition-colors">
                     <cat.icon className="w-8 h-8 text-[#c9b89a]" />
@@ -185,7 +187,7 @@ const HomePage = () => {
 
       {/* Featured Products */}
       <section className="relative py-24 bg-[#0c0c0e]">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-8">
+        <div className="max-w-350 mx-auto px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-12">
             <div>
               <span className="text-[#c9b89a] text-sm tracking-[0.3em] uppercase">New Arrivals</span>
@@ -213,11 +215,11 @@ const HomePage = () => {
       {/* Brand Story */}
       <section id="story" className="relative py-24 bg-[#0a0a0c]">
         <div className="absolute inset-0 pattern-arabesque opacity-5" />
-        <div className="relative max-w-[1400px] mx-auto px-6 lg:px-8">
+        <div className="relative max-w-350 mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Image */}
             <div className="relative animate-fadeIn">
-              <div className="aspect-[4/5] rounded-3xl overflow-hidden bg-gradient-to-br from-[#1a1a1e] to-[#2a2a2e]">
+              <div className="aspect-4/5 rounded-3xl overflow-hidden bg-linear-to-br from-[#1a1a1e] to-[#2a2a2e]">
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center">
                     <div className="w-32 h-32 rounded-full bg-[#c9b89a]/10 mx-auto mb-4 flex items-center justify-center">
@@ -284,7 +286,7 @@ const HomePage = () => {
 
       {/* Instagram Feed */}
       <section className="relative py-24 bg-[#0c0c0e]">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-8">
+        <div className="max-w-350 mx-auto px-6 lg:px-8">
           <div className="text-center mb-12">
             <span className="text-[#c9b89a] text-sm tracking-[0.3em] uppercase">@kiswaessentials</span>
             <h2 className="font-display text-3xl text-[#f8f4ef] mt-2">Follow Our Journey</h2>

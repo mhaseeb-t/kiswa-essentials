@@ -54,6 +54,25 @@ const seedDatabase = async () => {
     }
     console.log('Products seeded');
 
+    // Create sample coupons
+    const coupons = [
+      { code: 'WELCOME10', discount_type: 'percentage', discount_value: 10, min_order_amount: 50, max_discount: 20, usage_limit: 100, valid_from: new Date(), valid_until: new Date(Date.now() + 365 * 24 * 60 * 60 * 1000), active: true },
+      { code: 'SAVE20', discount_type: 'fixed', discount_value: 20, min_order_amount: 100, usage_limit: 50, valid_from: new Date(), valid_until: new Date(Date.now() + 180 * 24 * 60 * 60 * 1000), active: true },
+      { code: 'SUMMER25', discount_type: 'percentage', discount_value: 25, min_order_amount: 75, max_discount: 50, usage_limit: null, valid_from: new Date(), valid_until: new Date(Date.now() + 90 * 24 * 60 * 60 * 1000), active: true },
+    ];
+
+    for (const coupon of coupons) {
+      await pool.query(
+        `INSERT INTO coupons (code, discount_type, discount_value, min_order_amount, max_discount, usage_limit, valid_from, valid_until, active)
+         VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
+         ON CONFLICT (code) DO UPDATE SET
+         discount_type = EXCLUDED.discount_type, discount_value = EXCLUDED.discount_value, min_order_amount = EXCLUDED.min_order_amount,
+         max_discount = EXCLUDED.max_discount, usage_limit = EXCLUDED.usage_limit, active = EXCLUDED.active`,
+        [coupon.code, coupon.discount_type, coupon.discount_value, coupon.min_order_amount, coupon.max_discount, coupon.usage_limit, coupon.valid_from, coupon.valid_until, coupon.active]
+      );
+    }
+    console.log('Coupons seeded');
+
     // Create admin user
     const bcrypt = require('bcryptjs');
     const hashedPassword = await bcrypt.hash('admin123', 10);

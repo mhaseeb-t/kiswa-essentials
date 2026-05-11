@@ -1,0 +1,19 @@
+# Supabase Database Connection
+# Project: Kiswa Essentials
+# Project ID: cagqmgxlrlopxrfxhwou
+# Region: eu-west-2 (Ireland)
+
+# Connection String (for local development)
+# postgresql://postgres.cagqmgxlrlopxrfxhwou:Rm@kaK9N.hDp9.@aws-0-eu-west-2.pooler.supabase.com:5432/postgres
+
+# Direct Connection (without pooling - for pgAdmin, DBeaver, etc.)
+# postgresql://postgres.cagqmgxlrlopxrfxhwou:Rm@kaK9N.hDp9.@db.cagqmgxlrlopxrfxhwou.supabase.co:5432/postgres
+
+# Environment Variables for Vercel
+# DATABASE_URL = postgresql://postgres.cagqmgxlrlopxrfxhwou:Rm%40kaK9N.hDp9.%40aws-0-eu-west-2.pooler.supabase.com:5432/postgres
+# JWT_SECRET = kiswa-super-secret-jwt-key-2026-secure
+
+# Vercel Project URLs
+# Frontend: https://frontend-lyart-alpha-63.vercel.app
+# Backend: https://backend-chi-drab-54.vercel.app
+# Backend API: https://backend-chi-drab-54.vercel.app/api

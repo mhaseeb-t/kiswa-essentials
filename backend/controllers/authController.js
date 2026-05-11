@@ -171,9 +171,180 @@ const updateProfile = async (req, res, next) => {
   }
 };
 
+const forgotPassword = async (req, res, next) => {
+  try {
+    const { email } = req.body;
+    const FRONTEND_URL = process.env.FRONTEND_URL || 'http://localhost:5173';
+
+    if (!email) {
+      return res.status(400).json({
+        success: false,
+        message: 'Please provide an email address'
+      });
+    }
+
+    const user = await User.findByEmail(email);
+
+    // Always return success to prevent email enumeration
+    if (!user) {
+      console.log(`Password reset requested for non-existent email: ${email}`);
+      return res.json({
+        success: true,
+        message: 'If an account exists with this email, you will receive a password reset link'
+      });
+    }
+
+    // Generate reset token
+    const crypto = require('crypto');
+    const token = crypto.randomBytes(32).toString('hex');
+    const expiresAt = new Date(Date.now() + 60 * 60 * 1000); // 1 hour from now
+
+    // Store token in database
+    const { pool } = require('../config/db');
+    await pool.query(
+      `INSERT INTO password_resets (email, token, expires_at) VALUES ($1, $2, $3)`,
+      [email, token, expiresAt]
+    );
+
+    // Log the email instead of sending (for now)
+    console.log(`
+========== PASSWORD RESET EMAIL ==========
+To: ${email}
+Subject: Reset your KISWA password
+
+Click the link below to reset your password:
+${FRONTEND_URL}/reset-password/${token}
+
+This link expires in 1 hour.
+
+If you didn't request this, ignore this email.
+==========================================
+`);
+
+    res.json({
+      success: true,
+      message: 'If an account exists with this email, you will receive a password reset link'
+    });
+  } catch (error) {
+    next(error);
+  }
+};
+
+const validateResetToken = async (req, res, next) => {
+  try {
+    const { token } = req.params;
+    const { pool } = require('../config/db');
+
+    const result = await pool.query(
+      `SELECT email, expires_at, used FROM password_resets WHERE token = $1`,
+      [token]
+    );
+
+    if (!result.rows[0]) {
+      return res.status(400).json({
+        success: false,
+        message: 'Invalid or expired token'
+      });
+    }
+
+    const resetRecord = result.rows[0];
+
+    if (resetRecord.used) {
+      return res.status(400).json({
+        success: false,
+        message: 'This reset link has already been used'
+      });
+    }
+
+    if (new Date(resetRecord.expires_at) < new Date()) {
+      return res.status(400).json({
+        success: false,
+        message: 'This reset link has expired'
+      });
+    }
+
+    res.json({
+      success: true,
+      email: resetRecord.email
+    });
+  } catch (error) {
+    next(error);
+  }
+};
+
+const resetPassword = async (req, res, next) => {
+  try {
+    const { token, password } = req.body;
+    const { pool } = require('../config/db');
+
+    if (!token || !password) {
+      return res.status(400).json({
+        success: false,
+        message: 'Token and new password are required'
+      });
+    }
+
+    if (password.length < 8) {
+      return res.status(400).json({
+        success: false,
+        message: 'Password must be at least 8 characters'
+      });
+    }
+
+    // Validate token
+    const result = await pool.query(
+      `SELECT email, expires_at, used FROM password_resets WHERE token = $1`,
+      [token]
+    );
+
+    if (!result.rows[0]) {
+      return res.status(400).json({
+        success: false,
+        message: 'Invalid or expired token'
+      });
+    }
+
+    const resetRecord = result.rows[0];
+
+    if (resetRecord.used) {
+      return res.status(400).json({
+        success: false,
+        message: 'This reset link has already been used'
+      });
+    }
+
+    if (new Date(resetRecord.expires_at) < new Date()) {
+      return res.status(400).json({
+        success: false,
+        message: 'This reset link has expired'
+      });
+    }
+
+    // Update user password
+    const user = await User.findByEmail(resetRecord.email);
+    await User.updatePassword(user.id, password);
+
+    // Mark token as used
+    await pool.query(
+      `UPDATE password_resets SET used = true WHERE token = $1`,
+      [token]
+    );
+
+    res.json({
+      success: true,
+      message: 'Password has been reset successfully'
+    });
+  } catch (error) {
+    next(error);
+  }
+};
+
 module.exports = {
   register,
   login,
   getProfile,
-  updateProfile
+  updateProfile,
+  forgotPassword,
+  validateResetToken,
+  resetPassword
 };

@@ -10,6 +10,8 @@ const authRoutes = require('./routes/auth');
 const productRoutes = require('./routes/products');
 const orderRoutes = require('./routes/orders');
 const categoryRoutes = require('./routes/categories');
+const couponRoutes = require('./routes/coupons');
+const wishlistRoutes = require('./routes/wishlist');
 
 const app = express();
 
@@ -24,6 +26,8 @@ app.use('/api/auth', authRoutes);
 app.use('/api/products', productRoutes);
 app.use('/api/orders', orderRoutes);
 app.use('/api/categories', categoryRoutes);
+app.use('/api/coupons', couponRoutes);
+app.use('/api/wishlist', wishlistRoutes);
 
 // Health check route
 app.get('/api/health', async (req, res) => {
@@ -73,11 +77,27 @@ const startServer = async () => {
     const Category = require('./models/Category');
     const Product = require('./models/Product');
     const Order = require('./models/Order');
+    const Coupon = require('./models/Coupon');
+    const Wishlist = require('./models/Wishlist');
 
     await User.createTable();
     await Category.createTable();
     await Product.createTable();
     await Order.createTable();
+    await Coupon.createTable();
+    await Wishlist.createTable();
+
+    // Create password_resets table
+    await pool.query(`
+      CREATE TABLE IF NOT EXISTS password_resets (
+        id SERIAL PRIMARY KEY,
+        email VARCHAR(255),
+        token VARCHAR(255) UNIQUE NOT NULL,
+        expires_at TIMESTAMP NOT NULL,
+        used BOOLEAN DEFAULT FALSE,
+        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+      )
+    `);
 
     // Add missing columns to existing tables
     try {

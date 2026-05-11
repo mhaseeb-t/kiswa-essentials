@@ -1,29 +1,30 @@
 import { useState, useEffect } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { ShoppingCart, Menu, X, Search, User, LogOut, ChevronDown, Sparkles, Globe, MapPin, Languages } from 'lucide-react';
+import { ShoppingCart, Menu, X, User, LogOut, ChevronDown, Sparkles, MapPin, Languages, Heart, Search } from 'lucide-react';
 import { toggleCart } from '../../store/slices/cartSlice';
 import { toggleMenu } from '../../store/slices/uiSlice';
 import { logout } from '../../store/slices/authSlice';
 import { selectCartItemsCount } from '../../store/slices/cartSlice';
+import { selectWishlistCount, clearWishlist } from '../../store/slices/wishlistSlice';
 import { setLanguage, setRegion } from '../../store/slices/settingsSlice';
 import CartDrawer from '../cart/CartDrawer';
 import useRegionDetection from '../../hooks/useRegionDetection';
+import SearchBar from '../search/SearchBar';
 
 const Navbar = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const location = useLocation();
-  const [searchQuery, setSearchQuery] = useState('');
-  const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
   const [isRegionMenuOpen, setIsRegionMenuOpen] = useState(false);
   const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false);
   const { user, token } = useSelector((state) => state.auth);
   const cartItemsCount = useSelector(selectCartItemsCount);
+  const wishlistCount = useSelector(selectWishlistCount);
   const { isMenuOpen } = useSelector((state) => state.ui);
-  const { language, regionCode, region } = useSelector((state) => state.settings);
+  const { language, regionCode } = useSelector((state) => state.settings);
 
   useRegionDetection();
 
@@ -39,30 +40,38 @@ const Navbar = () => {
     if (isMenuOpen) {
       dispatch(toggleMenu());
     }
+  }, [location.pathname, isMenuOpen, dispatch]);
+
+  useEffect(() => {
     setIsUserMenuOpen(false);
-  }, [location, isMenuOpen, dispatch]);
+  }, [location.pathname]);
 
   const handleLogout = () => {
     dispatch(logout());
+    dispatch(clearWishlist());
     navigate('/');
   };
 
-  const handleSearch = (e) => {
-    e.preventDefault();
-    if (searchQuery.trim()) {
-      navigate(`/products?search=${encodeURIComponent(searchQuery)}`);
-      setSearchQuery('');
-      setIsSearchOpen(false);
-    }
+  const handleSearch = () => { // eslint-disable-line
+    // Search functionality handled in products page
   };
 
-  const handleRegionChange = (code, currency) => {
-    dispatch(setRegion({ region, code, currency }));
+  const handleRegionChange = (newCode, newCurrency) => {
+    const regionObj = regions.find(r => r.code === newCode);
+    dispatch(setRegion({
+      region: regionObj?.name || 'United Kingdom',
+      code: newCode,
+      currency: newCurrency
+    }));
     setIsRegionMenuOpen(false);
   };
 
   const handleLanguageChange = (lang) => {
     dispatch(setLanguage(lang));
+  };
+
+  const openMobileSearch = () => {
+    navigate('/search');
   };
 
   const navLinks = [
@@ -186,8 +195,8 @@ const Navbar = () => {
                 )}
               </div>
 
-              {/* Search */}
-              <div className="relative">
+              {/* Search - Hidden */}
+              {/* <div className="relative">
                 {isSearchOpen ? (
                   <form onSubmit={handleSearch} className="flex items-center animate-fadeIn">
                     <input
@@ -214,7 +223,33 @@ const Navbar = () => {
                     <Search className="w-5 h-5" />
                   </button>
                 )}
+              </div> */}
+
+              {/* Search Bar */}
+              <div className="hidden md:block">
+                <SearchBar />
               </div>
+
+              {/* Mobile Search Button */}
+              <button
+                onClick={openMobileSearch}
+                className="md:hidden p-2.5 text-[#a8a4a0] hover:text-[#c9b89a] hover:bg-[#1a1a1e]/50 rounded-full transition-all"
+              >
+                <Search className="w-5 h-5" />
+              </button>
+
+              {/* Wishlist */}
+              <Link
+                to="/wishlist"
+                className="relative p-2.5 text-[#a8a4a0] hover:text-[#c9b89a] hover:bg-[#1a1a1e]/50 rounded-full transition-all group"
+              >
+                <Heart className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                {wishlistCount > 0 && (
+                  <span className="absolute -top-0.5 -right-0.5 w-5 h-5 bg-[#c9b89a] text-[#0c0c0e] text-[10px] font-bold rounded-full flex items-center justify-center animate-fadeIn">
+                    {wishlistCount > 9 ? '9+' : wishlistCount}
+                  </span>
+                )}
+              </Link>
 
               {/* Cart */}
               <button

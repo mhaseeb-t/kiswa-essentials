@@ -43,74 +43,74 @@ const AdminOrderDetail = () => {
     navigate('/admin/orders');
   };
 
-  if (!order) return <div className="min-h-screen bg-[#0f0f0f]">Loading...</div>;
+  if (!order) return <div className="min-h-screen bg-[#0c0c0e] pt-20 flex items-center justify-center"><p className="text-[#6b6b6b]">Loading...</p></div>;
 
   return (
-    <div className="min-h-screen bg-[#0f0f0f] py-8 px-4">
-      <div className="max-w-4xl mx-auto">
-        <button onClick={() => navigate('/admin/orders')} className="inline-flex items-center text-[#888888] hover:text-[#c9b89a] mb-6">
-          <ArrowLeft className="w-4 h-4 mr-2" />
+    <div className="min-h-screen bg-[#0c0c0e] pt-20 pb-16">
+      <div className="max-w-4xl mx-auto px-6 lg:px-8">
+        <button onClick={() => navigate('/admin/orders')} className="inline-flex items-center gap-2 text-[#a8a4a0] hover:text-[#c9b89a] mb-8 transition-colors group">
+          <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
           Back to Orders
         </button>
 
-        <h1 className="text-3xl font-medium text-[#f5f0e8] mb-8">Order {order.id}</h1>
+        <h1 className="font-display text-3xl text-[#f8f4ef] mb-8">Order {order.id}</h1>
 
         {/* Customer Info */}
-        <div className="bg-[#1a1a1a] border border-[#2e2e2e] rounded-lg p-6 mb-6">
-          <h2 className="text-lg font-medium text-[#f5f0e8] mb-4">Customer Information</h2>
+        <div className="bg-[#1a1a1e] border border-[#2a2a2e] rounded-2xl p-6 mb-6">
+          <h2 className="font-display text-lg text-[#f8f4ef] mb-4">Customer Information</h2>
           <div className="grid grid-cols-2 gap-4">
             <div>
-              <p className="text-[#888888] text-sm">Name</p>
-              <p className="text-[#f5f0e8]">{order.customer.name}</p>
+              <p className="text-[#6b6b6b] text-xs uppercase tracking-wider mb-1">Name</p>
+              <p className="text-[#f8f4ef]">{order.customer.name}</p>
             </div>
             <div>
-              <p className="text-[#888888] text-sm">Email</p>
-              <p className="text-[#f5f0e8]">{order.customer.email}</p>
+              <p className="text-[#6b6b6b] text-xs uppercase tracking-wider mb-1">Email</p>
+              <p className="text-[#f8f4ef]">{order.customer.email}</p>
             </div>
             <div>
-              <p className="text-[#888888] text-sm">Phone</p>
-              <p className="text-[#f5f0e8]">{order.customer.phone}</p>
+              <p className="text-[#6b6b6b] text-xs uppercase tracking-wider mb-1">Phone</p>
+              <p className="text-[#f8f4ef]">{order.customer.phone}</p>
             </div>
             <div>
-              <p className="text-[#888888] text-sm">Date</p>
-              <p className="text-[#f5f0e8]">{formatDate(order.createdAt)}</p>
+              <p className="text-[#6b6b6b] text-xs uppercase tracking-wider mb-1">Date</p>
+              <p className="text-[#f8f4ef]">{formatDate(order.createdAt)}</p>
             </div>
           </div>
         </div>
 
         {/* Order Items */}
-        <div className="bg-[#1a1a1a] border border-[#2e2e2e] rounded-lg p-6 mb-6">
-          <h2 className="text-lg font-medium text-[#f5f0e8] mb-4">Order Items</h2>
+        <div className="bg-[#1a1a1e] border border-[#2a2a2e] rounded-2xl p-6 mb-6">
+          <h2 className="font-display text-lg text-[#f8f4ef] mb-4">Order Items</h2>
           <div className="space-y-4">
             {order.items.map((item) => (
-              <div key={item.id} className="flex gap-4 p-4 bg-[#0f0f0f] rounded">
-                <div className="w-16 h-16 bg-[#2e2e2e] rounded overflow-hidden">
+              <div key={item.id} className="flex gap-4 p-4 bg-[#0c0c0e] rounded-xl">
+                <div className="w-16 h-16 bg-[#2a2a2e] rounded-lg overflow-hidden">
                   <img src={item.image} alt="" className="w-full h-full object-cover" />
                 </div>
                 <div className="flex-1">
-                  <p className="text-[#f5f0e8]">{item.name}</p>
-                  <p className="text-[#888888] text-sm">Qty: {item.quantity}</p>
+                  <p className="text-[#f8f4ef]">{item.name}</p>
+                  <p className="text-[#6b6b6b] text-sm">Qty: {item.quantity}</p>
                 </div>
-                <p className="text-[#f5f0e8]">{formatPrice(item.price * item.quantity)}</p>
+                <p className="text-[#f8f4ef]">{formatPrice(item.price * item.quantity)}</p>
               </div>
             ))}
           </div>
-          <div className="mt-4 pt-4 border-t border-[#2e2e2e] flex justify-between">
-            <span className="text-[#888888]">Total</span>
-            <span className="text-[#c9b89a] text-xl">{formatPrice(order.total)}</span>
+          <div className="mt-4 pt-4 border-t border-[#2a2a2e] flex justify-between">
+            <span className="text-[#6b6b6b]">Total</span>
+            <span className="font-display text-xl text-[#c9b89a]">{formatPrice(order.total)}</span>
           </div>
         </div>
 
         {/* Update Order */}
-        <div className="bg-[#1a1a1a] border border-[#2e2e2e] rounded-lg p-6 mb-6">
-          <h2 className="text-lg font-medium text-[#f5f0e8] mb-4">Update Order</h2>
+        <div className="bg-[#1a1a1e] border border-[#2a2a2e] rounded-2xl p-6 mb-6">
+          <h2 className="font-display text-lg text-[#f8f4ef] mb-4">Update Order</h2>
           <div className="space-y-4">
             <div>
-              <label className="text-[#888888] text-sm mb-2 block">Status</label>
+              <label className="text-sm text-[#a8a4a0] mb-2 block">Status</label>
               <select
                 value={status}
                 onChange={(e) => setStatus(e.target.value)}
-                className="w-full px-4 py-2.5 bg-[#0f0f0f] border border-[#2e2e2e] rounded text-[#f5f0e8] focus:outline-none focus:border-[#c9b89a]"
+                className="w-full px-4 py-3 bg-[#0c0c0e] border border-[#2a2a2e] rounded-xl text-[#f8f4ef] focus:outline-none focus:border-[#c9b89a]/50 transition-colors"
               >
                 <option value="PENDING">PENDING</option>
                 <option value="PAID">PAID</option>
@@ -133,7 +133,7 @@ const AdminOrderDetail = () => {
                 placeholder="TRK-XXXXX"
               />
             </div>
-            <p className="text-[#888888] text-sm">Customer will be emailed on update.</p>
+            <p className="text-[#6b6b6b] text-sm">Customer will be emailed on update.</p>
             <Button onClick={handleUpdate} className="w-full">
               Update Order
             </Button>
@@ -141,10 +141,10 @@ const AdminOrderDetail = () => {
         </div>
 
         {/* Delivery Address */}
-        <div className="bg-[#1a1a1a] border border-[#2e2e2e] rounded-lg p-6">
-          <h2 className="text-lg font-medium text-[#f5f0e8] mb-4">Delivery Address</h2>
-          <div className="text-[#888888]">
-            <p className="text-[#f5f0e8]">{order.shippingAddress.fullName}</p>
+        <div className="bg-[#1a1a1e] border border-[#2a2a2e] rounded-2xl p-6">
+          <h2 className="font-display text-lg text-[#f8f4ef] mb-4">Delivery Address</h2>
+          <div className="text-[#6b6b6b]">
+            <p className="text-[#f8f4ef] font-medium">{order.shippingAddress.fullName}</p>
             <p>{order.shippingAddress.line1}</p>
             <p>{order.shippingAddress.city}, {order.shippingAddress.postcode}</p>
             <p>{order.shippingAddress.country}</p>

@@ -26,20 +26,23 @@ const AdminOrders = () => {
     : orders.filter(o => o.status === activeTab);
 
   return (
-    <div className="min-h-screen bg-[#0f0f0f] py-8 px-4">
-      <div className="max-w-7xl mx-auto">
-        <h1 className="text-3xl font-medium text-[#f5f0e8] mb-8">Orders</h1>
+    <div className="min-h-screen bg-[#0c0c0e] pt-20 pb-16">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="mb-8">
+          <h1 className="font-display text-3xl text-[#f8f4ef]">Orders</h1>
+          <p className="text-[#6b6b6b] mt-1">Manage and track all customer orders</p>
+        </div>
 
         {/* Tabs */}
-        <div className="flex flex-wrap gap-2 mb-6">
+        <div className="flex flex-wrap gap-2 mb-8">
           {tabs.map((tab) => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`px-4 py-2 rounded text-sm font-medium transition-colors ${
+              className={`px-4 py-2.5 rounded-full text-sm font-medium transition-all ${
                 activeTab === tab
-                  ? 'bg-[#c9b89a] text-[#0f0f0f]'
-                  : 'bg-[#1a1a1a] text-[#888888] hover:text-[#f5f0e8] border border-[#2e2e2e]'
+                  ? 'bg-[#c9b89a] text-[#0c0c0e]'
+                  : 'bg-[#1a1a1e] text-[#6b6b6b] border border-[#2a2a2e] hover:border-[#c9b89a]/50 hover:text-[#f8f4ef]'
               }`}
             >
               {tab.charAt(0).toUpperCase() + tab.slice(1)}
@@ -48,26 +51,39 @@ const AdminOrders = () => {
         </div>
 
         {/* Orders Table */}
-        <div className="bg-[#1a1a1a] border border-[#2e2e2e] rounded-lg overflow-hidden">
+        <div className="bg-[#1a1a1e] border border-[#2a2a2e] rounded-2xl overflow-hidden">
           <table className="w-full">
             <thead>
-              <tr className="border-b border-[#2e2e2e]">
-                <th className="text-left p-4 text-[#888888] text-sm font-medium">Order ID</th>
-                <th className="text-left p-4 text-[#888888] text-sm font-medium">Customer</th>
-                <th className="text-left p-4 text-[#888888] text-sm font-medium">Email</th>
-                <th className="text-left p-4 text-[#888888] text-sm font-medium">Total</th>
-                <th className="text-left p-4 text-[#888888] text-sm font-medium">Status</th>
-                <th className="text-left p-4 text-[#888888] text-sm font-medium">Date</th>
-                <th className="text-left p-4 text-[#888888] text-sm font-medium">Action</th>
+              <tr className="border-b border-[#2a2a2e]">
+                <th className="text-left p-4 text-[#6b6b6b] text-xs font-medium uppercase tracking-wider">Order ID</th>
+                <th className="text-left p-4 text-[#6b6b6b] text-xs font-medium uppercase tracking-wider">Customer</th>
+                <th className="text-left p-4 text-[#6b6b6b] text-xs font-medium uppercase tracking-wider">Email</th>
+                <th className="text-left p-4 text-[#6b6b6b] text-xs font-medium uppercase tracking-wider">Total</th>
+                <th className="text-left p-4 text-[#6b6b6b] text-xs font-medium uppercase tracking-wider">Status</th>
+                <th className="text-left p-4 text-[#6b6b6b] text-xs font-medium uppercase tracking-wider">Date</th>
+                <th className="text-left p-4 text-[#6b6b6b] text-xs font-medium uppercase tracking-wider">Action</th>
               </tr>
             </thead>
             <tbody>
               {filteredOrders.map((order) => (
-                <tr key={order.id} className="border-b border-[#2e2e2e] hover:bg-[#0f0f0f]">
-                  <td className="p-4 text-[#f5f0e8] font-medium">{order.id}</td>
-                  <td className="p-4 text-[#f5f0e8]">{order.customer}</td>
-                  <td className="p-4 text-[#888888]">{order.email}</td>
-                  <td className="p-4 text-[#c9b89a]">{formatPrice(order.total)}</td>
+                <tr key={order.id} className="border-b border-[#2a2a2e]/50 hover:bg-[#0c0c0e]/30 transition-colors">
+                  <td className="p-4">
+                    <span className="text-sm font-medium text-[#c9b89a]">{order.id}</span>
+                  </td>
+                  <td className="p-4">
+                    <div className="flex items-center gap-3">
+                      <div className="w-8 h-8 rounded-full bg-linear-to-br from-[#c9b89a] to-[#a89878] flex items-center justify-center">
+                        <span className="text-[#0c0c0e] text-xs font-medium">
+                          {order.customer.split(' ').map(n => n[0]).join('')}
+                        </span>
+                      </div>
+                      <span className="text-sm text-[#f8f4ef]">{order.customer}</span>
+                    </div>
+                  </td>
+                  <td className="p-4 text-sm text-[#6b6b6b]">{order.email}</td>
+                  <td className="p-4">
+                    <span className="font-display text-[#f8f4ef]">{formatPrice(order.total)}</span>
+                  </td>
                   <td className="p-4">
                     <Badge variant={
                       order.status === 'DELIVERED' ? 'success' :
@@ -78,11 +94,11 @@ const AdminOrders = () => {
                       {ORDER_STATUSES[order.status]?.label || order.status}
                     </Badge>
                   </td>
-                  <td className="p-4 text-[#888888]">{order.date}</td>
+                  <td className="p-4 text-sm text-[#6b6b6b]">{order.date}</td>
                   <td className="p-4">
                     <Link
                       to={`/admin/orders/${order.id}`}
-                      className="inline-flex items-center gap-2 text-[#c9b89a] hover:underline"
+                      className="inline-flex items-center gap-2 text-sm text-[#c9b89a] hover:text-[#d4c9a8] transition-colors"
                     >
                       <Eye className="w-4 h-4" />
                       View

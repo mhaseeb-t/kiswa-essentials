@@ -5,6 +5,8 @@ import { useDispatch } from 'react-redux';
 import { Eye, EyeOff, Sparkles, ArrowRight, Mail, Lock, User, Check } from 'lucide-react';
 import { setUser, setToken } from '../../store/slices/authSlice';
 
+const API_URL = import.meta.env.VITE_API_URL || 'https://backend-chi-drab-54.vercel.app/api';
+
 const RegisterPage = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -18,7 +20,7 @@ const RegisterPage = () => {
   const onSubmit = async (data) => {
     setRegisterError('');
     try {
-      const response = await fetch('http://localhost:5000/api/auth/register', {
+      const response = await fetch(`${API_URL}/register`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
@@ -34,7 +36,7 @@ const RegisterPage = () => {
       dispatch(setToken(result.token));
       dispatch(setUser(result.user));
       navigate('/');
-    } catch (err) {
+    } catch {
       setRegisterError('Unable to connect to server. Please try again.');
     }
   };

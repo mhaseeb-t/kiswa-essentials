@@ -1,60 +1,102 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { setRegion, setLanguage } from '../../store/slices/settingsSlice';
+import { setRegion } from '../store/slices/settingsSlice';
+
+const REGION_MAPPINGS = {
+  GB: { region: 'United Kingdom', code: 'UK', currency: 'GBP' },
+  US: { region: 'United States', code: 'US', currency: 'USD' },
+  PK: { region: 'Pakistan', code: 'PK', currency: 'PKR' },
+  AE: { region: 'United Arab Emirates', code: 'AE', currency: 'AED' },
+  IN: { region: 'India', code: 'IN', currency: 'INR' },
+  SA: { region: 'Saudi Arabia', code: 'SA', currency: 'SAR' },
+  DE: { region: 'Germany', code: 'DE', currency: 'EUR' },
+  FR: { region: 'France', code: 'FR', currency: 'EUR' },
+};
+
+const DEFAULT_REGION = { region: 'United Kingdom', code: 'UK', currency: 'GBP' };
 
 const useRegionDetection = () => {
   const dispatch = useDispatch();
-  const { region, regionCode, loadingRegion } = useSelector((state) => state.settings);
-  const [ipData, setIpData] = useState(null);
+  const region = useSelector((state) => state.settings.region);
+  const loadingRegion = useSelector((state) => state.settings.loadingRegion);
 
   useEffect(() => {
+    if (region || loadingRegion) return;
+
     const detectRegion = async () => {
-      try {
-        // Get IP and location
-        const ipResponse = await fetch('https://ipapi.co/json/');
-        const ipData = await ipResponse.json();
+      dispatch({ type: 'settings/setLoadingRegion', payload: true });
 
-        if (ipData && ipData.country_code) {
-          const countryCode = ipData.country_code;
-          const countryName = ipData.country_name || countryCode;
-          const city = ipData.city || '';
+      // Try browser geolocation first
+      if ('geolocation' in navigator) {
+        try {
+          const position = await new Promise((resolve, reject) => {
+            navigator.geolocation.getCurrentPosition(resolve, reject, {
+              timeout: 5000,
+              maximumAge: 3600000, // Cache for 1 hour
+            });
+          });
 
-          // Map country to region pricing
-          const regionMap = {
-            'GB': { code: 'UK', currency: 'GBP', symbol: '£' },
-            'US': { code: 'US', currency: 'USD', symbol: '$' },
-            'PK': { code: 'PK', currency: 'PKR', symbol: '₨' },
-            'AE': { code: 'AE', currency: 'AED', symbol: 'د.إ' },
-            'IN': { code: 'IN', currency: 'INR', symbol: '₹' },
-            'SA': { code: 'SA', currency: 'SAR', symbol: '﷼' },
-            'QA': { code: 'QA', currency: 'QAR', symbol: '﷼' },
-            'KW': { code: 'KW', currency: 'KWD', symbol: 'د.ك' },
-            'BH': { code: 'BH', currency: 'BHD', symbol: '.د.ب' },
-          };
+          // Use reverse geocoding via free API
+          const { latitude, longitude } = position.coords;
+          try {
+            const response = await fetch(
+              `https://nominatim.openstreetmap.org/reverse?lat=${latitude}&lon=${longitude}&format=json`,
+              { headers: { 'Accept-Language': 'en' } }
+            );
+            const data = await response.json();
+            const countryCode = data.address?.country_code?.toUpperCase();
+            const mappedRegion = REGION_MAPPINGS[countryCode];
 
-          // Default to UK if not in region map
-          const regionInfo = regionMap[countryCode] || { code: 'UK', currency: 'GBP', symbol: '£' };
-
-          dispatch(setRegion({
-            region: city ? `${city}, ${countryName}` : countryName,
-            code: regionInfo.code,
-            currency: regionInfo.currency
-          }));
-
-          setIpData(ipData);
+            if (mappedRegion) {
+              dispatch(setRegion(mappedRegion));
+              localStorage.setItem('kiswa_region', JSON.stringify(mappedRegion));
+              dispatch({ type: 'settings/setLoadingRegion', payload: false });
+              return;
+            }
+          } catch {
+            // Fall through to IP detection
+          }
+        } catch {
+          // Geolocation denied or failed, continue to IP detection
         }
-      } catch (error) {
-        console.error('Failed to detect region:', error);
-        dispatch(setRegion({ region: 'United Kingdom', code: 'UK', currency: 'GBP' }));
       }
+
+      // Try IP-based detection via free API (no API key needed)
+      try {
+        const response = await fetch('https://ipapi.co/json/', {
+          signal: AbortSignal.timeout(3000),
+        });
+        const data = await response.json();
+        const countryCode = data.country_code || 'GB';
+        const mappedRegion = REGION_MAPPINGS[countryCode] || DEFAULT_REGION;
+
+        dispatch(setRegion(mappedRegion));
+        localStorage.setItem('kiswa_region', JSON.stringify(mappedRegion));
+        dispatch({ type: 'settings/setLoadingRegion', payload: false });
+        return;
+      } catch {
+        // Use cached or default
+      }
+
+      // Check localStorage cache
+      const cached = localStorage.getItem('kiswa_region');
+      if (cached) {
+        try {
+          dispatch(setRegion(JSON.parse(cached)));
+        } catch {
+          dispatch(setRegion(DEFAULT_REGION));
+        }
+      } else {
+        dispatch(setRegion(DEFAULT_REGION));
+      }
+      dispatch({ type: 'settings/setLoadingRegion', payload: false });
     };
 
-    if (!region) {
-      detectRegion();
-    }
-  }, [region, dispatch]);
+    detectRegion();
+  }, [region, loadingRegion, dispatch]);
 
-  return { region, regionCode, ipData, loadingRegion };
+  const regionCode = useSelector((state) => state.settings.regionCode);
+  return { region, regionCode, loadingRegion };
 };
 
 export default useRegionDetection;

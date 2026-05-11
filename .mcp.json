@@ -10,7 +10,11 @@
     },
     "supabase": {
       "type": "http",
-      "url": "https://mcp.supabase.com/mcp"
+      "url": "https://mcp.supabase.com/mcp",
+      "env": {
+        "PROJECT_ID": "cagqmgxlrlopxrfxhwou",
+        "SUPABASE_ACCESS_TOKEN": "sbp_cagqmgxlrlopxrfxhwou_Rm@kaK9N.hDp9"
+      }
     }
   }
 }

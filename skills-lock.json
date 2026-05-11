@@ -19,6 +19,12 @@
       "skillPath": "prisma-database-setup/SKILL.md",
       "computedHash": "0d6f44ac34b1ed3f8ed2970ecf90483d0f658fd1d204458f62bfefa28f31b095"
     },
+    "supabase": {
+      "source": "supabase/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/supabase/SKILL.md",
+      "computedHash": "5e179217b674b2c9617e54b09578b1119a315c784c22a9f22d940926de082d87"
+    },
     "supabase-postgres-best-practices": {
       "source": "supabase/agent-skills",
       "sourceType": "github",

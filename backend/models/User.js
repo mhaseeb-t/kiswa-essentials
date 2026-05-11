@@ -88,6 +88,12 @@ const User = {
     const query = 'SELECT COUNT(*) as count FROM orders WHERE user_id = $1';
     const result = await pool.query(query, [userId]);
     return parseInt(result.rows[0].count);
+  },
+
+  async updatePassword(id, newPassword) {
+    const hashedPassword = await bcrypt.hash(newPassword, 10);
+    const query = `UPDATE users SET password = $1, updated_at = CURRENT_TIMESTAMP WHERE id = $2`;
+    await pool.query(query, [hashedPassword, id]);
   }
 };
 

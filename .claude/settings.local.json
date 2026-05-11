@@ -27,7 +27,10 @@
       "Bash(New-Item -ItemType Directory -Path \"backend\\\\api\\\\auth\" -Force)",
       "Bash(New-Item -ItemType Directory -Path \"backend\\\\api\\\\products\" -Force)",
       "Bash(New-Item -ItemType Directory -Path \"backend\\\\api\\\\orders\" -Force)",
-      "Bash(New-Item -ItemType Directory -Path \"backend\\\\api\\\\categories\" -Force)"
+      "Bash(New-Item -ItemType Directory -Path \"backend\\\\api\\\\categories\" -Force)",
+      "Bash(curl -s \"https://backend-chi-drab-54.vercel.app/api/products/9b6bc22e-7c7a-4409-9708-e312c1681510?region=US\" -v)",
+      "Bash(curl *)",
+      "Bash(python *)"
     ]
   },
   "enableAllProjectMcpServers": true,

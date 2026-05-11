@@ -4,6 +4,9 @@ import { useForm } from 'react-hook-form';
 import { useDispatch, useSelector } from 'react-redux';
 import { Eye, EyeOff, Sparkles, ArrowRight, Mail, Lock } from 'lucide-react';
 import { setUser, setToken } from '../../store/slices/authSlice';
+import { clearWishlist, syncWishlist } from '../../store/slices/wishlistSlice';
+
+const API_URL = import.meta.env.VITE_API_URL || 'https://backend-chi-drab-54.vercel.app/api';
 
 const LoginPage = () => {
   const navigate = useNavigate();
@@ -17,7 +20,7 @@ const LoginPage = () => {
   const onSubmit = async (data) => {
     setLoginError('');
     try {
-      const response = await fetch('http://localhost:5000/api/auth/login', {
+      const response = await fetch(`${API_URL}/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
@@ -32,8 +35,22 @@ const LoginPage = () => {
 
       dispatch(setToken(result.token));
       dispatch(setUser(result.user));
+
+      // Sync wishlist from server
+      try {
+        const wishlistRes = await fetch(`${API_URL}/wishlist`, {
+          headers: { 'Authorization': `Bearer ${result.token}` },
+        });
+        const wishlistData = await wishlistRes.json();
+        if (wishlistData.items) {
+          dispatch(syncWishlist(wishlistData.items));
+        }
+      } catch {
+        // Wishlist sync failed - keep local state
+      }
+
       navigate('/');
-    } catch (err) {
+    } catch {
       setLoginError('Unable to connect to server. Please try again.');
     }
   };
@@ -142,8 +159,8 @@ const LoginPage = () => {
           <div className="bg-[#0c0c0e] rounded-xl p-4 mb-6">
             <p className="text-xs text-[#6b6b6b] mb-2 text-center">Demo Credentials</p>
             <div className="space-y-1 text-xs text-[#a8a4a0]">
-              <p><span className="text-[#c9b89a]">Admin:</span> admin@kiswa.com / admin123</p>
-              <p><span className="text-[#c9b89a]">Staff:</span> staff@kiswa.com / staff123</p>
+              <p><span className="text-[#c9b89a]">Admin:</span> admin@kiswa.com / password</p>
+              <p><span className="text-[#c9b89a]">Staff:</span> staff@kiswa.com / password</p>
             </div>
           </div>
 

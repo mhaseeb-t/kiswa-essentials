@@ -3,7 +3,7 @@ const User = require('../models/User');
 
 const createOrder = async (req, res, next) => {
   try {
-    const { items, shippingAddress, paymentId } = req.body;
+    const { items, shippingAddress, paymentId, couponId } = req.body;
 
     if (!items || items.length === 0) {
       return res.status(400).json({
@@ -21,7 +21,8 @@ const createOrder = async (req, res, next) => {
       items,
       total,
       shippingAddress,
-      paymentId
+      paymentId,
+      couponId
     });
 
     res.status(201).json({

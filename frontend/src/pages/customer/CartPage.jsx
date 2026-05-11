@@ -39,7 +39,7 @@ const CartPage = () => {
 
   return (
     <div className="min-h-screen bg-[#0c0c0e] pt-20 pb-16">
-      <div className="max-w-[1400px] mx-auto px-6 lg:px-8">
+      <div className="max-w-350 mx-auto px-6 lg:px-8">
         {/* Header */}
         <div className="flex items-center justify-between mb-12">
           <div>
@@ -65,7 +65,7 @@ const CartPage = () => {
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 {/* Image */}
-                <div className="w-28 h-36 sm:w-32 sm:h-40 bg-[#0c0c0e] rounded-xl overflow-hidden flex-shrink-0">
+                <div className="w-28 h-36 sm:w-32 sm:h-40 bg-[#0c0c0e] rounded-xl overflow-hidden shrink-0">
                   <img
                     src={item.image || `https://picsum.photos/128/160?random=${item.id}`}
                     alt={item.name}
@@ -92,7 +92,7 @@ const CartPage = () => {
                         >
                           <Minus className="w-4 h-4" />
                         </button>
-                        <span className="px-4 text-[#f8f4ef] font-medium min-w-[2rem] text-center">{item.quantity}</span>
+                        <span className="px-4 text-[#f8f4ef] font-medium min-w-8 text-center">{item.quantity}</span>
                         <button
                           onClick={() => dispatch(updateQuantity({ id: item.id, quantity: item.quantity + 1 }))}
                           className="p-2.5 text-[#a8a4a0] hover:text-[#f8f4ef] hover:bg-[#1a1a1e] rounded-full transition-all"
@@ -148,7 +148,7 @@ const CartPage = () => {
                   </p>
                   <div className="mt-2 h-1.5 bg-[#2a2a2e] rounded-full overflow-hidden">
                     <div
-                      className="h-full bg-gradient-to-r from-[#c9b89a] to-[#d4c9a8] rounded-full transition-all duration-500"
+                      className="h-full bg-linear-to-r from-[#c9b89a] to-[#d4c9a8] rounded-full transition-all duration-500"
                       style={{ width: `${Math.min((total / FREE_SHIPPING_THRESHOLD) * 100, 100)}%` }}
                     />
                   </div>

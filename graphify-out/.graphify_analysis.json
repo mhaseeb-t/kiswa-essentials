@@ -1,0 +1,442 @@
+{
+  "communities": {
+    "0": [
+      "admin_adminaddproduct_adminaddproduct",
+      "admin_admincategories_admincategories",
+      "admin_admincustomers_admincustomers",
+      "admin_admindashboard_admindashboard",
+      "admin_admineditproduct_admineditproduct",
+      "admin_adminorderdetail_adminorderdetail",
+      "admin_adminorders_adminorders",
+      "admin_adminproducts_adminproducts",
+      "admin_inventorypage_inventorypage",
+      "admin_stafforders_stafforders",
+      "auth_resetpasswordpage_resetpasswordpage",
+      "customer_aboutpage_aboutpage",
+      "customer_checkoutpage_checkoutpage",
+      "customer_orderconfirmpage_orderconfirmpage",
+      "customer_orderdetailpage_orderdetailpage",
+      "customer_orderspage_orderspage",
+      "customer_profilepage_profilepage",
+      "customer_trackorderpage_trackorderpage",
+      "frontend_src_app_jsx",
+      "frontend_src_components_ui_badge_jsx",
+      "frontend_src_components_ui_button_jsx",
+      "frontend_src_components_ui_input_jsx",
+      "frontend_src_components_ui_modal_jsx",
+      "frontend_src_pages_admin_admincustomers_jsx",
+      "frontend_src_pages_admin_inventorypage_jsx",
+      "frontend_src_pages_admin_stafforders_jsx",
+      "frontend_src_pages_customer_orderspage_jsx",
+      "frontend_src_utils_constants_js",
+      "order_orderstatustracker_orderstatustracker",
+      "src_app_adminroute",
+      "src_app_app",
+      "src_app_protectedroute",
+      "src_app_staffroute",
+      "ui_badge_badge",
+      "ui_modal_modal",
+      "utils_formatdate_formatdate"
+    ],
+    "1": [
+      "auth_loginpage_loginpage",
+      "auth_registerpage_registerpage",
+      "backend_index_ensureuserstable",
+      "backend_index_js",
+      "customer_wishlistpage_wishlistpage",
+      "frontend_src_components_layout_adminlayout_jsx",
+      "frontend_src_components_layout_navbar_jsx",
+      "frontend_src_hooks_useregiondetection_js",
+      "frontend_src_main_jsx",
+      "frontend_src_pages_auth_loginpage_jsx",
+      "frontend_src_pages_auth_registerpage_jsx",
+      "frontend_src_store_slices_authslice_js",
+      "frontend_src_store_slices_settingsslice_js",
+      "frontend_src_store_slices_uislice_js",
+      "frontend_src_store_slices_wishlistslice_js",
+      "layout_adminlayout_adminlayout",
+      "layout_navbar_navbar",
+      "slices_cartslice_selectcartitemscount",
+      "slices_wishlistslice_selectisinwishlist",
+      "slices_wishlistslice_selectwishlistcount",
+      "slices_wishlistslice_selectwishlistitems",
+      "slices_wishlistslice_selectwishlistloading",
+      "store_index_loadauthfromstorage",
+      "store_index_loadcartfromstorage",
+      "store_index_loadsettingsfromstorage"
+    ],
+    "2": [
+      "admin_analyticspage_analyticspage",
+      "admin_analyticspage_getstatuscolor",
+      "admin_analyticspage_simplebarchart",
+      "admin_analyticspage_statcard",
+      "cart_cartdrawer_cartdrawer",
+      "customer_cartpage_cartpage",
+      "customer_searchpage_searchpage",
+      "frontend_src_api_axios_js",
+      "frontend_src_components_product_productcard_jsx",
+      "frontend_src_components_search_searchbar_jsx",
+      "frontend_src_pages_customer_cartpage_jsx",
+      "frontend_src_store_slices_cartslice_js",
+      "product_productcard_productcard",
+      "search_searchbar_searchbar",
+      "slices_cartslice_selectcarttotal",
+      "utils_formatprice_convertprice",
+      "utils_formatprice_formatprice",
+      "utils_formatprice_getcurrencysymbol"
+    ],
+    "3": [
+      "api_productapi_createproduct",
+      "api_productapi_deleteproduct",
+      "api_productapi_getallproducts",
+      "api_productapi_getcategories",
+      "api_productapi_getproduct",
+      "api_productapi_updateproduct",
+      "backend_controllers_categorycontroller_js",
+      "backend_controllers_productcontroller_js",
+      "controllers_categorycontroller_createcategory",
+      "controllers_categorycontroller_deletecategory",
+      "controllers_categorycontroller_getcategory",
+      "controllers_categorycontroller_updatecategory",
+      "frontend_src_api_productapi_js"
+    ],
+    "4": [
+      "customer_homepage_homepage",
+      "customer_productspage_productspage",
+      "frontend_src_pages_customer_homepage_jsx",
+      "frontend_src_store_slices_productslice_js",
+      "product_productfilters_checkicon",
+      "product_productfilters_filtersection",
+      "product_productfilters_productfilters",
+      "product_productgrid_productgrid",
+      "slices_productslice_selectavailablefilters",
+      "slices_productslice_selectfilters",
+      "slices_productslice_selectsearchquery"
+    ],
+    "5": [
+      "api_authapi_getprofile",
+      "api_authapi_login",
+      "api_authapi_register",
+      "api_authapi_updateprofile",
+      "backend_controllers_authcontroller_js",
+      "controllers_authcontroller_forgotpassword",
+      "controllers_authcontroller_generatetoken",
+      "controllers_authcontroller_resetpassword",
+      "controllers_authcontroller_validateresettoken",
+      "frontend_src_api_authapi_js"
+    ],
+    "6": [
+      "api_orderapi_createorder",
+      "api_orderapi_getallorders",
+      "api_orderapi_getmyorders",
+      "api_orderapi_getorder",
+      "api_orderapi_updateorderstatus",
+      "backend_controllers_ordercontroller_js",
+      "controllers_ordercontroller_getcustomers",
+      "frontend_src_api_orderapi_js"
+    ],
+    "7": [
+      "frontend_src_components_layout_footer_jsx",
+      "frontend_src_components_layout_layout_jsx",
+      "layout_footer_facebookicon",
+      "layout_footer_footer",
+      "layout_footer_instagramicon",
+      "layout_footer_twittericon",
+      "layout_layout_layout",
+      "layout_whatsappbutton_whatsappbutton"
+    ],
+    "8": [
+      "customer_productdetailpage_productdetailpage",
+      "frontend_src_components_product_reviewslist_jsx",
+      "product_reviewcard_reviewcard",
+      "product_reviewform_reviewform",
+      "product_reviewslist_reviewslist",
+      "product_starrating_starrating"
+    ],
+    "9": [
+      "backend_config_db_js",
+      "backend_server_js",
+      "backend_server_startserver",
+      "config_db_connectdb"
+    ],
+    "10": [
+      "backend_controllers_wishlistcontroller_js",
+      "controllers_wishlistcontroller_addtowishlist",
+      "controllers_wishlistcontroller_getwishlist",
+      "controllers_wishlistcontroller_removefromwishlist"
+    ],
+    "11": [
+      "frontend_src_utils_translations_js",
+      "hooks_usetranslation_usetranslation",
+      "ui_languageselector_languageselector",
+      "utils_translations_gettranslation"
+    ],
+    "12": [
+      "backend_controllers_couponcontroller_js",
+      "controllers_couponcontroller_getallcoupons",
+      "controllers_couponcontroller_validatecoupon"
+    ],
+    "13": [
+      "backend_seeds_data_js",
+      "backend_seeds_seeder_js",
+      "seeds_data_seeddatabase"
+    ],
+    "14": [
+      "backend_middleware_admin_js",
+      "middleware_admin_admin"
+    ],
+    "15": [
+      "backend_routes_auth_js",
+      "middleware_auth_protect"
+    ],
+    "16": [
+      "backend_middleware_staff_js",
+      "middleware_staff_staff"
+    ],
+    "17": [
+      "frontend_src_components_ui_spinner_jsx",
+      "ui_spinner_spinner"
+    ],
+    "18": [
+      "graphify_ast_py"
+    ],
+    "19": [
+      "graphify_ast_main_py"
+    ],
+    "20": [
+      "graphify_cache_py"
+    ],
+    "21": [
+      "graphify_cache_main_py"
+    ],
+    "22": [
+      "graphify_detect_py"
+    ],
+    "23": [
+      "backend_prisma_config_ts"
+    ],
+    "24": [
+      "backend_api_products_search_js"
+    ],
+    "25": [
+      "backend_middleware_errorhandler_js"
+    ],
+    "26": [
+      "backend_models_category_js"
+    ],
+    "27": [
+      "backend_models_coupon_js"
+    ],
+    "28": [
+      "backend_models_order_js"
+    ],
+    "29": [
+      "backend_models_product_js"
+    ],
+    "30": [
+      "backend_models_user_js"
+    ],
+    "31": [
+      "backend_models_wishlist_js"
+    ],
+    "32": [
+      "backend_routes_categories_js"
+    ],
+    "33": [
+      "backend_routes_coupons_js"
+    ],
+    "34": [
+      "backend_routes_orders_js"
+    ],
+    "35": [
+      "backend_routes_products_js"
+    ],
+    "36": [
+      "frontend_eslint_config_js"
+    ],
+    "37": [
+      "frontend_vite_config_js"
+    ]
+  },
+  "cohesion": {
+    "0": 0.1,
+    "1": 0.11,
+    "2": 0.16,
+    "3": 0.19,
+    "4": 0.22,
+    "5": 0.31,
+    "6": 0.36,
+    "7": 0.25,
+    "8": 0.53,
+    "9": 0.5,
+    "10": 0.5,
+    "11": 0.67,
+    "12": 0.67,
+    "13": 0.67,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 1.0,
+    "25": 1.0,
+    "26": 1.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 1.0,
+    "30": 1.0,
+    "31": 1.0,
+    "32": 1.0,
+    "33": 1.0,
+    "34": 1.0,
+    "35": 1.0,
+    "36": 1.0,
+    "37": 1.0
+  },
+  "gods": [
+    {
+      "id": "utils_formatprice_formatprice",
+      "label": "formatPrice()",
+      "degree": 19
+    },
+    {
+      "id": "admin_adminorderdetail_adminorderdetail",
+      "label": "AdminOrderDetail()",
+      "degree": 7
+    },
+    {
+      "id": "admin_analyticspage_analyticspage",
+      "label": "AnalyticsPage()",
+      "degree": 7
+    },
+    {
+      "id": "customer_checkoutpage_checkoutpage",
+      "label": "CheckoutPage()",
+      "degree": 7
+    },
+    {
+      "id": "customer_productdetailpage_productdetailpage",
+      "label": "ProductDetailPage()",
+      "degree": 7
+    },
+    {
+      "id": "customer_orderdetailpage_orderdetailpage",
+      "label": "OrderDetailPage()",
+      "degree": 6
+    },
+    {
+      "id": "admin_adminproducts_adminproducts",
+      "label": "AdminProducts()",
+      "degree": 5
+    },
+    {
+      "id": "customer_productspage_productspage",
+      "label": "ProductsPage()",
+      "degree": 5
+    },
+    {
+      "id": "customer_wishlistpage_wishlistpage",
+      "label": "WishlistPage()",
+      "degree": 5
+    },
+    {
+      "id": "utils_formatdate_formatdate",
+      "label": "formatDate()",
+      "degree": 5
+    }
+  ],
+  "surprises": [
+    {
+      "source": "register()",
+      "target": "generateToken()",
+      "source_files": [
+        "frontend/src/api/authApi.js",
+        "backend/controllers/authController.js"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories"
+    },
+    {
+      "source": "login()",
+      "target": "generateToken()",
+      "source_files": [
+        "frontend/src/api/authApi.js",
+        "backend/controllers/authController.js"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories"
+    },
+    {
+      "source": "ProductCard()",
+      "target": "formatPrice()",
+      "source_files": [
+        "frontend/src/components/product/ProductCard.jsx",
+        "frontend/src/utils/formatPrice.js"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; peripheral node `ProductCard()` unexpectedly reaches hub `formatPrice()`"
+    },
+    {
+      "source": "AdminDashboard()",
+      "target": "formatPrice()",
+      "source_files": [
+        "frontend/src/pages/admin/AdminDashboard.jsx",
+        "frontend/src/utils/formatPrice.js"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "AdminOrderDetail()",
+      "target": "formatPrice()",
+      "source_files": [
+        "frontend/src/pages/admin/AdminOrderDetail.jsx",
+        "frontend/src/utils/formatPrice.js"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `formatPrice()` connect `Community 2` to `Community 0`, `Community 8`, `Community 1`?",
+      "why": "High betweenness centrality (0.067) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `CheckoutPage()` connect `Community 0` to `Community 2`?",
+      "why": "High betweenness centrality (0.065) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `AnalyticsPage()` connect `Community 2` to `Community 0`?",
+      "why": "High betweenness centrality (0.060) - this node is a cross-community bridge."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 9 inferred relationships involving `formatPrice()` (e.g. with `CartDrawer()` and `ProductCard()`) actually correct?",
+      "why": "`formatPrice()` has 9 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 0` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.1 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 1` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.11 - nodes in this community are weakly interconnected."
+    }
+  ]
+}

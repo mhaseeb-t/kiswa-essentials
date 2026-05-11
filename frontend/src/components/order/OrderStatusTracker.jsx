@@ -14,7 +14,6 @@ const OrderStatusTracker = ({ currentStatus }) => {
       {steps.map((step, index) => {
         const isCompleted = index < currentIndex;
         const isCurrent = index === currentIndex;
-        const isPending = index > currentIndex;
 
         return (
           <div key={step.key} className="flex items-center flex-1">
@@ -23,7 +22,7 @@ const OrderStatusTracker = ({ currentStatus }) => {
                 className={`
                   w-10 h-10 rounded-full flex items-center justify-center font-medium text-sm
                   transition-all duration-300
-                  ${isCompleted || isCurrent ? 'bg-[#c9b89a] text-[#0f0f0f]' : 'border-2 border-[#2e2e2e] text-[#888888]'}
+                  ${isCompleted || isCurrent ? 'bg-[#c9b89a] text-[#0c0c0e]' : 'border-2 border-[#2a2a2e] text-[#6b6b6b]'}
                   ${isCurrent ? 'animate-pulse ring-4 ring-[#c9b89a]/30' : ''}
                 `}
               >
@@ -35,14 +34,14 @@ const OrderStatusTracker = ({ currentStatus }) => {
                   step.icon
                 )}
               </div>
-              <span className={`mt-2 text-xs ${isCompleted || isCurrent ? 'text-[#f5f0e8]' : 'text-[#888888]'}`}>
+              <span className={`mt-2 text-xs ${isCompleted || isCurrent ? 'text-[#f8f4ef]' : 'text-[#6b6b6b]'}`}>
                 {step.label}
               </span>
             </div>
             {index < steps.length - 1 && (
               <div
                 className={`flex-1 h-0.5 mx-2 transition-colors duration-300 ${
-                  isCompleted ? 'bg-[#c9b89a]' : 'bg-[#2e2e2e]'
+                  isCompleted ? 'bg-[#c9b89a]' : 'bg-[#2a2a2e]'
                 }`}
               />
             )}

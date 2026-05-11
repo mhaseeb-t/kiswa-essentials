@@ -30,10 +30,13 @@ const AdminProducts = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#0f0f0f] py-8 px-4">
-      <div className="max-w-7xl mx-auto">
+    <div className="min-h-screen bg-[#0c0c0e] pt-20 pb-16">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
-          <h1 className="text-3xl font-medium text-[#f5f0e8]">Products</h1>
+          <div>
+            <h1 className="font-display text-3xl text-[#f8f4ef]">Products</h1>
+            <p className="text-[#6b6b6b] mt-1">Manage your product inventory</p>
+          </div>
           <Link to="/admin/products/add">
             <Button>
               <Plus className="w-4 h-4 mr-2" />
@@ -43,45 +46,47 @@ const AdminProducts = () => {
         </div>
 
         {/* Search */}
-        <div className="mb-6">
+        <div className="mb-8">
           <div className="relative max-w-md">
             <input
               type="text"
               placeholder="Search products..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full px-4 py-3 bg-[#1a1a1a] border border-[#2e2e2e] rounded text-[#f5f0e8] placeholder-[#888888] focus:outline-none focus:border-[#c9b89a]"
+              className="w-full px-4 py-3.5 bg-[#1a1a1e] border border-[#2a2a2e] rounded-full text-[#f8f4ef] placeholder-[#6b6b6b] focus:outline-none focus:border-[#c9b89a]/50 transition-colors"
             />
-            <Search className="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#888888]" />
+            <Search className="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#6b6b6b]" />
           </div>
         </div>
 
         {/* Products Table */}
-        <div className="bg-[#1a1a1a] border border-[#2e2e2e] rounded-lg overflow-hidden">
+        <div className="bg-[#1a1a1e] border border-[#2a2a2e] rounded-2xl overflow-hidden">
           <table className="w-full">
             <thead>
-              <tr className="border-b border-[#2e2e2e]">
-                <th className="text-left p-4 text-[#888888] text-sm font-medium">Image</th>
-                <th className="text-left p-4 text-[#888888] text-sm font-medium">Name</th>
-                <th className="text-left p-4 text-[#888888] text-sm font-medium">Category</th>
-                <th className="text-left p-4 text-[#888888] text-sm font-medium">Price</th>
-                <th className="text-left p-4 text-[#888888] text-sm font-medium">Stock</th>
-                <th className="text-left p-4 text-[#888888] text-sm font-medium">Status</th>
-                <th className="text-left p-4 text-[#888888] text-sm font-medium">Actions</th>
+              <tr className="border-b border-[#2a2a2e]">
+                <th className="text-left p-4 text-[#6b6b6b] text-xs font-medium uppercase tracking-wider">Image</th>
+                <th className="text-left p-4 text-[#6b6b6b] text-xs font-medium uppercase tracking-wider">Name</th>
+                <th className="text-left p-4 text-[#6b6b6b] text-xs font-medium uppercase tracking-wider">Category</th>
+                <th className="text-left p-4 text-[#6b6b6b] text-xs font-medium uppercase tracking-wider">Price</th>
+                <th className="text-left p-4 text-[#6b6b6b] text-xs font-medium uppercase tracking-wider">Stock</th>
+                <th className="text-left p-4 text-[#6b6b6b] text-xs font-medium uppercase tracking-wider">Status</th>
+                <th className="text-left p-4 text-[#6b6b6b] text-xs font-medium uppercase tracking-wider">Actions</th>
               </tr>
             </thead>
             <tbody>
               {filteredProducts.map((product) => (
-                <tr key={product.id} className="border-b border-[#2e2e2e] hover:bg-[#0f0f0f]">
+                <tr key={product.id} className="border-b border-[#2a2a2e]/50 hover:bg-[#0c0c0e]/30 transition-colors">
                   <td className="p-4">
-                    <div className="w-12 h-12 bg-[#2e2e2e] rounded overflow-hidden">
+                    <div className="w-12 h-12 bg-[#0c0c0e] rounded-lg overflow-hidden">
                       <img src={`https://picsum.photos/48/48?random=${product.id}`} alt="" className="w-full h-full object-cover" />
                     </div>
                   </td>
-                  <td className="p-4 text-[#f5f0e8]">{product.name}</td>
-                  <td className="p-4 text-[#888888]">{product.category}</td>
-                  <td className="p-4 text-[#c9b89a]">{formatPrice(product.price)}</td>
-                  <td className="p-4 text-[#888888]">{product.stock}</td>
+                  <td className="p-4 text-sm text-[#f8f4ef]">{product.name}</td>
+                  <td className="p-4 text-sm text-[#6b6b6b]">{product.category}</td>
+                  <td className="p-4">
+                    <span className="font-display text-[#c9b89a]">{formatPrice(product.price)}</span>
+                  </td>
+                  <td className="p-4 text-sm text-[#6b6b6b]">{product.stock}</td>
                   <td className="p-4">
                     <Badge variant={product.isActive ? 'success' : 'error'}>
                       {product.isActive ? 'Active' : 'Inactive'}
@@ -91,13 +96,13 @@ const AdminProducts = () => {
                     <div className="flex gap-2">
                       <Link
                         to={`/admin/products/${product.id}`}
-                        className="p-2 text-[#c9b89a] hover:bg-[#2e2e2e] rounded transition-colors"
+                        className="p-2 text-[#c9b89a] hover:bg-[#2a2a2e] rounded-lg transition-colors"
                       >
                         <Edit className="w-4 h-4" />
                       </Link>
                       <button
                         onClick={() => setDeleteModal({ isOpen: true, productId: product.id })}
-                        className="p-2 text-[#ef4444] hover:bg-[#ef4444]/10 rounded transition-colors"
+                        className="p-2 text-red-400 hover:bg-red-500/10 rounded-lg transition-colors"
                       >
                         <Trash2 className="w-4 h-4" />
                       </button>
@@ -115,7 +120,7 @@ const AdminProducts = () => {
           onClose={() => setDeleteModal({ isOpen: false, productId: null })}
           title="Delete Product"
         >
-          <p className="text-[#888888] mb-6">Are you sure you want to delete this product? This action cannot be undone.</p>
+          <p className="text-[#6b6b6b] mb-6">Are you sure you want to delete this product? This action cannot be undone.</p>
           <div className="flex gap-4">
             <Button variant="outline" onClick={() => setDeleteModal({ isOpen: false, productId: null })}>
               Cancel

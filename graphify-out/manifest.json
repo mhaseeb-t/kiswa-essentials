@@ -1,0 +1,474 @@
+{
+  "F:\\agent checkl\\_graphify_ast.py": {
+    "mtime": 1778462458.0291708,
+    "hash": "20f4e0b456450d5347535ab176c7189d"
+  },
+  "F:\\agent checkl\\_graphify_ast_main.py": {
+    "mtime": 1778462514.4865973,
+    "hash": "54ef027ffe452c4d3e2a42b0ebb3de1b"
+  },
+  "F:\\agent checkl\\_graphify_cache.py": {
+    "mtime": 1778462464.6726522,
+    "hash": "97e389084e1e6ef95b2fc0e7d9d3298c"
+  },
+  "F:\\agent checkl\\_graphify_cache_main.py": {
+    "mtime": 1778462525.884305,
+    "hash": "97e389084e1e6ef95b2fc0e7d9d3298c"
+  },
+  "F:\\agent checkl\\_graphify_detect.py": {
+    "mtime": 1778462489.4084325,
+    "hash": "9ecc1697980a24c8cbee24ac8bbeb635"
+  },
+  "F:\\agent checkl\\backend\\index.js": {
+    "mtime": 1778462337.8724363,
+    "hash": "81835f92560f4738fdfc50b7fca9a136"
+  },
+  "F:\\agent checkl\\backend\\prisma.config.ts": {
+    "mtime": 1778445153.434472,
+    "hash": "f6143a6083213d512c0beaa8d98daf63"
+  },
+  "F:\\agent checkl\\backend\\server.js": {
+    "mtime": 1778460912.3065345,
+    "hash": "f1a8b5c12f450a5490706fdf6ec62ef7"
+  },
+  "F:\\agent checkl\\backend\\api\\products\\search.js": {
+    "mtime": 1778460843.0065465,
+    "hash": "89e2ef7bdac4e1bd4c23e69845478e95"
+  },
+  "F:\\agent checkl\\backend\\config\\db.js": {
+    "mtime": 1778407193.1420305,
+    "hash": "b137830258519efb2ca457e783f3a5b3"
+  },
+  "F:\\agent checkl\\backend\\controllers\\authController.js": {
+    "mtime": 1778460895.1716022,
+    "hash": "ccd534858d961d69915f5da38d47183c"
+  },
+  "F:\\agent checkl\\backend\\controllers\\categoryController.js": {
+    "mtime": 1778407474.0367002,
+    "hash": "6d6279be65193f5be5ef1ed00c152bb1"
+  },
+  "F:\\agent checkl\\backend\\controllers\\couponController.js": {
+    "mtime": 1778460874.959288,
+    "hash": "b565b1a15e32bae7c15032fda80b8106"
+  },
+  "F:\\agent checkl\\backend\\controllers\\orderController.js": {
+    "mtime": 1778460951.951645,
+    "hash": "70af8db6e1afd388f70932ef55320607"
+  },
+  "F:\\agent checkl\\backend\\controllers\\productController.js": {
+    "mtime": 1778413656.1627715,
+    "hash": "179361b4d15b0fd97b58af5e9cb1eed6"
+  },
+  "F:\\agent checkl\\backend\\controllers\\wishlistController.js": {
+    "mtime": 1778460865.818468,
+    "hash": "115fe19db0f7121f291b0ed152492e88"
+  },
+  "F:\\agent checkl\\backend\\middleware\\admin.js": {
+    "mtime": 1778405093.8136787,
+    "hash": "1d5554cc1e3eb858dbeb0cef7642b952"
+  },
+  "F:\\agent checkl\\backend\\middleware\\auth.js": {
+    "mtime": 1778407497.9584558,
+    "hash": "9bfd6886b7ae1df2b293239b45bc1e49"
+  },
+  "F:\\agent checkl\\backend\\middleware\\errorHandler.js": {
+    "mtime": 1778407733.1572495,
+    "hash": "4be302ed99e99ac7f2b2c22bee612ec2"
+  },
+  "F:\\agent checkl\\backend\\middleware\\staff.js": {
+    "mtime": 1778405098.1683774,
+    "hash": "95baf3ff375998db604d406782f962d5"
+  },
+  "F:\\agent checkl\\backend\\migrations\\001_create_reviews.sql": {
+    "mtime": 1778461586.9179697,
+    "hash": "ad9e7dd7eff457d182d701f4c22bc7c0"
+  },
+  "F:\\agent checkl\\backend\\models\\Category.js": {
+    "mtime": 1778413614.9529366,
+    "hash": "d45034806a3ae24b49ee964c2bcb82d7"
+  },
+  "F:\\agent checkl\\backend\\models\\Coupon.js": {
+    "mtime": 1778460873.2923439,
+    "hash": "36f2976b3d0abadd247214de6737f6c8"
+  },
+  "F:\\agent checkl\\backend\\models\\Order.js": {
+    "mtime": 1778460947.2286558,
+    "hash": "fe84b359fd902c07cd9c4a90e0d578b7"
+  },
+  "F:\\agent checkl\\backend\\models\\Product.js": {
+    "mtime": 1778413592.656829,
+    "hash": "f41201504f275efc11e102c93bb1f30f"
+  },
+  "F:\\agent checkl\\backend\\models\\User.js": {
+    "mtime": 1778460895.1270325,
+    "hash": "d567a9a17bb371ee8a359c82d5f4d125"
+  },
+  "F:\\agent checkl\\backend\\models\\Wishlist.js": {
+    "mtime": 1778460864.520537,
+    "hash": "327a843f11bb2a4fe11a3dd99f76e17c"
+  },
+  "F:\\agent checkl\\backend\\routes\\auth.js": {
+    "mtime": 1778460895.2085564,
+    "hash": "d6fa7c24c07efb36f817d16b6d3fde9b"
+  },
+  "F:\\agent checkl\\backend\\routes\\categories.js": {
+    "mtime": 1778407706.2676442,
+    "hash": "ece2d76c47b269855ab96b57930c169b"
+  },
+  "F:\\agent checkl\\backend\\routes\\coupons.js": {
+    "mtime": 1778460875.201717,
+    "hash": "56d90d79efbcfaeeff0889e92fe534cb"
+  },
+  "F:\\agent checkl\\backend\\routes\\orders.js": {
+    "mtime": 1778407705.223598,
+    "hash": "2595172106cffc4486ebfd2c37917c85"
+  },
+  "F:\\agent checkl\\backend\\routes\\products.js": {
+    "mtime": 1778407704.19125,
+    "hash": "e3576c4c578be966eddee7afba98ec0d"
+  },
+  "F:\\agent checkl\\backend\\routes\\wishlist.js": {
+    "mtime": 1778460866.1134284,
+    "hash": "695eaa5d3ddffe9c43cc3953c20b8d30"
+  },
+  "F:\\agent checkl\\backend\\seeds\\data.js": {
+    "mtime": 1778460968.2397697,
+    "hash": "32cc8508ad618cb53c990ea698367719"
+  },
+  "F:\\agent checkl\\backend\\seeds\\seeder.js": {
+    "mtime": 1778407581.9527638,
+    "hash": "85e6e15f16fac8307df2a72ef06d0208"
+  },
+  "F:\\agent checkl\\backend\\sql\\migrations\\001_product_variants.sql": {
+    "mtime": 1778461102.3650396,
+    "hash": "377f1d57ae5db10b1aca985d11fb107c"
+  },
+  "F:\\agent checkl\\frontend\\eslint.config.js": {
+    "mtime": 1776959748.3736753,
+    "hash": "3aa4b57d7f08181d86bde52a4dcb7f22"
+  },
+  "F:\\agent checkl\\frontend\\vite.config.js": {
+    "mtime": 1778449179.1324868,
+    "hash": "abb3fddf3ff62df339477a2ee03ac746"
+  },
+  "F:\\agent checkl\\frontend\\src\\App.jsx": {
+    "mtime": 1778461128.2517607,
+    "hash": "f2e60404dc668eaff0abd343b233a623"
+  },
+  "F:\\agent checkl\\frontend\\src\\main.jsx": {
+    "mtime": 1778406733.4336636,
+    "hash": "878c5abccf65a388b0ae3eae511237a9"
+  },
+  "F:\\agent checkl\\frontend\\src\\api\\authApi.js": {
+    "mtime": 1778405653.4732704,
+    "hash": "1380f481dbe26ddca0bf8396b25c7560"
+  },
+  "F:\\agent checkl\\frontend\\src\\api\\axios.js": {
+    "mtime": 1778449935.0649023,
+    "hash": "89c575de506f9736182cf047df6c53d5"
+  },
+  "F:\\agent checkl\\frontend\\src\\api\\orderApi.js": {
+    "mtime": 1778405655.5458508,
+    "hash": "d29c15a9d01276d0bee883d9c4700c0f"
+  },
+  "F:\\agent checkl\\frontend\\src\\api\\productApi.js": {
+    "mtime": 1778405654.5156708,
+    "hash": "1ada7f154560b8bd52c2b33d320d2e40"
+  },
+  "F:\\agent checkl\\frontend\\src\\components\\cart\\CartDrawer.jsx": {
+    "mtime": 1778455089.6165736,
+    "hash": "aac4dcb71ca6603f6cf359f8ac5f5948"
+  },
+  "F:\\agent checkl\\frontend\\src\\components\\layout\\AdminLayout.jsx": {
+    "mtime": 1778461333.247633,
+    "hash": "210b8d1d5250b4cca8e3b1e959f60043"
+  },
+  "F:\\agent checkl\\frontend\\src\\components\\layout\\Footer.jsx": {
+    "mtime": 1778459970.4778886,
+    "hash": "1a98bc7f3207dd4b7081adcc111dccaf"
+  },
+  "F:\\agent checkl\\frontend\\src\\components\\layout\\Layout.jsx": {
+    "mtime": 1778413411.3589306,
+    "hash": "b86739071e2190dd8cbebb3c5c03858f"
+  },
+  "F:\\agent checkl\\frontend\\src\\components\\layout\\Navbar.jsx": {
+    "mtime": 1778461033.8386772,
+    "hash": "d269bfaa0086b8cea2659a2d84c588f2"
+  },
+  "F:\\agent checkl\\frontend\\src\\components\\layout\\WhatsAppButton.jsx": {
+    "mtime": 1778459977.9215784,
+    "hash": "d55ed498d22072c7448f9156c9b55932"
+  },
+  "F:\\agent checkl\\frontend\\src\\components\\order\\OrderStatusTracker.jsx": {
+    "mtime": 1778460044.8369586,
+    "hash": "786c33319012d275b2af3660986f3629"
+  },
+  "F:\\agent checkl\\frontend\\src\\components\\product\\ProductCard.jsx": {
+    "mtime": 1778461019.1121538,
+    "hash": "556cbcb81fbf772041f083ee2c25b0d3"
+  },
+  "F:\\agent checkl\\frontend\\src\\components\\product\\ProductFilters.jsx": {
+    "mtime": 1778461035.4602587,
+    "hash": "955fefd7fb16aa541389a688623cfc32"
+  },
+  "F:\\agent checkl\\frontend\\src\\components\\product\\ProductGrid.jsx": {
+    "mtime": 1778450476.093541,
+    "hash": "6f1f747b7f5cb123617407ec1c93c727"
+  },
+  "F:\\agent checkl\\frontend\\src\\components\\product\\ReviewCard.jsx": {
+    "mtime": 1778461120.9687994,
+    "hash": "d8f5188949c8137144c473b88d452723"
+  },
+  "F:\\agent checkl\\frontend\\src\\components\\product\\ReviewForm.jsx": {
+    "mtime": 1778461192.4206629,
+    "hash": "bc527fcdcfc7048730bc48420fbae77e"
+  },
+  "F:\\agent checkl\\frontend\\src\\components\\product\\ReviewsList.jsx": {
+    "mtime": 1778461159.301082,
+    "hash": "197309fff46a64a16c63964e344258ea"
+  },
+  "F:\\agent checkl\\frontend\\src\\components\\product\\StarRating.jsx": {
+    "mtime": 1778461104.0984058,
+    "hash": "cd4fcf2447a584e2e031d07d92ad3b8d"
+  },
+  "F:\\agent checkl\\frontend\\src\\components\\search\\SearchBar.jsx": {
+    "mtime": 1778460913.5698726,
+    "hash": "b97d9efa907d16f7d22bceaac4701f27"
+  },
+  "F:\\agent checkl\\frontend\\src\\components\\ui\\Badge.jsx": {
+    "mtime": 1778412870.339091,
+    "hash": "52446105a00779c968b0cb35c41a63f1"
+  },
+  "F:\\agent checkl\\frontend\\src\\components\\ui\\Button.jsx": {
+    "mtime": 1778412858.8340266,
+    "hash": "21205abe99304bc6ffbdeb920c46d3ae"
+  },
+  "F:\\agent checkl\\frontend\\src\\components\\ui\\Input.jsx": {
+    "mtime": 1778459430.1285434,
+    "hash": "4bd511c1c123a5f08d0efa18e7ac7244"
+  },
+  "F:\\agent checkl\\frontend\\src\\components\\ui\\LanguageSelector.jsx": {
+    "mtime": 1778462486.3052962,
+    "hash": "05f51631c474441c210ba733f66c7435"
+  },
+  "F:\\agent checkl\\frontend\\src\\components\\ui\\Modal.jsx": {
+    "mtime": 1778459554.2993138,
+    "hash": "2096a80f0e9803cb5207831bad6d0fbc"
+  },
+  "F:\\agent checkl\\frontend\\src\\components\\ui\\Spinner.jsx": {
+    "mtime": 1778405721.450714,
+    "hash": "ed0c5efd6a176cf868ffaeebf922f424"
+  },
+  "F:\\agent checkl\\frontend\\src\\hooks\\useRegionDetection.js": {
+    "mtime": 1778460738.0097609,
+    "hash": "5b85cc024d90c21822b9698caca54578"
+  },
+  "F:\\agent checkl\\frontend\\src\\hooks\\useTranslation.js": {
+    "mtime": 1778462425.5273433,
+    "hash": "454a4a775313e9678077bbcc1a968855"
+  },
+  "F:\\agent checkl\\frontend\\src\\pages\\admin\\AdminAddProduct.jsx": {
+    "mtime": 1778459888.6190035,
+    "hash": "342ac2569628a4f7e2ae7445ec1851f6"
+  },
+  "F:\\agent checkl\\frontend\\src\\pages\\admin\\AdminCategories.jsx": {
+    "mtime": 1778459511.3648515,
+    "hash": "ef0a4e1c24f7b47ece5cbeaa474de784"
+  },
+  "F:\\agent checkl\\frontend\\src\\pages\\admin\\AdminCustomers.jsx": {
+    "mtime": 1778459469.4263551,
+    "hash": "de3121a58f644f863d7841029839d0aa"
+  },
+  "F:\\agent checkl\\frontend\\src\\pages\\admin\\AdminDashboard.jsx": {
+    "mtime": 1778461281.1581707,
+    "hash": "2e6cf9ff922592865e2c0e02c95d6698"
+  },
+  "F:\\agent checkl\\frontend\\src\\pages\\admin\\AdminEditProduct.jsx": {
+    "mtime": 1778459929.487515,
+    "hash": "d04470f69befe4058acf5b980fc5d82d"
+  },
+  "F:\\agent checkl\\frontend\\src\\pages\\admin\\AdminOrderDetail.jsx": {
+    "mtime": 1778459929.5785642,
+    "hash": "d907984bbc8c93fa230a4186764e9a52"
+  },
+  "F:\\agent checkl\\frontend\\src\\pages\\admin\\AdminOrders.jsx": {
+    "mtime": 1778459288.778699,
+    "hash": "ff479948e48be01ac70201a3aebc2104"
+  },
+  "F:\\agent checkl\\frontend\\src\\pages\\admin\\AdminProducts.jsx": {
+    "mtime": 1778459409.0138578,
+    "hash": "f5141ed0d1038f1bf5d49bd634eb6919"
+  },
+  "F:\\agent checkl\\frontend\\src\\pages\\admin\\AnalyticsPage.jsx": {
+    "mtime": 1778460971.7637055,
+    "hash": "1054ceaa35a9b0d3c6dba63fdb615e76"
+  },
+  "F:\\agent checkl\\frontend\\src\\pages\\admin\\InventoryPage.jsx": {
+    "mtime": 1778461119.6741471,
+    "hash": "c50965f88e23e43ee37efadcbd16ad54"
+  },
+  "F:\\agent checkl\\frontend\\src\\pages\\admin\\StaffOrders.jsx": {
+    "mtime": 1778459929.651823,
+    "hash": "f624179de2f6948eea8ff1f6806089ea"
+  },
+  "F:\\agent checkl\\frontend\\src\\pages\\auth\\ForgotPasswordPage.jsx": {
+    "mtime": 1778461026.64535,
+    "hash": "657bed7d4f23b6285e5162d5e261791b"
+  },
+  "F:\\agent checkl\\frontend\\src\\pages\\auth\\LoginPage.jsx": {
+    "mtime": 1778460964.1914504,
+    "hash": "43507015ade81a54dd1142b8f3eaed68"
+  },
+  "F:\\agent checkl\\frontend\\src\\pages\\auth\\RegisterPage.jsx": {
+    "mtime": 1778460089.2289233,
+    "hash": "0e8be29fcbadc54658317e4e352aa930"
+  },
+  "F:\\agent checkl\\frontend\\src\\pages\\auth\\ResetPasswordPage.jsx": {
+    "mtime": 1778461058.509481,
+    "hash": "963ae4197156ec97ae7a286466bd3f3c"
+  },
+  "F:\\agent checkl\\frontend\\src\\pages\\customer\\AboutPage.jsx": {
+    "mtime": 1778450424.6800413,
+    "hash": "d030fb240bd2532887ced1c83ec7843d"
+  },
+  "F:\\agent checkl\\frontend\\src\\pages\\customer\\CartPage.jsx": {
+    "mtime": 1778451115.34061,
+    "hash": "9157b24a6904090e944ec72d624d2578"
+  },
+  "F:\\agent checkl\\frontend\\src\\pages\\customer\\CheckoutPage.jsx": {
+    "mtime": 1778460940.4375618,
+    "hash": "d58ba4c1533f68145e502a919fa56551"
+  },
+  "F:\\agent checkl\\frontend\\src\\pages\\customer\\HomePage.jsx": {
+    "mtime": 1778451116.7185836,
+    "hash": "6f1cf831ece7c0ae14e4357932acbb77"
+  },
+  "F:\\agent checkl\\frontend\\src\\pages\\customer\\OrderConfirmPage.jsx": {
+    "mtime": 1778459828.7766924,
+    "hash": "b614c59d068eb0ab99bf46fdb1b69343"
+  },
+  "F:\\agent checkl\\frontend\\src\\pages\\customer\\OrderDetailPage.jsx": {
+    "mtime": 1778459612.5238311,
+    "hash": "7c486a3c52ec4378a7ac71a36e4e7156"
+  },
+  "F:\\agent checkl\\frontend\\src\\pages\\customer\\OrdersPage.jsx": {
+    "mtime": 1778459322.7567818,
+    "hash": "fc1d487d18c1afd4185c77f29750fafd"
+  },
+  "F:\\agent checkl\\frontend\\src\\pages\\customer\\ProductDetailPage.jsx": {
+    "mtime": 1778461570.803009,
+    "hash": "82a57a24211461aeaa48e342d86eac92"
+  },
+  "F:\\agent checkl\\frontend\\src\\pages\\customer\\ProductsPage.jsx": {
+    "mtime": 1778461079.34281,
+    "hash": "62b1c9432992410f3646990ef8b116aa"
+  },
+  "F:\\agent checkl\\frontend\\src\\pages\\customer\\ProfilePage.jsx": {
+    "mtime": 1778459359.655353,
+    "hash": "8370544561d6bda6269ada8f68a54ed1"
+  },
+  "F:\\agent checkl\\frontend\\src\\pages\\customer\\SearchPage.jsx": {
+    "mtime": 1778461093.3652356,
+    "hash": "daa5a9106a182a48407bac5e1f216f3e"
+  },
+  "F:\\agent checkl\\frontend\\src\\pages\\customer\\TrackOrderPage.jsx": {
+    "mtime": 1778460063.6704495,
+    "hash": "f32aeba1c856b9c67fd6658b09479b80"
+  },
+  "F:\\agent checkl\\frontend\\src\\pages\\customer\\WishlistPage.jsx": {
+    "mtime": 1778461007.9756534,
+    "hash": "0df411f51e638d23087de2d982c2d8f9"
+  },
+  "F:\\agent checkl\\frontend\\src\\store\\index.js": {
+    "mtime": 1778462514.4845989,
+    "hash": "430d8083b0d39b98f029c3801356a350"
+  },
+  "F:\\agent checkl\\frontend\\src\\store\\slices\\authSlice.js": {
+    "mtime": 1778460986.9893613,
+    "hash": "3afa628218cb835d26cb4e8fddc0b5b2"
+  },
+  "F:\\agent checkl\\frontend\\src\\store\\slices\\cartSlice.js": {
+    "mtime": 1778407945.648618,
+    "hash": "092bff0014fb8801fd865f7487b98d2a"
+  },
+  "F:\\agent checkl\\frontend\\src\\store\\slices\\productSlice.js": {
+    "mtime": 1778460974.0401647,
+    "hash": "95b3ef90e9ebaa9f69bd0634ad1c798e"
+  },
+  "F:\\agent checkl\\frontend\\src\\store\\slices\\settingsSlice.js": {
+    "mtime": 1778413467.3396308,
+    "hash": "db8587f0787c767b31dd0d6360249369"
+  },
+  "F:\\agent checkl\\frontend\\src\\store\\slices\\uiSlice.js": {
+    "mtime": 1778407946.6929963,
+    "hash": "3046fdb9aa6861e3763fb920baa8dc3c"
+  },
+  "F:\\agent checkl\\frontend\\src\\store\\slices\\wishlistSlice.js": {
+    "mtime": 1778460893.289101,
+    "hash": "eb03f46701cf6319add6cd27feace854"
+  },
+  "F:\\agent checkl\\frontend\\src\\utils\\constants.js": {
+    "mtime": 1778449934.0196595,
+    "hash": "003076b216bed398b7623586214af62f"
+  },
+  "F:\\agent checkl\\frontend\\src\\utils\\formatDate.js": {
+    "mtime": 1778405682.3729265,
+    "hash": "370528b46334e582608e9e07e3d54d01"
+  },
+  "F:\\agent checkl\\frontend\\src\\utils\\formatPrice.js": {
+    "mtime": 1778460752.1256955,
+    "hash": "42d6b34203d0f887eea374d469d08a1a"
+  },
+  "F:\\agent checkl\\frontend\\src\\utils\\translations.js": {
+    "mtime": 1778462417.2824247,
+    "hash": "4435727fcb14bf47dd2a2e42f8e5394b"
+  },
+  "F:\\agent checkl\\CLAUDE.md": {
+    "mtime": 1778453806.2601714,
+    "hash": "7c6711aeac393ca1b1839519d2996cae"
+  },
+  "F:\\agent checkl\\README.md": {
+    "mtime": 1778442092.478031,
+    "hash": "3a71332a489239c93eeda9dce2e7c088"
+  },
+  "F:\\agent checkl\\backend\\db_url.txt": {
+    "mtime": 1778445758.638361,
+    "hash": "3ac2ae434522180cba53ca7ecc2d8ae9"
+  },
+  "F:\\agent checkl\\backend\\README-SERVERLESS.md": {
+    "mtime": 1778448520.5192187,
+    "hash": "d7d29e0d0141370d4a208ef6653ecd92"
+  },
+  "F:\\agent checkl\\backend\\supabase-db-info.txt": {
+    "mtime": 1778445357.3970816,
+    "hash": "463d374540d6adc3d25bbc0b13c1da21"
+  },
+  "F:\\agent checkl\\frontend\\index.html": {
+    "mtime": 1778404800.9772823,
+    "hash": "89150e536c4a99f73625f46f41f0f437"
+  },
+  "F:\\agent checkl\\frontend\\README.md": {
+    "mtime": 1778448509.7113724,
+    "hash": "11d058dea24bda7b86d9505ac8dab364"
+  },
+  "F:\\agent checkl\\frontend\\public\\favicon.svg": {
+    "mtime": 1776959748.4718287,
+    "hash": "7e840862161341271697daa99a40d76b"
+  },
+  "F:\\agent checkl\\frontend\\public\\icons.svg": {
+    "mtime": 1776959748.4916632,
+    "hash": "3b4fcfcf393eca4d264dca4a4663bc37"
+  },
+  "F:\\agent checkl\\frontend\\src\\assets\\hero.png": {
+    "mtime": 1776959748.4469779,
+    "hash": "aead493361b27e7510691c5d7072dfc1"
+  },
+  "F:\\agent checkl\\frontend\\src\\assets\\react.svg": {
+    "mtime": 1776959748.5078676,
+    "hash": "f0402b67b6ce880f65666bb49e841696"
+  },
+  "F:\\agent checkl\\frontend\\src\\assets\\vite.svg": {
+    "mtime": 1776959748.5234578,
+    "hash": "9960a24288958394ac50e57ff638b036"
+  }
+}

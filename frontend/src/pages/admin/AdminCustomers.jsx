@@ -22,44 +22,58 @@ const AdminCustomers = () => {
   );
 
   return (
-    <div className="min-h-screen bg-[#0f0f0f] py-8 px-4">
-      <div className="max-w-7xl mx-auto">
-        <h1 className="text-3xl font-medium text-[#f5f0e8] mb-8">Customers</h1>
+    <div className="min-h-screen bg-[#0c0c0e] pt-20 pb-16">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="mb-8">
+          <h1 className="font-display text-3xl text-[#f8f4ef]">Customers</h1>
+          <p className="text-[#6b6b6b] mt-1">View and manage customer accounts</p>
+        </div>
 
         {/* Search */}
-        <div className="mb-6">
+        <div className="mb-8">
           <div className="relative max-w-md">
             <input
               type="text"
               placeholder="Search by name or email..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full px-4 py-3 bg-[#1a1a1a] border border-[#2e2e2e] rounded text-[#f5f0e8] placeholder-[#888888] focus:outline-none focus:border-[#c9b89a]"
+              className="w-full px-4 py-3.5 bg-[#1a1a1e] border border-[#2a2a2e] rounded-full text-[#f8f4ef] placeholder-[#6b6b6b] focus:outline-none focus:border-[#c9b89a]/50 transition-colors"
             />
-            <Search className="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#888888]" />
+            <Search className="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#6b6b6b]" />
           </div>
         </div>
 
         {/* Customers Table */}
-        <div className="bg-[#1a1a1a] border border-[#2e2e2e] rounded-lg overflow-hidden">
+        <div className="bg-[#1a1a1e] border border-[#2a2a2e] rounded-2xl overflow-hidden">
           <table className="w-full">
             <thead>
-              <tr className="border-b border-[#2e2e2e]">
-                <th className="text-left p-4 text-[#888888] text-sm font-medium">Name</th>
-                <th className="text-left p-4 text-[#888888] text-sm font-medium">Email</th>
-                <th className="text-left p-4 text-[#888888] text-sm font-medium">Phone</th>
-                <th className="text-left p-4 text-[#888888] text-sm font-medium">Orders</th>
-                <th className="text-left p-4 text-[#888888] text-sm font-medium">Joined</th>
+              <tr className="border-b border-[#2a2a2e]">
+                <th className="text-left p-4 text-[#6b6b6b] text-xs font-medium uppercase tracking-wider">Name</th>
+                <th className="text-left p-4 text-[#6b6b6b] text-xs font-medium uppercase tracking-wider">Email</th>
+                <th className="text-left p-4 text-[#6b6b6b] text-xs font-medium uppercase tracking-wider">Phone</th>
+                <th className="text-left p-4 text-[#6b6b6b] text-xs font-medium uppercase tracking-wider">Orders</th>
+                <th className="text-left p-4 text-[#6b6b6b] text-xs font-medium uppercase tracking-wider">Joined</th>
               </tr>
             </thead>
             <tbody>
               {filteredCustomers.map((customer) => (
-                <tr key={customer.id} className="border-b border-[#2e2e2e] hover:bg-[#0f0f0f] cursor-pointer">
-                  <td className="p-4 text-[#f5f0e8]">{customer.name}</td>
-                  <td className="p-4 text-[#888888]">{customer.email}</td>
-                  <td className="p-4 text-[#888888]">{customer.phone}</td>
-                  <td className="p-4 text-[#c9b89a]">{customer.ordersCount}</td>
-                  <td className="p-4 text-[#888888]">{formatDate(customer.createdAt)}</td>
+                <tr key={customer.id} className="border-b border-[#2a2a2e]/50 hover:bg-[#0c0c0e]/30 cursor-pointer transition-colors">
+                  <td className="p-4">
+                    <div className="flex items-center gap-3">
+                      <div className="w-8 h-8 rounded-full bg-linear-to-br from-[#c9b89a] to-[#a89878] flex items-center justify-center">
+                        <span className="text-[#0c0c0e] text-xs font-medium">
+                          {customer.name.split(' ').map(n => n[0]).join('')}
+                        </span>
+                      </div>
+                      <span className="text-sm text-[#f8f4ef]">{customer.name}</span>
+                    </div>
+                  </td>
+                  <td className="p-4 text-sm text-[#6b6b6b]">{customer.email}</td>
+                  <td className="p-4 text-sm text-[#6b6b6b]">{customer.phone}</td>
+                  <td className="p-4">
+                    <span className="font-display text-[#c9b89a]">{customer.ordersCount}</span>
+                  </td>
+                  <td className="p-4 text-sm text-[#6b6b6b]">{formatDate(customer.createdAt)}</td>
                 </tr>
               ))}
             </tbody>

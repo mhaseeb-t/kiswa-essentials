@@ -1,7 +1,7 @@
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { logout } from '../../store/slices/authSlice';
-import { LayoutDashboard, Package, ShoppingBag, Users, FolderTree, Settings, LogOut, Sparkles } from 'lucide-react';
+import { LayoutDashboard, Package, ShoppingBag, Users, FolderTree, LogOut, Sparkles, BarChart3 } from 'lucide-react';
 
 const AdminLayout = () => {
   const dispatch = useDispatch();
@@ -10,7 +10,9 @@ const AdminLayout = () => {
 
   const adminNavItems = [
     { name: 'Dashboard', path: '/admin', icon: LayoutDashboard, roles: ['ADMIN'] },
+    { name: 'Analytics', path: '/admin/analytics', icon: BarChart3, roles: ['ADMIN'] },
     { name: 'Products', path: '/admin/products', icon: Package, roles: ['ADMIN'] },
+    { name: 'Inventory', path: '/admin/inventory', icon: Package, roles: ['ADMIN'] },
     { name: 'Orders', path: '/admin/orders', icon: ShoppingBag, roles: ['ADMIN', 'STAFF'] },
     { name: 'Customers', path: '/admin/customers', icon: Users, roles: ['ADMIN'] },
     { name: 'Categories', path: '/admin/categories', icon: FolderTree, roles: ['ADMIN'] },

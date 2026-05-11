@@ -16,13 +16,18 @@ import OrderDetailPage from './pages/customer/OrderDetailPage';
 import ProfilePage from './pages/customer/ProfilePage';
 import AboutPage from './pages/customer/AboutPage';
 import TrackOrderPage from './pages/customer/TrackOrderPage';
+import WishlistPage from './pages/customer/WishlistPage';
+import SearchPage from './pages/customer/SearchPage';
 
 // Auth Pages
 import LoginPage from './pages/auth/LoginPage';
 import RegisterPage from './pages/auth/RegisterPage';
+import ForgotPasswordPage from './pages/auth/ForgotPasswordPage';
+import ResetPasswordPage from './pages/auth/ResetPasswordPage';
 
 // Admin Pages
 import AdminDashboard from './pages/admin/AdminDashboard';
+import AnalyticsPage from './pages/admin/AnalyticsPage';
 import AdminProducts from './pages/admin/AdminProducts';
 import AdminAddProduct from './pages/admin/AdminAddProduct';
 import AdminEditProduct from './pages/admin/AdminEditProduct';
@@ -31,6 +36,7 @@ import AdminOrderDetail from './pages/admin/AdminOrderDetail';
 import AdminCustomers from './pages/admin/AdminCustomers';
 import AdminCategories from './pages/admin/AdminCategories';
 import StaffOrders from './pages/admin/StaffOrders';
+import InventoryPage from './pages/admin/InventoryPage';
 
 // Protected Route Component
 const ProtectedRoute = ({ children }) => {
@@ -76,7 +82,11 @@ function App() {
           <Route path="products/:id" element={<ProductDetailPage />} />
           <Route path="login" element={<LoginPage />} />
           <Route path="register" element={<RegisterPage />} />
+          <Route path="forgot-password" element={<ForgotPasswordPage />} />
+          <Route path="reset-password/:token" element={<ResetPasswordPage />} />
+          <Route path="search" element={<SearchPage />} />
           <Route path="cart" element={<CartPage />} />
+          <Route path="wishlist" element={<WishlistPage />} />
 
           {/* Protected Customer Routes */}
           <Route path="checkout" element={
@@ -111,6 +121,7 @@ function App() {
           </AdminRoute>
         }>
           <Route index element={<AdminDashboard />} />
+          <Route path="analytics" element={<AnalyticsPage />} />
           <Route path="products" element={<AdminProducts />} />
           <Route path="products/add" element={<AdminAddProduct />} />
           <Route path="products/:id" element={<AdminEditProduct />} />
@@ -118,6 +129,7 @@ function App() {
           <Route path="orders/:id" element={<AdminOrderDetail />} />
           <Route path="customers" element={<AdminCustomers />} />
           <Route path="categories" element={<AdminCategories />} />
+          <Route path="inventory" element={<InventoryPage />} />
         </Route>
 
         {/* Staff Routes */}

@@ -8,6 +8,7 @@ const CartDrawer = () => {
   const dispatch = useDispatch();
   const { items, isOpen } = useSelector((state) => state.cart);
   const total = useSelector(selectCartTotal);
+  const currency = useSelector((state) => state.settings.currency);
 
   if (!isOpen) return null;
 
@@ -66,7 +67,7 @@ const CartDrawer = () => {
                   className="group flex gap-4 p-4 bg-[#0c0c0e] rounded-xl border border-[#2a2a2e] hover:border-[#c9b89a]/30 transition-all animate-fadeInUp"
                   style={{ animationDelay: `${index * 50}ms` }}
                 >
-                  <div className="w-20 h-24 bg-[#1a1a1e] rounded-lg overflow-hidden flex-shrink-0">
+                  <div className="w-20 h-24 bg-[#1a1a1e] rounded-lg overflow-hidden shrink-0">
                     <img
                       src={item.image || `https://picsum.photos/80/96?random=${item.id}`}
                       alt={item.name}
@@ -79,7 +80,7 @@ const CartDrawer = () => {
                       <h4 className="text-[#f8f4ef] text-sm font-medium truncate group-hover:text-[#c9b89a] transition-colors">
                         {item.name}
                       </h4>
-                      <p className="font-display text-[#c9b89a] mt-1">{formatPrice(item.price)}</p>
+                      <p className="font-display text-[#c9b89a] mt-1">{formatPrice(item.price, currency)}</p>
                     </div>
 
                     <div className="flex items-center justify-between">
@@ -116,7 +117,7 @@ const CartDrawer = () => {
               {/* Total */}
               <div className="flex items-center justify-between mb-4">
                 <span className="text-[#6b6b6b]">Subtotal</span>
-                <span className="font-display text-2xl text-[#c9b89a]">{formatPrice(total)}</span>
+                <span className="font-display text-2xl text-[#c9b89a]">{formatPrice(total, currency)}</span>
               </div>
 
               <p className="text-xs text-[#6b6b6b] mb-6 text-center">Shipping & taxes calculated at checkout</p>

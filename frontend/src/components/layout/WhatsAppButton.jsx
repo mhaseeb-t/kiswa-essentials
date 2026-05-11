@@ -1,4 +1,4 @@
-import { MessageCircle, X } from 'lucide-react';
+import { MessageCircle } from 'lucide-react';
 import { WHATSAPP_NUMBER } from '../../utils/constants';
 
 const WhatsAppButton = () => {
