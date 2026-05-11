@@ -20,10 +20,14 @@ const RegisterPage = () => {
   const onSubmit = async (data) => {
     setRegisterError('');
     try {
-      const response = await fetch(`${API_URL}/register`, {
+      const response = await fetch(`${API_URL}/register?type=register`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
+        body: JSON.stringify({
+          name: data.name,
+          email: data.email,
+          password: data.password
+        }),
       });
 
       const result = await response.json();
